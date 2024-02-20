@@ -1,0 +1,1455 @@
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: 0;
+}
+.link{
+  text-decoration: none;
+}
+.link:hover{
+  text-decoration: none;
+}
+.form-control:focus {
+  outline: none;
+}
+
+.back-page{
+  margin-left: 30px;
+  font-size: 16px;
+  color: white;
+}
+.carousel-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none; 
+  outline: none;
+  box-shadow: none;
+}
+.vertical-carousel-container {
+  position: relative;
+ 
+}
+
+
+
+/* <----------------------------------- Navbar---------------------------------------------> */
+
+.slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navbar {
+  height: 115px;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 0px 0px 50px 50px;
+  background: #FFF;
+  z-index: 2000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ 
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #000;
+  font-size: 19px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #B03035;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #B03035;
+}
+button.navbar-toggler:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.hamberger{
+  color: #B03035;
+  font-size: 35px;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+.collapse.show {
+  display: block;
+  background-color: white;
+}
+
+
+/* <---------------- Speed0meter--------------------> */
+.speedometer-wrapper {
+  background-image: url("../src/Components/assets/SpeedOmeter/speedo-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  padding: 10px;
+  position: relative;
+}
+.speedometer-content{
+  text-align: left;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.speedometer{
+  /* bottom: 150px; *//**/
+}
+/* 
+.speedometer-content {
+  position: absolute;
+  top: 55%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+} */
+
+.speedometer-content h2 {
+  color: #fff;
+  font-family: 'Futura Lt BT', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+
+}
+.speedometer-content span {
+  color: #AF4E4F;
+  font-size: 35px;
+  font-family: croser !important;
+  font-weight: 900;
+  letter-spacing: 2px;
+
+}
+.speedometer-content p {
+  color: #fff;
+  font-weight: 200 !important;
+}
+
+.custom-btn {
+  background: url('../src/Components/assets/SpeedOmeter/custom.png');
+
+  background-position: center;
+  width: 260px;
+  color: #FFF;
+  font-family: "Racing Sans One";
+  font-size: 32px;
+  padding: 10px 25px;
+  font-weight: 400;
+  border: none;
+}
+
+/* <!----------------- Banner-----------------------------> */
+.banner{
+  margin-top: 5%;
+}
+
+.banner-slider{
+  background-image: url('../src/Components/assets/Navbar/main-banner.png');
+  background-repeat: no-repeat;
+  background-position: center;;
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.banner-text-main{
+position: relative;
+
+}
+.banner-text{
+position: absolute;
+translate: -50% -350%;
+top: 0%;
+left: 50%;
+}
+.carousel-slide img{
+margin: 0 auto;
+z-index: 2;
+} 
+
+#scramblerLeft{
+  color: black;
+  z-index:-100;
+}
+.navigation-controls-main{
+  position: relative;
+}
+.navigation-controls{
+  position: absolute;
+  translate: -50% -100%;
+  left: 50%;
+  top: 50%;
+}
+
+.icon-left{
+  width: 50px;
+background-color: white;
+border-radius: 50%;
+padding: 2px 6px;
+height: 50px;
+border: 1px solid grey;
+  z-index: 2;
+  cursor: pointer;
+}
+.icon-right{
+  width: 50px;
+background-color: white;
+border-radius: 50%;
+padding: 2px 6px;
+height: 50px;
+border: 1px solid grey;
+  z-index: 2;
+  cursor: pointer;
+}
+.text{
+  font-size: 120px;
+  font-weight: 500;
+  font-family: croser !important;
+  color: transparent;
+  -webkit-text-stroke-width: 3px; 
+  -webkit-text-stroke-color: rgb(255, 255, 255); 
+}
+.bike-type{
+  margin-top: 10%;
+  color: white;
+}
+hr{
+  color: white;
+}
+
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-in-out;
+  z-index: -2;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .banner{
+    margin-top: 50%;
+  }
+  .banner-text{
+    position: absolute;
+    translate: -50% -440%;
+    top: 0%;
+    left: 50%;
+    }
+    .vertical-carousel-container{
+      margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:786px) {
+  .text{
+    font-size: 75px;
+  }
+  .banner-text{
+    position: absolute;
+    translate: -50% -440%;
+    top: 0%;
+    left: 50%;
+    }
+    .banner{
+      margin-top: 30%;
+    }
+    /* .banner-slider{
+      height: 400px;
+    } */
+   
+  
+}
+@media screen and (max-width:992px) {
+  .text{
+    font-size: 75px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .text{
+    font-size: 75px;
+  }
+}
+@media screen and (max-width:1200px) {
+  .text{
+    font-size: 75px;
+  }
+}
+@media screen and (max-width:1400px) {
+  .text{
+    font-size: 75px;
+  }
+}
+
+/* <----------------------- View360----------------------------------> */
+
+.view-360{
+  background: url("../src/Components/assets/View360/degree-bg.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  /* bottom: 50px; */
+}
+.view-360-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-360-img-main img{
+  width: 100%;
+}
+.view-360-container-info {
+padding-top: 40px;
+h2{
+  color: #000;
+   width: 100%;
+  font-family: 'Racing Sans One', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px; 
+
+}
+span{
+  color: #FF0;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 65px;
+    padding-left: 10px;
+}
+}
+.view-360-icons   {
+  margin-right: 35px;
+}
+
+/* <------------------ Timeline ---------------------> */
+
+.timeline {
+  max-width: 600px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  width: 2px;
+  height: 68%;
+  background: #ffffff;
+  transform: translateX(-50%);
+}
+
+.event {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.event-1::after {
+  content: '';
+  position: absolute;
+  top: 8%;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+
+.timeline {
+  position: relative;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  top: 8%;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  background-color: #FFFF00;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.timeline.active::after {
+  display: block;
+}
+
+.event-1.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-50%);
+}
+
+.event-2.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: -12px;
+  transform: translateY(-50%);
+}
+
+.event-3.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: -12px;
+  transform: translateY(-50%);
+}
+
+
+
+.event-2::after {
+  content: '';
+  position: absolute;
+  top: 39%;
+  left: -10px;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.event-3::after {
+  content: '';
+  position: absolute;
+  top: 74%;
+  left: -10px;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.event-content1 {
+  max-width: 400px;
+  height: 150px;
+  padding: 15px 18px;
+}
+.event-content2 {
+  max-width: 400px;
+  padding: 15px 18px;
+}
+.event-content3 {
+  max-width: 400px;
+  padding: 15px 18px;
+}
+.event-content1  h3{
+  font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+.event-content1 p {
+  font-weight: 800;
+  width: 150px;
+  color: #FFFF00;
+}
+.event-content2 p {
+  font-weight: 800;
+  width: 150px;
+  color: #FFFF00;
+}
+.event-content3  h3{
+  font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+.event-content3 p {
+  font-weight: 800;
+  width: 150px;
+  color: #FFFF00;
+}
+
+/* <----------------------- Color Pallette---------------------> */
+.color-palette{
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.color-box {
+  width: 70px;
+  height: 50px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* <-------------------- Scrambler-----------------------------------> */
+
+.active-palette {
+  border: 4px solid white;
+  color: white;
+}
+.palette-1-scrambler {
+  background-color: #454545;
+}
+
+.palette-2-scrambler {
+  background-color: #20222D;
+}
+
+.palette-3-scrambler {
+  background-color: #F16D3E;
+}
+
+.palette-4-scrambler {
+  background-color: #42504C;
+}
+
+.palette-5-scrambler {
+  background-color: #B8AD6F;
+}
+
+.palette-6-scrambler {
+  background-color: #B03035;
+}
+
+.palette-7-scrambler {
+  background-color: #E0A944;
+}
+
+/* <-------------------- Roadster-----------------------------------> */
+.palette-1-Roadster.active {
+  background-color: #383838;
+  border: 4px solid white;
+  color: white;
+}
+.palette-2-Roadster {
+  background-color: #B31B21;
+}
+.palette-3-Roadster {
+  background-color: #F8F0E9;
+}
+.palette-4-Roadster{
+  background-color: #313131;
+}
+.palette-5-Roadster{
+  background-color: #394B34;
+}
+.palette-6-Roadster {
+  background-color: #374A65;
+}
+
+/* <---------------------- Adventure------------------------------------> */
+.palette-1-Adventure.active {
+  background-color: #383838;
+  border: 4px solid white;
+  color: white;
+}
+.palette-2-Adventure {
+  background-color: #B31B21;
+}
+.palette-3-Adventure {
+  background-color: #F8F0E9;
+}
+
+
+
+
+
+
+.color-palette-info p{
+  margin-left: 20px;
+  margin-top: 8px;
+  width: 100px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium';
+  color: rgb(187, 187, 187);
+}
+.color-palette-info-2 p{
+  margin-left: 20px;
+  margin-top: 8px;
+  width: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium';
+  color: rgb(187, 187, 187);
+}
+.color-palette-info-3 p{
+  margin-left: 20px;
+  margin-top: 8px;
+  width: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium';
+  color: rgb(187, 187, 187);
+}
+
+.color-palette-info.active p{
+  color: rgb(255, 255, 255);
+}
+.color-palette-info-2.active p{
+  color: rgb(255, 255, 255);
+}
+.color-palette-info-3.active p{
+  color: rgb(255, 255, 255);
+}
+
+.color-palette-info span{
+  font-size: 14px;
+  font-weight: 600;
+}
+.color-palette-info-2 span{
+  font-size: 14px;
+  width: 200px;
+  font-weight: 600;
+}
+.color-palette-info-3 span{
+  font-size: 14px;
+  width: 200px;
+  font-weight: 600;
+}
+.view-360-container{
+  padding: 30px 0px;
+}
+.left-icon{
+  font-size: 60px;
+  padding: 18px;
+  font-weight: 100;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.right-icon{
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  padding: 18px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+
+
+/* <------------------------ Highlights---------------------------------> */
+.highlights{
+  background: url("../src/Components/assets/Key-highlights/slide-bg.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  height: auto;
+  background-size: cover;
+  position: relative;
+}
+
+.highlights h2 {
+    color: #000;
+    padding-top: 40px;
+    max-width: 150px;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.highlights span {
+    color: #FF0;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 65px;
+    padding-left: 10px;
+} 
+.highlights-main {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.img-fluid {
+  display: inline-block;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+}
+
+.scroll-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+
+/* <-------------------------- Our Blogs -----------------------------------------------------> */
+.ourblogs-main{
+  background: url('../src/Components/assets/OurBlogs/Ourblog-output.jpg');
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.ourblogs-main-info-main h1{
+  color: #000;
+  padding-top: 40px;
+  max-width: 150px;
+  font-family: 'Racing Sans One', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px;
+
+}
+.ourblogs-main-info-main span{
+  color: #FF0;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 65px;
+    padding-left: 10px;
+}
+.ourblogs-video{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+.icon-up{
+  position: relative;
+width: 50px;
+background-color: white;
+border-radius: 50%;
+padding: 2px 6px;
+height: 50px;
+border: 1px solid grey;
+  z-index: 2;
+  cursor: pointer;
+}
+.icon-down{
+  position: relative;
+  width: 50px;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  height: 50px;
+  z-index: 2;
+  cursor: pointer;
+
+}
+.custom-arrow-1{
+  position: absolute;
+  left: 9%;
+  top: 70%;
+}
+.custom-arrow-2{
+  position: absolute;
+  left: 9%;
+  top: 60%;
+}
+
+/* <----------------- Footer----------------------------------------> */
+.footer-wrapper {
+  background-image: url('../src/Components/assets/Footer/footer-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.footer-content h5 {
+  font-weight: 600;
+}
+
+
+
+.social-icons img {
+  padding-right: 1rem;
+  width: 45px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+
+.footer-content a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-content ul {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.footer-content ul li {
+  list-style: none;
+  padding-right: 20px;
+}
+
+.footer-content ul li a {
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.footer-content a:hover {
+  color: #000;
+}
+
+.footer-content i {
+  padding-right: 10px;
+}
+
+/* Add this CSS in your stylesheet or within your component */
+
+.scrambler-mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200px; /* Adjust the font size as needed */
+  color: white;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+/* Add styles in your CSS file or use a styling solution like styled-components */
+
+.VideoCarousel {
+  width: 80%;
+  margin: auto;
+}
+
+.VideoCarousel video {
+  display: block;
+  margin: 0 auto;
+}
+
+.VideoCarousel img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.preview-img-main-info{
+position: relative;
+}
+.preview-img-main{
+  position: absolute;
+  bottom: 80px;
+  left:-150px;
+  background-color: #DCDC4D;
+  width: 300px;
+  padding: 10px 0px 10px 10px;
+
+}
+
+.ourblogs-main{
+  background: url("../src/Components/assets/OurBlogs/Ourblog-output.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+
+.owl-carousel .owl-nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-20%);
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  padding: 10px 15px !important;
+  border: 2px solid gray !important;
+  border-radius: 50%;
+  transform: rotateZ(-180deg);
+}
+
+.owl-carousel .owl-nav button.owl-prev *,
+.owl-carousel .owl-nav button.owl-next * {
+  vertical-align: text-bottom;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+.slider-info h2{
+  color: white;
+}
+
+.slider .text-slider-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-carousel .slide-elem {
+  font-family: Impact;
+  font-size: 140px;
+  /* z-index: -1; */
+}
+
+.text-carousel span {
+  transition: all ease-out 0.5s;
+  color: lightgray;
+}
+
+.text-carousel .center span {
+  color: #000;
+}
+
+.character-carousel {
+  position: relative;
+}
+
+.character-carousel .slide-elem {
+  text-align: center;
+}
+
+.character-carousel img {
+  width: auto !important;
+  max-width: 100%;
+  max-height: 400px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.author {
+  background: #fff;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 30px 0;
+  /* z-index: 1; */
+}
+
+.author span {
+  color: red;
+}
+
+.author a {
+  display: inline-block;
+  color: red;
+}
+
+.author a:focus,
+.author a:hover {
+  opacity: 0.8;
+}
+/* Your existing styles... */
+
+.text-slider-content {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Ensure the text content takes full height */
+}
+
+.text-carousel {
+  width: 100%;
+}
+
+.text-carousel .item {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Ensure each text item takes full height */
+}
+
+.character-carousel {
+  width: 100%;
+}
+
+.character-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Ensure the image carousel takes full height */
+}
+
+.character-carousel .item {
+  height: 100%; /* Ensure each image item takes full height */
+}
+/* Editterr.css */
+
+.character-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.character-carousel .owl-stage {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-carousel .item {
+  height: 100%;
+}
+
+.character-carousel img {
+  width: auto !important;
+  max-width: 100%;
+  max-height: 400px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.icon-left{
+  width: 50px;
+background-color: white;
+border-radius: 50%;
+padding: 2px 6px;
+height: 50px;
+border: 1px solid grey;
+  z-index: 2;
+  cursor: pointer;
+}
+.icon-right{
+  width: 50px;
+background-color: white;
+border-radius: 50%;
+padding: 2px 6px;
+height: 50px;
+border: 1px solid grey;
+  z-index: 2;
+  cursor: pointer;
+}
+.map-location{
+  margin-top: 25px;
+}
+/* .text{
+  font-size: 150px;
+  font-weight: 500;
+  font-family: croser !important;
+  color: transparent;
+  -webkit-text-stroke-width: 3px; 
+  -webkit-text-stroke-color: rgb(255, 255, 255); 
+} */
+
+/* VerticalCarousel.css */
+
+/* .scrambler-1.slide-in-left {
+  animation: slideInLeft 0.5s ease-in-out;
+} */
+
+/* .scrambler-2.slide-in-right {
+  animation: slideInRight 0.5s ease-in-out;
+} */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.slick-prev:before {
+  display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .highlight-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .highlights{
+    h2{
+      font-size: 35px;
+      max-width: 300px;
+    }
+    span{
+      font-size: 45px;
+    }
+  }
+ 
+}
+
+
+
+.text {
+  font-size: 6vw; 
+  font-weight: 500;
+  font-family: croser !important;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+/* Add this media query for responsiveness */
+@media only screen and (max-width: 768px) {
+  .text {
+    font-size: 5vw; 
+    text-align: center;
+    -webkit-text-stroke-width: 0.5px; 
+  }
+}
+
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.banner-container .text {
+  text-align: center;
+}
+
+
+.carousel-controls {
+  position: relative;
+
+}
+.carousel-controls-info{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  flex-direction: row;
+  left: 10%;
+  right: 10%;
+  bottom: 40px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* <----------------------------- Motorcycle---------------------------------------------------------------> */
+.motorcycle-main{
+  background-color: #2C2C2C;
+  padding-top: 100px;
+}
+.motorcycle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+Link{
+  text-decoration: none;
+}
+.motorcycle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("../src/Components/assets/Motorcycle/Motorcycle-bg.png") center/cover no-repeat;
+  opacity: 0.2; 
+
+}
+
+
+.motorcycle .other-elements {
+  opacity: 1; 
+}
+
+.motorcycle-main-info{
+  h2{
+    font-weight: bold;
+    color: rgb(209, 209, 209);
+    font-size: 38px;
+    padding-bottom: 10px;
+  }
+  p{
+    font-size: 15px;
+    color: #8d8d8d;
+    font-weight: 500;
+  }
+}
+
+.yezdi-img{
+  width: 450px;
+  transition: all ease-in-out 0.4s;
+}
+.yezdi-img:hover{                                                                                                
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.yezdi-img-info{
+  font-size: 15px;
+  width: 280px;
+  color: #c3c3c3;
+  font-weight: 500;
+}
+
+.yezdi-details{
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  color:grey;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+  
+}
+.yezdi-details:hover{
+  color:rgb(255, 255, 255); 
+  text-decoration: none;
+}
+.yezdi-details span{
+  padding: 8px 8px;
+  font-size: 25px;
+}
+.motorcycle-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.motorcycle-img img{
+  cursor: pointer;
+  /* padding-bottom: 30px; */
+}
+.offcanvas-header{
+  background-color: #313131;
+}
+.offcanvas-body{
+  background-color: #313131;
+ 
+}
+.offcanvas-title {
+  color: white;
+    
+}
+label{
+  color: white;
+}
+.btn-close{
+  color: #B03035;
+  background-color: #B03035;
+}
+.test-drive{
+  background:none;
+  border: none;
+  border-bottom: 1px solid rgb(93, 93, 93);
+}
+
+.book-now{
+  background-color: #212121;
+  border: 2px solid white;
+  color: white;
+  padding: 17px 15px;
+  transition: all ease-in-out 0.8s;
+}
+.book-now:hover{
+  background-color: #000000;
+ 
+}
+.motorcycle-img h5{
+color: white;
+font-size: 25px;
+}
+
+/* <--------------------------------- Kommuniti---------------------------------------------------> */
+
+.kommuniti{
+  background-color:#313131 ;
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+.kommuniti-main-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    word-spacing: 5px;
+   
+  }
+  p{
+    font-weight: 800;
+    color: white;
+    /* width: 700px; */
+  }
+}
+/* .kommuniti-main-img-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 1rem;
+  
+} */
+ .kommuniti-main-img-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 1rem;
+  
+} 
+
+.kommuniti-main-img-infos {
+  width: 100%; 
+  height: 400px;
+  box-sizing: border-box;
+  margin-top: 60px;
+  padding: 10px;
+  h1 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    text-align: left;
+  }
+ 
+}
+.kommunity{
+  overflow: hidden;
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.img-container img {
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.2);
+}
+
+.kommuniti-main{
+  h2{
+    color: white;
+  }
+  p{
+    color: white;
+  }
+}
+.img-containers{
+  
+    color: white;
+  
+}
+
+.contact-us{
+  background-color: #313131;
+  padding-top: 120px;
+}
+
+.contactus-info{
+  h3{
+    color: white;
+  }
+  h2{
+    color: white;
+  }
+  p{
+    color: white;
+  }
+}
+.contact-uss h2{
+  color: white;
+}
+.contact-uss{
+  color: white;
+}
+

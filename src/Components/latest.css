@@ -1,0 +1,23 @@
+.bike-type{
+    margin-top: 10%;
+}
+.carousel-controls{
+    width: 500px;
+    bottom: 25px;
+}
+.progress{
+    height: 10px;
+    margin-right: 8px;
+    
+}
+.progress-info {
+    font-size: 35px;
+    color: white;
+    margin-top: 16px;
+    margin-right: 7px ;
+    margin-left: 7px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
