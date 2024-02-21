@@ -98,7 +98,7 @@ button.navbar-toggler:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 100vh;
   padding: 10px;
   position: relative;
 }
@@ -108,16 +108,7 @@ button.navbar-toggler:focus {
   display: flex;
   flex-direction: column;
 }
-.speedometer{
-  /* bottom: 150px; *//**/
-}
-/* 
-.speedometer-content {
-  position: absolute;
-  top: 55%;
-  left: 72%;
-  transform: translate(-50%, -50%);
-} */
+
 
 .speedometer-content h2 {
   color: #fff;
@@ -1157,6 +1148,9 @@ border: 1px solid grey;
       font-size: 45px;
     }
   }
+  .speedometer-wrapper{
+    height: 60vh;
+  }
  
 }
 
@@ -1452,4 +1446,240 @@ font-size: 25px;
 .contact-uss{
   color: white;
 }
+/* <-----------Emi----------------------------------> */
+/* .emi-calculator {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+input[type='number'] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .emi-calculator {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  input[type='number'], button {
+    font-size: 14px;
+  }
+} */
+
+.h__mb60{
+  background-color: #313131;
+  padding: 35px ;
+}
+.grid__gap60{
+  padding: 30px;
+  border: 1px solid #a1a1a1;
+  background-color:rgb(35 35 35);
+}
+
+.section__ttl {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.section__desc {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.input__field {
+  margin-bottom: 50px;
+
+}
+
+.input__label {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.input__control {
+  width: calc(100% - 50px);
+  padding: 12px 25px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.input__prefix {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+.emi-calc__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.emi-calc__list li{
+  padding-top: 30px;
+}
+
+.emi-calc__list-item {
+  text-align: center;
+}
+
+.emi-calc__list-label {
+  font-size: 20px;
+  color: #AF4E4F;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.emi-calc__list-val {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.emi-calc__emiblock {
+  text-align: center;
+}
+
+.emi-calc__emi {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.emi-calc__totalamt {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.emi-calc__smtxt {
+  font-size: 14px;
+  color: #AF4E4F;
+}
+
+.emi-calc__actionbtn {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.emi-calc__actionbtn:hover {
+  background-color: #0056b3;
+}
+
+/* <----------- Gallery -------------------> */
+.gallery-main{
+  width: 100%;
+
+
+}
+.gallery-container{
+  background-color: rgb(26 26 26);
+ 
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  overflow: hidden;
+  margin: 5px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  padding: 10px 12px;
+  margin: 0 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  border-color: #AF4E4F;
+  color: #AF4E4F;
+}
+
+.filter-buttons button.active {
+  border-color: #AF4E4F;
+  color: #AF4E4F;
+}
+
+
 

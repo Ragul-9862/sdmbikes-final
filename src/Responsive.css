@@ -74,11 +74,7 @@
     opacity: 1 !important;
 }
 
-/* @media screen and (min-width:426px) and (max-width:786px) {
-    .vertical-carousel-container{
-        margin-bottom: 150px;
-      }
-} */
+
 
 @media screen and (max-width:1399.99px) {
   
@@ -401,6 +397,7 @@
        
        
       }
+    
       .scrambler-text-container {
         position: relative;
         top: 20px;
