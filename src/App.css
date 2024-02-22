@@ -6,6 +6,18 @@
   padding-left: calc(var(--bs-gutter-x) * .5);
   margin-top: 0;
 }
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading img {
+  width: 100px; 
+  height: 100px; 
+}
+
 .link{
   text-decoration: none;
 }
@@ -57,6 +69,13 @@
 }
 .logo{
   width: 100px;
+}
+.offcanvas-header .btn-close {
+ background-color: white;
+  margin-bottom: calc(var(--bs-offcanvas-padding-y)*-.5);
+  margin-right: calc(var(--bs-offcanvas-padding-x)*-.5);
+  margin-top: calc(var(--bs-offcanvas-padding-y)*-.5);
+  padding: calc(var(--bs-offcanvas-padding-y)*.5) calc(var(--bs-offcanvas-padding-x)*.5);
 }
 
 

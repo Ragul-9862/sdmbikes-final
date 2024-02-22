@@ -69,7 +69,7 @@ export default function Navbar() {
                 </li>
               </Link>
               <li className="nav-item">
-                <button className="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Book a Test Drive</button>
+                <a className="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Book a Test Drive</a>
               </li>
             </ul>
           </div>
@@ -80,8 +80,8 @@ export default function Navbar() {
           </a>
         )}
         {(windowWidth < 992) && (
-          <div style={{ position: "relative" }}>
-            <a className="gotojawa" target="_blank" href="https://www.jawamotorcycles.com/">go to java</a>
+          <div style={{ position: "relative",textDecoration:"none" }}>
+            <a className="gotojawa" target="_blank" href="">go to java</a>
           </div>
         )}
       </nav>
@@ -89,7 +89,7 @@ export default function Navbar() {
  
       <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div className="offcanvas-header">
-          <h5 className="offcanvas-title" id="offcanvasRightLabel">Book a Test Drive</h5>
+          {/* <h5 className="offcanvas-title" id="offcanvasRightLabel">Book a Test Drive</h5> */}
           <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
           </button>
         </div>
