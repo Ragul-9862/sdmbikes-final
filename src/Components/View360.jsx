@@ -10,7 +10,7 @@ import { FiArrowLeft } from "react-icons/fi";
 // import BikeBoldBlack from '../Components/assets/View360/Scrambler/Scrambler.png';
 // const BikeBoldBlack = require(`../Components/assets/java-bike/bike-${number}.png`).default;
 
-// import BikeMidnightBlue from '../Components/assets/View360/Scrambler/Scrambler-2.png';
+import BikeMidnightBlue from '../Components/assets/View360/Scrambler/Scrambler-2.png';
 import BikeFireOrange from '../Components/assets/View360/Scrambler/Scrambler-3.png';
 import BikeMeanGreen from '../Components/assets/View360/Scrambler/Scrambler-4.png';
 import BikeOutlawOlive from '../Components/assets/View360/Scrambler/Scrambler-5.png';
@@ -38,7 +38,9 @@ export default function New() {
   const [number, setNumber] = useState(1);
   const BikeBoldBlack = require(`../Components/assets/j-bike/bike-${number}.png`)
   const [number2, setNumber2] = useState(1);
-  const BikeMidnightBlue = require(`../Components/assets/j-bike/Scrambler-midnight-blue/bike-${number2}.png`)
+  const BikeShodowGrey = require(`../Components/assets/j-bike/Roadster/bike-${number2}.png`)
+  const [number3, setNumber3] = useState(1);
+  const BikeWithoutWhite = require(`../Components/assets/j-bike/Adventure/bike-${number3}.png`)
 
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -81,6 +83,13 @@ export default function New() {
 
   const handleIncrease2 = () => {
     setNumber2((prevNumber) => Math.min(17, prevNumber + 1));
+  };
+  const handleDecrease3 = () => {
+    setNumber3((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease3 = () => {
+    setNumber3((prevNumber) => Math.min(17, prevNumber + 1));
   };
 
 
@@ -273,11 +282,57 @@ export default function New() {
              
             </div>
             <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
-              <img src={getColorImageSource2(selectedColor2)} className='img-fluid' alt={`Bike ${selectedColor2}`} />
+              <section className='slider'>
+                <Box>
+                  <img
+                    src={getColorImageSource2(selectedColor2 )}
+                    className='img-fluid'
+                    alt=""
+                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }} 
+                    onMouseDown={handleMouseDown}
+                    onMouseMove={handleMouseMove}
+                    onMouseUp={handleMouseUp}
+                  />
+                  <div className='view-360-icons-main'>
+                  <Stack  spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+                    <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease2} />
+                    <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease2} />
+                  </Stack>
+                  </div>
+               
+                </Box>
+              </section>
+             
             </div>
             <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
-              <img src={getColorImageSource3(selectedColor3)} className='img-fluid' alt={`Bike ${selectedColor3}`} />
+              <section className='slider'>
+                <Box>
+                  <img
+                    src={getColorImageSource3(selectedColor3 )}
+                    className='img-fluid'
+                    alt=""
+                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }} 
+                    onMouseDown={handleMouseDown}
+                    onMouseMove={handleMouseMove}
+                    onMouseUp={handleMouseUp}
+                  />
+                  <div className='view-360-icons-main'>
+                  <Stack  spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+                    <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease3} />
+                    <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease3} />
+                  </Stack>
+                  </div>
+               
+                </Box>
+              </section>
+             
             </div>
+            {/* <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
+              <img src={getColorImageSource2(selectedColor2)} className='img-fluid' alt={`Bike ${selectedColor2}`} />
+            </div> */}
+            {/* <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
+              <img src={getColorImageSource3(selectedColor3)} className='img-fluid' alt={`Bike ${selectedColor3}`} />
+            </div> */}
 
             <div className={`col-lg-1 color-palette ${selectedEvent === 'event1' ? '' : 'd-none'}`}>
               <div
