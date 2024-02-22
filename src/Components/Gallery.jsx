@@ -33,7 +33,7 @@ const Gallery = () => {
                 <div className="filter-buttons">
                     <button className={filter === 'all' ? 'active' : ''} onClick={() => setFilter('all')}>All</button>
                     <button className={filter === 'events' ? 'active' : ''} onClick={() => setFilter('events')}>Events</button>
-                    <button className={filter === 'products' ? 'active' : ''} onClick={() => setFilter('products')}>Products</button>
+                    {/* <button className={filter === 'products' ? 'active' : ''} onClick={() => setFilter('products')}>Products</button> */}
                 </div>
                 <div className="row">
                     {filteredImages.map((image, index) => (

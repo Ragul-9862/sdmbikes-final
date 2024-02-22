@@ -3,8 +3,8 @@ export default function Footer() {
   return (
     <div>
      <footer className="footer-wrapper">
-  <div className="container-fluid">
-    <div className="row">
+  <div className="container-fluid ">
+    <div className="row footer-wrapper-main">
       <div className="col-lg-3">
         <div className="footer-logo">
           <img className="img-fluid" src={require("../Components/assets/Footer/footer-logo.png")} alt="logo" />

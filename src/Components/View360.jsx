@@ -10,7 +10,7 @@ import { FiArrowLeft } from "react-icons/fi";
 // import BikeBoldBlack from '../Components/assets/View360/Scrambler/Scrambler.png';
 // const BikeBoldBlack = require(`../Components/assets/java-bike/bike-${number}.png`).default;
 
-import BikeMidnightBlue from '../Components/assets/View360/Scrambler/Scrambler-2.png';
+// import BikeMidnightBlue from '../Components/assets/View360/Scrambler/Scrambler-2.png';
 import BikeFireOrange from '../Components/assets/View360/Scrambler/Scrambler-3.png';
 import BikeMeanGreen from '../Components/assets/View360/Scrambler/Scrambler-4.png';
 import BikeOutlawOlive from '../Components/assets/View360/Scrambler/Scrambler-5.png';
@@ -37,6 +37,8 @@ export default function New() {
 
   const [number, setNumber] = useState(1);
   const BikeBoldBlack = require(`../Components/assets/j-bike/bike-${number}.png`)
+  const [number2, setNumber2] = useState(1);
+  const BikeMidnightBlue = require(`../Components/assets/j-bike/Scrambler-midnight-blue/bike-${number2}.png`)
 
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -71,6 +73,14 @@ export default function New() {
 
   const handleIncrease = () => {
     setNumber((prevNumber) => Math.min(17, prevNumber + 1));
+  };
+
+  const handleDecrease2 = () => {
+    setNumber2((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease2 = () => {
+    setNumber2((prevNumber) => Math.min(17, prevNumber + 1));
   };
 
 
@@ -246,7 +256,7 @@ export default function New() {
                     src={getColorImageSource(selectedColor)}
                     className='img-fluid'
                     alt=""
-                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }} // Add userSelect: 'none'
+                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }} 
                     onMouseDown={handleMouseDown}
                     onMouseMove={handleMouseMove}
                     onMouseUp={handleMouseUp}
@@ -260,7 +270,7 @@ export default function New() {
                
                 </Box>
               </section>
-              {/* <img src={getColorImageSource(selectedColor)} className='img-fluid' alt={`Bike ${selectedColor}`} /> */}
+             
             </div>
             <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
               <img src={getColorImageSource2(selectedColor2)} className='img-fluid' alt={`Bike ${selectedColor2}`} />

@@ -17,9 +17,28 @@
 }
 
 .back-page{
-  margin-left: 30px;
+  margin-left: 35px;
   font-size: 16px;
-  color: white;
+  color: rgb(163, 163, 163);
+}
+.gotojawa{
+  position: absolute;
+  top: -20px;
+  width: 80px;
+  font-size: 15px;
+  right: 0px;
+    padding: 10px 8px;
+    margin-bottom: 30px;
+    background-color: #B03035;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.back-page:hover{
+  margin-left: 35px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
 }
 .carousel-wrapper{
   position: absolute;
@@ -35,6 +54,9 @@
 .vertical-carousel-container {
   position: relative;
  
+}
+.logo{
+  width: 100px;
 }
 
 
@@ -59,7 +81,7 @@
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   color: #000;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 400;
   margin-left: 10px;
 }
@@ -90,6 +112,110 @@ button.navbar-toggler:focus {
   display: block;
   background-color: white;
 }
+.banner-info-icon-1{
+  position: relative;
+}
+.banner-info-icon-main-1{
+  position: fixed;
+  top: 145px;
+  right: -15px;
+  z-index: 10;
+
+}
+.banner-info-icon-main-2 {
+  position: fixed;
+  top: 225px;
+  right: -15px;
+  z-index: 10;
+}
+.banner-info-icon-2{
+  position: relative;
+ 
+}
+
+.side-button {
+  color: white;
+  text-decoration: none;
+  border-radius: 60px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  width: auto;
+  max-width: 70px;
+  border-radius: 30px 0px 0px 30px;
+  background: #2C2C2C;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 10px;
+}
+
+.side-button:hover {
+  max-width: 300px;
+}
+
+.side-button .icon {
+  max-width: 50px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+.side-button-2 .icon {
+  max-width: 50px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.side-button .texted {
+  white-space: nowrap;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  padding-right: 15px;
+}
+.side-button-2 .texted {
+  white-space: nowrap;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+.side-button-2 {
+  color: white;
+  text-decoration: none;
+  border-radius: 60px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  width: auto;
+  max-width: 70px;
+  border-radius: 30px 0px 0px 30px;
+  background: #2C2C2C;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 10px;
+}
+
+.side-button-2:hover {
+  max-width: 300px;
+}
+.side-button .icon img{
+  width: 50px;
+}
+.side-button-2 .icon img{
+  width: 50px;
+}
+
+
 
 
 /* <---------------- Speed0meter--------------------> */
@@ -330,7 +456,7 @@ hr{
   width: 100%;
 }
 .view-360-container-info {
-padding-top: 40px;
+/* padding-top: 40px; */
 h2{
   color: #000;
    width: 100%;
@@ -755,7 +881,7 @@ button {
 .ourblogs-main-info-main span{
   color: #FF0;
     font-family: 'Racing Sans One', sans-serif;
-    font-size: 76px;
+    /* font-size: 76px; */
     font-style: normal;
     font-weight: 400;
     line-height: 65px;
@@ -808,6 +934,10 @@ border: 1px solid grey;
   background-position: center;
   background-size: cover;
   position: relative;
+}
+.footer-wrapper-main{
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .footer-content h5 {
@@ -1139,18 +1269,32 @@ border: 1px solid grey;
     max-width: 100%;
     height: auto;
   }
-  .highlights{
-    h2{
-      font-size: 35px;
-      max-width: 300px;
-    }
-    span{
-      font-size: 45px;
-    }
-  }
+ 
   .speedometer-wrapper{
     height: 60vh;
   }
+  .gotojawa {
+    position: absolute;
+    top: -20px;
+    width: 65px;
+    font-size: 15px;
+    right: 0px;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+    background-color: #B03035;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px 0px 0px 15px;
+}
+.highlights h2{
+  font-size: 30px;
+  max-width: 300px;
+}
+.highlights span{
+  font-size: 30px;
+
+}
+ 
  
 }
 
@@ -1404,6 +1548,7 @@ font-size: 25px;
 
 .img-container img {
   transition: transform 0.3s ease;
+  margin-bottom: 15px;
 }
 
 .img-container:hover img {
@@ -1418,12 +1563,11 @@ font-size: 25px;
     color: white;
   }
 }
-.img-containers{
-  
-    color: white;
-  
+.img-containers {
+  color: white;
+  margin-bottom: 35px;
+  font-size: 22px;
 }
-
 .contact-us{
   background-color: #313131;
   padding-top: 120px;
@@ -1447,61 +1591,10 @@ font-size: 25px;
   color: white;
 }
 /* <-----------Emi----------------------------------> */
-/* .emi-calculator {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  background-color: #000;
-  color: #fff;
-}
 
-.input-container {
-  margin-bottom: 10px;
-}
-
-input[type='number'] {
-  width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #cc0000;
-}
-
-.result {
-  margin-top: 20px;
-}
-
-
-@media screen and (max-width: 600px) {
-  .emi-calculator {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  input[type='number'], button {
-    font-size: 14px;
-  }
-} */
 
 .h__mb60{
   background-color: #313131;
-  padding: 35px ;
 }
 .grid__gap60{
   padding: 30px;
@@ -1624,11 +1717,9 @@ button:hover {
 
 
 }
-.gallery-container{
-  background-color: rgb(26 26 26);
- 
+.gallery-container {
+  background-color: rgb(88 88 88);
 }
-
 .gallery {
   display: flex;
   flex-wrap: wrap;

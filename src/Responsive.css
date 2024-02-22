@@ -77,18 +77,21 @@
 
 
 @media screen and (max-width:1399.99px) {
-  
-    .custom-arrow-2{
+
+    .custom-arrow-2 {
         left: 10%;
         top: 50%;
     }
-    .custom-arrow-1{
+
+    .custom-arrow-1 {
         left: 10%;
         top: 65%;
     }
-    .view-360-icons-main{
+
+    .view-360-icons-main {
         margin-right: 25px;
     }
+
     .navbar-expand-lg .navbar-nav .nav-link {
         color: #000;
         font-size: 19px;
@@ -98,53 +101,70 @@
 }
 
 @media(max-width:1199.99px) {
-   
-    .custom-arrow-2{
+
+    .custom-arrow-2 {
         left: 13%;
         top: 45%;
     }
-    .custom-arrow-1{
+
+    .custom-arrow-1 {
         left: 13%;
         top: 60%;
     }
+
     .navbar-expand-lg .navbar-nav .nav-link {
         color: #000;
         font-size: 19px;
         font-weight: 400;
         margin-left: 0px;
     }
-     
+
+    .fixed-top {
+        width: 92%;
+    }
+
+    .bike-type h1 {
+        font-size: 35px;
+    }
+
 }
 
 @media screen and (max-width:1024px) {
-    .scrambler-2{
+    .scrambler-2 {
         position: relative;
         top: -81px;
     }
+
     .banner-img {
         position: relative;
         top: -32px;
         overflow-x: hidden;
     }
-    .custom-arrow-2{
+
+    .custom-arrow-2 {
         left: 13%;
         top: 45%;
     }
-    .custom-arrow-1{
+
+    .custom-arrow-1 {
         left: 13%;
         top: 60%;
     }
-    .view-360-icons-main{
+
+    .view-360-icons-main {
         margin-right: 15px;
     }
+
     .navbar-expand-lg .navbar-nav .nav-link {
         color: #000;
         font-size: 19px;
         font-weight: 400;
         margin-left: 0px;
     }
-     
+
+
 }
+
 @media(max-width:992px) {
 
     .jawa {
@@ -167,6 +187,7 @@
         border-radius: 12px;
         padding: 15px;
     }
+
     .timeline::before {
         content: '';
         display: flex;
@@ -179,26 +200,28 @@
         height: 2px;
         background: #ffffff;
         transform: translateY(-50%);
-     
+
     }
+
     .navbar {
         width: 100%;
-  
-      }
-    
+
+    }
+
     .timeline-main {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: -100px;
     }
+
     .navbar-expand-lg .navbar-nav .nav-link {
         color: #000;
         font-size: 19px;
         font-weight: 400;
         margin-left: 10px;
     }
-   
+
     .timeline {
         display: flex;
         flex-direction: row;
@@ -269,11 +292,12 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-      
-      }
-      .color-palette-info{
+
+    }
+
+    .color-palette-info {
         margin-right: 15px;
-      }
+    }
 
     .color-box {
         border-radius: 50%;
@@ -319,73 +343,87 @@
         font-size: 15px;
         width: 100px;
     }
+
     .event-content2 p {
         font-size: 15px;
         width: 100px;
     }
+
     .event-content3 p {
         font-size: 15px;
         width: 100px;
     }
-    .event-content1{
+
+    .event-content1 {
         width: 150px;
     }
-    .event-content2{
+
+    .event-content2 {
         width: 150px;
     }
-    .event-content3{
+
+    .event-content3 {
         width: 150px;
     }
 
     .event-content1.active {
         width: 150px;
     }
+
     .event-content2.active {
         width: 150px;
     }
+
     .event-content3.active {
         width: 150px;
     }
-.banner-img{
-    position: relative;
-    overflow-x: hidden;
-}
-.banner-container{
-    top: 67%;
-}
-.custom-arrow-2{
-   display: none;
-}
-.custom-arrow-1{
-    display: none;
-}
+
+    .banner-img {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .banner-container {
+        top: 67%;
+    }
+
+    .custom-arrow-2 {
+        display: none;
+    }
+
+    .custom-arrow-1 {
+        display: none;
+    }
 
 
-.carosuel-controls{
-    position: relative;
+    .carosuel-controls {
+        position: relative;
 
-}
-.icon-right{
-    display: none;
-   }
-   .icon-left{
-    display: none;
-   }
-   .progress{
-    display: none;
-   }
+    }
 
-   .ourblogs-main{
-    background: url('../src/Components/assets/OurBlogs/Ourblog-output.jpg');
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-  }
- 
+    .icon-right {
+        display: none;
+    }
 
-    
+    .icon-left {
+        display: none;
+    }
+
+    .progress {
+        display: none;
+    }
+
+    .ourblogs-main {
+        background: url('../src/Components/assets/OurBlogs/Ourblog-output.jpg');
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+
+
 }
 
 @media screen and (max-width:768px) {
@@ -394,19 +432,24 @@
         border-radius: 0px 0px 0px 0px;
         background: #FFF;
         z-index: 2000;
-       
-       
-      }
-    
-      .scrambler-text-container {
+
+
+    }
+
+    .scrambler-text-container {
         position: relative;
         top: 20px;
     }
-    .scrambler-1{
+
+    .scrambler-1 {
         bottom: 94px;
         position: relative;
     }
-      
+
+    .logo {
+        width: 120px;
+    }
+
 
     .speedometer-content span {
         font-size: 18px;
@@ -416,17 +459,18 @@
         font-size: 20px;
     }
 
-    .ourblogs-main-info-main {
-        h1{
-            font-size: 35px;
-            max-width: 200px;
-        }
 
-        span{
-            font-size: 45px;
-        }
+
+    .ourblogs-main-info-main h1 {
+        font-size: 30px;
+        max-width: 230px;
     }
-    .view-360-icons-main{
+
+    span {
+        font-size: 30px;
+    }
+
+    .view-360-icons-main {
         margin-right: 15px;
     }
 
@@ -448,7 +492,7 @@
         height: 2px;
         background: #ffffff;
         transform: translateY(-50%);
-      
+
     }
 
     .timeline {
@@ -516,26 +560,27 @@
         left: 80%;
     }
 
-    
+
     .color-palette {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-       
+
     }
+
     .color-palette-info {
-       margin-right: 10px;
+        margin-right: 10px;
     }
-    
+
     .color-palette-info-2 {
-       margin-right: 10px;
+        margin-right: 10px;
     }
-    
+
     .color-palette-info-3 {
-       margin-right: 10px;
+        margin-right: 10px;
     }
-    
+
 
     .color-box {
         border-radius: 50%;
@@ -553,9 +598,9 @@
 
     .color-palette-info p {
         display: none;
-      }
-      
-   
+    }
+
+
     .palette-1-Roadster.active {
         background-color: #383838;
         border: 2px solid white;
@@ -582,34 +627,42 @@
         font-size: 10px;
         width: 100px;
     }
+
     .event-content2 p {
         font-size: 10px;
         width: 100px;
     }
+
     .event-content3 p {
         font-size: 10px;
         width: 100px;
     }
-    .event-content1{
+
+    .event-content1 {
         width: 80px;
     }
-    .event-content2{
+
+    .event-content2 {
         width: 80px;
     }
-    .event-content3{
+
+    .event-content3 {
         width: 80px;
     }
 
     .event-content1.active {
         width: 80px;
     }
+
     .event-content2.active {
         width: 80px;
     }
+
     .event-content3.active {
         width: 80px;
     }
-  .ac{
+
+    .ac {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -623,38 +676,43 @@
     .speedometer-content {
         padding: 10px;
     }
-    .left-icon{
+
+    .left-icon {
         font-size: 40px;
         padding: 12px;
         font-weight: 100;
         color: white;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 50%;
-      }
-      .right-icon{
+    }
+
+    .right-icon {
         font-size: 40px;
         font-weight: 100;
         color: white;
         padding: 12px;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 50%;
-      }
-      .view-360-icons   {
+    }
+
+    .view-360-icons {
         margin-right: 26px;
         margin-bottom: 10px;
-      }
-      .view-360-container-info {
-        h1{
-          color: #000;
-           width: 100%;
-          font-family: 'Racing Sans One', sans-serif;
-          font-size: 35px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 65px; 
+    }
+
+    .view-360-container-info {
+        h1 {
+            color: #000;
+            width: 100%;
+            font-family: 'Racing Sans One', sans-serif;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 65px;
         }
-        span{
-          color: #FF0;
+
+        span {
+            color: #FF0;
             font-family: 'Racing Sans One', sans-serif;
             font-size: 45px;
             font-style: normal;
@@ -662,41 +720,47 @@
             line-height: 65px;
             padding-left: 10px;
         }
-        }
-       
-     
-}
+    }
 
-
-@media screen and (min-width:768px)  {
-    .back-page{
+    .back-page {
         margin-left: 0px;
-      }
-      .logo{
-        width: 100px;
-      }
-      
+        font-size: 16px;
+        color: rgb(163, 163, 163);
+    }
+
+    .back-page:hover {
+        color: rgb(255, 255, 255);
+    }
+    .footer-wrapper-main {
+        padding-left: 0px; 
+        padding-right: 0px;
+    }
+
+
 }
 
 
 
 
 
-@media screen and (max-width:600px){
-   
-    
-      .view-360-container-info {
-        h1{
-          color: #000;
-           width: 100%;
-          font-family: 'Racing Sans One', sans-serif;
-          font-size: 25px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 65px; 
+
+
+@media screen and (max-width:600px) {
+
+
+    .view-360-container-info {
+        h1 {
+            color: #000;
+            width: 100%;
+            font-family: 'Racing Sans One', sans-serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 65px;
         }
-        span{
-          color: #FF0;
+
+        span {
+            color: #FF0;
             font-family: 'Racing Sans One', sans-serif;
             font-size: 30px;
             font-style: normal;
@@ -704,17 +768,10 @@
             line-height: 65px;
             padding-left: 10px;
         }
-        }
-        .map-location{
-        margin-top: 30px;
-       }
-     
     }
-   
-    
 
-  
+    .map-location {
+        margin-top: 30px;
+    }
 
- 
-
-     
+}

@@ -50,9 +50,9 @@ export default function Motorcycle() {
                     {expanded[index] ? " Read Less" : " Read More"} {expanded[index] ? <HiChevronUp /> : <HiChevronDown />}
                   </span>
                 </p>
-                <a className="yezdi-details" href="">
+                {/* <a className="yezdi-details" href="">
                   Book Online <span> <HiArrowNarrowRight /></span>
-                </a>
+                </a> */}
               </div>
             ))}
           </div>

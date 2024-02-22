@@ -1,5 +1,3 @@
-
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
@@ -10,7 +8,6 @@ import img2 from '../Components/assets/Navbar/Roadster-banner.png';
 import img3 from '../Components/assets/Navbar/Adventure-banner.png';
 import "./latest.css"
 
-
 const slides = [
   {
     id: 1,
@@ -20,7 +17,7 @@ const slides = [
     info2: "Daily Commute",
     info3: "Touring",
     info4: "Rally",
-    num:"01"
+    num: "01"
   },
   {
     id: 2,
@@ -43,8 +40,6 @@ const slides = [
     num: "03"
   },
 ];
-
-
 
 const VerticalCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -93,10 +88,6 @@ const VerticalCarousel = () => {
     paddingRight: '5px',
     transition: 'width 0.2s ease-in-out, background-color 0.2s ease-in-out',
   };
-  
-
- 
-
 
   const settings = {
     dots: false,
@@ -111,6 +102,7 @@ const VerticalCarousel = () => {
       setCurrentSlide(next);
       updateProgress();
       animateText();
+      animateText2();
     },
   };
 
@@ -120,26 +112,44 @@ const VerticalCarousel = () => {
     void scramblerLeft.offsetWidth; 
     scramblerLeft.classList.add("slide-in-left");
   };
+
   const animateText2 = () => {
-    const scramblerLeft = document.getElementById("scramblerRight");
-    scramblerLeft.classList.remove("slide-in-right");
-    void scramblerLeft.offsetWidth; 
-    scramblerLeft.classList.add("slide-in-right");
+    const scramblerRight = document.getElementById("scramblerRight");
+    scramblerRight.classList.remove("slide-in-right");
+    void scramblerRight.offsetWidth; 
+    scramblerRight.classList.add("slide-in-right");
   };
 
   return (
     <div className='banner-slider'>
       <section className='container-fluid banner' >
+        <div className='banner-info-icon-1'>
+        <div className='banner-info-icon-main-1'>
+            <a href="#" className="side-button">
+                <span className="icon"><img src={require("../Components/assets/Navbar/Phone iCon-2.png")} alt=""/></span>
+                <span className="texted">Whatsapp</span>
+            </a>
+        </div>
+        </div>
+        <div className='banner-info-icon-2'>
+        <div className='banner-info-icon-main-2'>
+            <a href="#" className="side-button-2">
+            <span className="icon"><img src={require("../Components/assets/Navbar/Phone iCon.png")} alt=""/></span>
+                <span className="texted">Phone</span>
+            </a>
+        </div>
+        </div>
+      
+      
+     
         <div className='row'>
           <div className='col-lg-2 d-none d-lg-block bike-type'>
-
             <h1>Bike type</h1>
             <hr />
             <p>{slides[currentSlide].info1}</p>
             <p>{slides[currentSlide].info2}</p>
             <p>{slides[currentSlide].info3}</p>
             <p>{slides[currentSlide].info4}</p>
-          
           </div>
           <div className='col-lg-8'>
             <div className="vertical-carousel-container d-flex align-items-center justify-content-center">
@@ -165,7 +175,6 @@ const VerticalCarousel = () => {
                 </h2>
               </div>
             </div>
-         
             <div className='navigation-controls-main d-none d-lg-block'>
               <div className='navigation-controls'>
                 <div className="carousel-controls d-flex justify-content-center align-items-center  " >
@@ -178,18 +187,7 @@ const VerticalCarousel = () => {
               </div>
             </div>
           </div>
-
-
-
-
         </div>
-        {/* <div className="row" style={{ position: "absolute", left: "1%", top: "30%" }}>
-        <div className="col text-center">
-          <h2 id="scramblerRight" className='text mb-2 scrambler-1 scramble-animation slide-in-right text mb-5 scrambler-2'>
-            {slides[currentSlide].text}
-          </h2>
-        </div>
-      </div> */}
       </section>
     </div>
   );
