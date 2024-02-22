@@ -127,7 +127,7 @@ const VerticalCarousel = () => {
         <div className='banner-info-icon-main-1'>
             <a href="#" className="side-button">
                 <span className="icon"><img src={require("../Components/assets/Navbar/Phone iCon-2.png")} alt=""/></span>
-                <span className="texted">Whatsapp</span>
+                <span className="texted">Phone</span>
             </a>
         </div>
         </div>
@@ -135,7 +135,7 @@ const VerticalCarousel = () => {
         <div className='banner-info-icon-main-2'>
             <a href="#" className="side-button-2">
             <span className="icon"><img src={require("../Components/assets/Navbar/Phone iCon.png")} alt=""/></span>
-                <span className="texted">Phone</span>
+                <span className="texted">Whatsapp</span>
             </a>
         </div>
         </div>
