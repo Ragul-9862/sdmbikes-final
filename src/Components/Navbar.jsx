@@ -76,14 +76,14 @@ export default function Navbar() {
           </div>
         </div>
         {(windowWidth >= 992) && (
-          <Link to="/navbar">
+          <Link to="/HomePageJawa">
             <img src={require("../Components/assets/Navbar/jawa.png")} alt="logo" className='d-none d-lg-block jawa' />
           </Link>
         )}
         {(windowWidth < 992) && (
           <div style={{ position: "relative",textDecoration:"none" }}>
             {/* <a className="gotojawa" target="_blank" href="">go to java</a> */}
-            <Link to='/navbar'>
+            <Link to='/HomePageJawa'>
          <img className='md-logo' src={jawa} alt="" />
 
             </Link>
