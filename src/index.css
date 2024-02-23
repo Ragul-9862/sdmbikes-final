@@ -22,6 +22,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
 }
+.form-check-input:checked {
+  background-color: #b03035;
+  border-color: #b03035;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

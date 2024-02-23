@@ -103,9 +103,10 @@ export default function Navbar() {
     <div className="mb-3">
       <label htmlFor="selectModel" className="form-label">Select Model</label>
       <select className="form-select" id="selectModel">
-        <option value="model1">Jawa</option>
-        <option value="model2">Scrambler</option>
-        <option value="model2">Adventure</option>
+        <option value="model1">Jawa 350</option>
+        <option value="model2">42</option>
+        <option value="model2">42 Bobber</option>
+        <option value="model2">Perak</option>
       </select>
     </div>
     <div className="mb-3">

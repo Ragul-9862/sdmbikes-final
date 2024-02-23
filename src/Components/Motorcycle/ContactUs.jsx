@@ -33,9 +33,9 @@ export default function ContactUs() {
             <p>123 Jawa Street</p>
             <p>Jawa City, India</p>
             <h3>Phone:</h3>
-            <p>+91 123 456 7890</p>
+            <p> +91 98765 43210</p>
             <h3>Email:</h3>
-            <p>info@jawamotorcycles.com</p>
+            <p>info@shreedhanammotors.com</p>
           </div>
         </div>
         {/* <div className='row mt-5'>

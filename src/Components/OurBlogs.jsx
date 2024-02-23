@@ -76,7 +76,7 @@ export default function OurBlogs() {
             <Slider {...settings}>
               {videos.map((video, index) => (
                 <div key={video.id} style={{ position: 'relative', width: '800px', height: '100%' }}>
-                  <video autoPlay muted loop width='100%' height='100%' poster={video.preview}>
+                  <video className='ourBlogs-video' autoPlay muted loop width='100%' height='100%' poster={video.preview}>
                     <source src={video.video} type='video/mp4' />
                     Your browser does not support the video tag.
                   </video>
@@ -93,8 +93,8 @@ export default function OurBlogs() {
                   key={video.id}
                   src={videos[index === videos.length - 1 ? 0 : index + 1].preview}
                   alt={videos[index === videos.length - 1 ? 0 : index + 1].id}
-                  width='220px'
-                  height='150px'
+                  width='180px'
+                  height='130px'
                   style={{ display: index === currentVideo ? 'block' : 'none' }}
                 />
               ))}

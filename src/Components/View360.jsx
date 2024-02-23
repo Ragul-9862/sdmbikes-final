@@ -19,7 +19,7 @@ import BikeYellingYellow from '../Components/assets/View360/Scrambler/Scrambler-
 
 // <------------------Roadster----------------------------------------->
 
-import BikeShodowGrey from '../Components/assets/View360/Roadster/Roadster.png'
+// import BikeShodowGrey from '../Components/assets/View360/Roadster/Roadster.png'
 import BikeInfernoRed from '../Components/assets/View360/Roadster/Roadster-2.png'
 import BikeGlacialWhite from '../Components/assets/View360/Roadster/Roadster-3.png'
 import BikeSmokeGrey from '../Components/assets/View360/Roadster/Roadster-4.png'
@@ -28,17 +28,52 @@ import BikeSteelBlue from '../Components/assets/View360/Roadster/Roadster-6.png'
 
 // <------------- Adventure------------------------------------->
 
-import BikeWithoutWhite from '../Components/assets/View360/Adventure/Adventure.png'
+// import BikeWithoutWhite from '../Components/assets/View360/Adventure/Adventure.png'
 import BikeSlickSilver from '../Components/assets/View360/Adventure/Adventure-2.png'
 import BikeMambaBlack from '../Components/assets/View360/Adventure/Adventure-3.png'
 
 export default function New() {
 
+  // <------------Scrambler------------------------------->
 
   const [number, setNumber] = useState(1);
   const BikeBoldBlack = require(`../Components/assets/j-bike/bike-${number}.png`)
+
+
+  // <------------Scrambler Midnightblue------------------------------->
+  const [number12, setNumber12] = useState(1);
+  const BikeMidnightBlue = require(`../Components/assets/j-bike/Scrambler-midnight-blue/bike-${number12}.png`)
+
+
+  const handleDecrease12 = () => {
+    setNumber12((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease12 = () => {
+    setNumber12((prevNumber) => Math.min(17, prevNumber + 1));
+  };
+  // <------------Scrambler FireOrange------------------------------->
+  const [number13, setNumber13] = useState(1);
+  const BikeFireOrange = require(`../Components/assets/j-bike/Scrambler-fireorange/bike-${number13}.png`)
+
+
+  const handleDecrease13 = () => {
+    setNumber13((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease13 = () => {
+    setNumber13((prevNumber) => Math.min(17, prevNumber + 1));
+  };
+
+
+
   const [number2, setNumber2] = useState(1);
   const BikeShodowGrey = require(`../Components/assets/j-bike/Roadster/bike-${number2}.png`)
+
+
+
+
+
   const [number3, setNumber3] = useState(1);
   const BikeWithoutWhite = require(`../Components/assets/j-bike/Adventure/bike-${number3}.png`)
 
@@ -234,7 +269,7 @@ export default function New() {
       <section className='view-360'>
         <div className='container-fluid view-360-container'>
           <div className='view-360-container-info text-center'>
-          <h2>360 <span>View</span></h2>
+            <h2>Take <span> 360 View</span></h2>
 
           </div>
           <div className='row view-360-main'>
@@ -258,74 +293,133 @@ export default function New() {
               </div>
             </div>
 
-            <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent === 'event1' ? '' : 'd-none'}`}>
-              <section className='slider'>
-                <Box>
-                  <img
-                    src={getColorImageSource(selectedColor)}
-                    className='img-fluid'
-                    alt=""
-                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }} 
-                    onMouseDown={handleMouseDown}
-                    onMouseMove={handleMouseMove}
-                    onMouseUp={handleMouseUp}
-                  />
-                  <div className='view-360-icons-main'>
-                  <Stack  spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-                    <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease} />
-                    <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease} />
-                  </Stack>
-                  </div>
-               
-                </Box>
-              </section>
-             
-            </div>
+<div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent === 'event1' ? '' : 'd-none'}`}>
+  <section className='slider'>
+    <Box>
+      {selectedColor === 'MeanGreen' ? (
+        <>
+          <img
+            src={BikeFireOrange}
+            className='img-fluid'
+            alt=""
+            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+          />
+          <div className='view-360-icons-main'>
+            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease13} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease13} />
+            </Stack>
+          </div>
+        </>
+      ) : selectedColor === 'FireOrange' ? (
+        <>
+          <img
+            src={BikeFireOrange}
+            className='img-fluid'
+            alt=""
+            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+          />
+          <div className='view-360-icons-main'>
+            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease13} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease13} />
+            </Stack>
+          </div>
+        </>
+      ) : selectedColor === 'MidnightBlue' ? (
+        <>
+          <img
+            src={BikeMidnightBlue}
+            className='img-fluid'
+            alt=""
+            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+          />
+          <div className='view-360-icons-main'>
+            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease12} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease12} />
+            </Stack>
+          </div>
+        </>
+      ) : (
+        <>
+          <img
+            src={getColorImageSource(selectedColor)}
+            className='img-fluid'
+            alt=""
+            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+          />
+          <div className='view-360-icons-main'>
+            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease} />
+            </Stack>
+          </div>
+        </>
+      )}
+    </Box>
+  </section>
+</div>
+
+
+
             <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
               <section className='slider'>
                 <Box>
                   <img
-                    src={getColorImageSource2(selectedColor2 )}
+                    src={getColorImageSource2(selectedColor2)}
                     className='img-fluid'
                     alt=""
-                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }} 
+                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
                     onMouseDown={handleMouseDown}
                     onMouseMove={handleMouseMove}
                     onMouseUp={handleMouseUp}
                   />
                   <div className='view-360-icons-main'>
-                  <Stack  spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-                    <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease2} />
-                    <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease2} />
-                  </Stack>
+                    <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+                      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease2} />
+                      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease2} />
+                    </Stack>
                   </div>
-               
+
                 </Box>
               </section>
-             
+
             </div>
             <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
               <section className='slider'>
                 <Box>
                   <img
-                    src={getColorImageSource3(selectedColor3 )}
+                    src={getColorImageSource3(selectedColor3)}
                     className='img-fluid'
                     alt=""
-                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }} 
+                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
                     onMouseDown={handleMouseDown}
                     onMouseMove={handleMouseMove}
                     onMouseUp={handleMouseUp}
                   />
                   <div className='view-360-icons-main'>
-                  <Stack  spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-                    <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease3} />
-                    <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease3} />
-                  </Stack>
+                    <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+                      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease3} />
+                      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease3} />
+                    </Stack>
                   </div>
-               
+
                 </Box>
               </section>
-             
+
             </div>
             {/* <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
               <img src={getColorImageSource2(selectedColor2)} className='img-fluid' alt={`Bike ${selectedColor2}`} />
@@ -353,35 +447,35 @@ export default function New() {
                 className={`d-flex align-items-center color-palette-info ${selectedColor === 'FireOrange' ? 'active' : ''}`}
                 onClick={() => handleColorClick('FireOrange')}
               >
-                <div  className={`color-box palette-3-scrambler ${selectedColor === 'FireOrange' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-3-scrambler ${selectedColor === 'FireOrange' ? 'active-palette ' : ''} `}></div>
                 <p>Single Tone <span>Fire Orange</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info ${selectedColor === 'MeanGreen' ? 'active' : ''}`}
                 onClick={() => handleColorClick('MeanGreen')}
               >
-                <div  className={`color-box palette-4-scrambler ${selectedColor === 'MeanGreen' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-4-scrambler ${selectedColor === 'MeanGreen' ? 'active-palette ' : ''} `}></div>
                 <p>Dual Tone <span>Mean Green</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info ${selectedColor === 'OutlawOlive' ? 'active' : ''}`}
                 onClick={() => handleColorClick('OutlawOlive')}
               >
-                <div  className={`color-box palette-5-scrambler ${selectedColor === 'OutlawOlive' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-5-scrambler ${selectedColor === 'OutlawOlive' ? 'active-palette ' : ''} `}></div>
                 <p>Single Tone <span>Outlaw Olive</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info ${selectedColor === 'RebelRed' ? 'active' : ''}`}
                 onClick={() => handleColorClick('RebelRed')}
               >
-                <div  className={`color-box palette-6-scrambler ${selectedColor === 'RebelRed' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-6-scrambler ${selectedColor === 'RebelRed' ? 'active-palette ' : ''} `}></div>
                 <p>Dual Tone <span>Rebel Red</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info ${selectedColor === 'YellingYellow' ? 'active' : ''}`}
                 onClick={() => handleColorClick('YellingYellow')}
               >
-                <div  className={`color-box palette-7-scrambler ${selectedColor === 'YellingYellow' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-7-scrambler ${selectedColor === 'YellingYellow' ? 'active-palette ' : ''} `}></div>
                 <p>Single Tone <span>Yelling Yellow</span></p>
               </div>
 
@@ -393,42 +487,42 @@ export default function New() {
                 className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'ShodowGrey' ? 'active' : ''}`}
                 onClick={() => handleColorClick2('ShodowGrey')}
               >
-                <div  className={`color-box palette-1-Roadster ${selectedColor2 === 'ShodowGrey' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-1-Roadster ${selectedColor2 === 'ShodowGrey' ? 'active-palette ' : ''} `}></div>
                 <p>Dark <span>Shodow Grey</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'InfernoRed' ? 'active' : ''}`}
                 onClick={() => handleColorClick2('InfernoRed')}
               >
-                   <div  className={`color-box palette-2-Roadster ${selectedColor2 === 'InfernoRed' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-2-Roadster ${selectedColor2 === 'InfernoRed' ? 'active-palette ' : ''} `}></div>
                 <p>Dark <span>Inferno Red</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'GlacialWhite' ? 'active' : ''}`}
                 onClick={() => handleColorClick2('GlacialWhite')}
               >
-                   <div  className={`color-box palette-3-Roadster ${selectedColor2 === 'GlacialWhite' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-3-Roadster ${selectedColor2 === 'GlacialWhite' ? 'active-palette ' : ''} `}></div>
                 <p>Dark <span>Glacial White</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'SmokeGrey' ? 'active' : ''}`}
                 onClick={() => handleColorClick2('SmokeGrey')}
               >
-                  <div  className={`color-box palette-4-Roadster ${selectedColor2 === 'SmokeGrey' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-4-Roadster ${selectedColor2 === 'SmokeGrey' ? 'active-palette ' : ''} `}></div>
                 <p>Dark <span>Smoke Grey</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'HunterGrey' ? 'active' : ''}`}
                 onClick={() => handleColorClick2('HunterGrey')}
               >
-                  <div  className={`color-box palette-5-Roadster ${selectedColor2 === 'HunterGrey' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-5-Roadster ${selectedColor2 === 'HunterGrey' ? 'active-palette ' : ''} `}></div>
                 <p>Dark <span>Hunter Grey</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'SteelBlue' ? 'active' : ''}`}
                 onClick={() => handleColorClick2('SteelBlue')}
               >
-                   <div  className={`color-box palette-6-Roadster ${selectedColor2 === 'SteelBlue' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-6-Roadster ${selectedColor2 === 'SteelBlue' ? 'active-palette ' : ''} `}></div>
                 <p>Dark <span>Steel Blue</span></p>
               </div>
             </div>
@@ -486,21 +580,21 @@ export default function New() {
                 className={`d-flex align-items-center color-palette-info-3 ${selectedColor3 === 'WithoutWhite' ? 'active' : ''}`}
                 onClick={() => handleColorClick3('WithoutWhite')}
               >
-             <div  className={`color-box palette-1-Adventure ${selectedColor3 === 'WithoutWhite' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-1-Adventure ${selectedColor3 === 'WithoutWhite' ? 'active-palette ' : ''} `}></div>
                 <p>Gloss Tone <span>Without White</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info ${selectedColor3 === 'SlickSilver' ? 'active' : ''}`}
                 onClick={() => handleColorClick3('SlickSilver')}
               >
-               <div  className={`color-box palette-2-Adventure ${selectedColor3 === 'SlickSilver' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-2-Adventure ${selectedColor3 === 'SlickSilver' ? 'active-palette ' : ''} `}></div>
                 <p>Matte <span>Slick Silver</span></p>
               </div>
               <div
                 className={`d-flex align-items-center color-palette-info ${selectedColor3 === 'MambaBlack' ? 'active' : ''}`}
                 onClick={() => handleColorClick3('MambaBlack')}
               >
-                  <div  className={`color-box palette-3-Adventure ${selectedColor3 === 'MambaBlack' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-3-Adventure ${selectedColor3 === 'MambaBlack' ? 'active-palette ' : ''} `}></div>
                 <p>Matte <span>Mamba Black</span></p>
               </div>
             </div>
