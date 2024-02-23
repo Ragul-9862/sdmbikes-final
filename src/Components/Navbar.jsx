@@ -61,7 +61,7 @@ export default function Navbar() {
               </li>
               <Link className='link' to="/Kommuniti">
                 <li className="nav-item">
-                  <a className="nav-link" href="#about">Kommuniti</a>
+                  <a className="nav-link" href="#about">Community</a>
                 </li>
               </Link>
               <Link className='link' to="/Contactus">

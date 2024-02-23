@@ -9,6 +9,7 @@ import MotorcyclePage from '../src/Pages/MotorcyclePage';
 import KommunitiPage from '../src/Pages/KommunitiPage';
 import ContactUsPage from './Pages/ContactUsPage';
 import HomePageJawa from './Pages/JawaMotorcycle/HomePageJawa';
+import Motorcyclejawa from './Pages/JawaMotorcycle/Motorcyclejawa';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
             <Route path="/Kommuniti" element={<KommunitiPage />} />
             <Route path="/ContactUs" element={<ContactUsPage />} />
             <Route path="/HomePageJawa" element={<HomePageJawa />} />
+            <Route path="/MotorcycleJawa" element={<Motorcyclejawa />} />
           </Routes>
         )}
       </BrowserRouter>

@@ -55,13 +55,13 @@ export default function Navbar() {
                 </li>
               </Link>
               <li className="nav-item">
-                <Link className='link' to="/Motorcycle">
+                <Link className='link' to="/MotorcycleJawa">
                   <a className="nav-link" href="#link">Motorcycles</a>
                 </Link>
               </li>
               <Link className='link' to="/Kommuniti">
                 <li className="nav-item">
-                  <a className="nav-link" href="#about">Kommuniti</a>
+                  <a className="nav-link" href="#about">Community</a>
                 </li>
               </Link>
               <Link className='link' to="/Contactus">
