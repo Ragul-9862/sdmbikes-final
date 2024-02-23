@@ -17,6 +17,18 @@
   width: 100px; 
   height:100px; 
 }
+.md-logo{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -32px;
+  font-size: 15px;
+  right: 0px;
+    margin-bottom: 30px;
+    color: white;
+    text-decoration: none;
+}
+
 
 .link{
   text-decoration: none;
@@ -319,7 +331,7 @@ z-index: 2;
 } 
 
 #scramblerLeft{
-  color: black;
+  color: #000000b3;
   z-index:-100;
 }
 .navigation-controls-main{
@@ -845,7 +857,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .highlights span {
-    color: #FF0;
+    color: #af4e4f;
     font-family: 'Racing Sans One', sans-serif;
     font-size: 76px;
     font-style: normal;
@@ -961,9 +973,25 @@ border: 1px solid grey;
   background-size: cover;
   position: relative;
 }
+.footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-logo{
+  width: 200px;
+  margin-top: 10px;
+}
 .footer-wrapper-main{
   padding-left: 60px;
   padding-right: 60px;
+}
+.footer-logo-info{
+font-weight: 800;
+word-spacing: 5px;
 }
 
 .footer-content h5 {
@@ -1400,12 +1428,12 @@ Link{
 }
 .motorcycle::before {
   content: "";
-  position: absolute;
+  position: absolute;    
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: url("../src/Components/assets/Motorcycle/Motorcycle-bg.png") center/cover no-repeat;
+  background: url("../src/Components/assets/Motorcycle/Yezdi-bg.png") center/cover no-repeat;
   opacity: 0.2; 
 
 }

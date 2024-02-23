@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FiAlignLeft, FiX } from "react-icons/fi";
-import jawa from '../Components/assets/Navbar/md-logo-jawa.png'
+import yezdi from '../assets/Navbar/md-logo-yezdi.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar() {
@@ -43,7 +43,7 @@ export default function Navbar() {
           <div className="navbar-brand-container d-flex justify-content-center justify-content-lg-start flex-grow-1 order-lg-1">
             <Link to="/">
               <a className="navbar-brand ms-lg-5" href="#home">
-                <img src={require("../Components/assets/Navbar/logo.png")} className='logo' alt='logo' />
+                <img src={require("../assets/Navbar/logo.png")} className='logo' alt='logo' />
               </a>
             </Link>
           </div>
@@ -74,19 +74,19 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-        </div>
+        </div> 
         {(windowWidth >= 992) && (
-          <Link to="/navbar">
-            <img src={require("../Components/assets/Navbar/jawa.png")} alt="logo" className='d-none d-lg-block jawa' />
+          <Link to='/'>
+            <img src={require("../assets/Navbar/yezdi.png")} alt="logo" className='d-none d-lg-block jawa' />
           </Link>
         )}
         {(windowWidth < 992) && (
           <div style={{ position: "relative",textDecoration:"none" }}>
-            {/* <a className="gotojawa" target="_blank" href="">go to java</a> */}
-            <Link to='/navbar'>
-         <img className='md-logo' src={jawa} alt="" />
+            <Link to='/'>
+         <img className='md-logo' src={yezdi} alt="" />
 
             </Link>
+            {/* <a className="gotojawa" target="_blank" href="">go to java</a> */}
           </div>
         )}
       </nav>
@@ -103,8 +103,8 @@ export default function Navbar() {
     <div className="mb-3">
       <label htmlFor="selectModel" className="form-label">Select Model</label>
       <select className="form-select" id="selectModel">
-        <option value="model1">Scrambler</option>
-        <option value="model2">Roadster</option>
+        <option value="model1">Jawa</option>
+        <option value="model2">Scrambler</option>
         <option value="model2">Adventure</option>
       </select>
     </div>

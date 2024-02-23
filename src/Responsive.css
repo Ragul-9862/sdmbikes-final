@@ -435,6 +435,18 @@
 
 
     }
+    .custom-btn {
+        background: url('../src/Components/assets/SpeedOmeter/custom.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 260px;
+        color: #FFF;
+        font-family: "Racing Sans One";
+        font-size: 17px;
+        padding: 5px 10px;
+        font-weight: 400;
+        border: none;
+    }
 
     .scrambler-text-container {
         position: relative;
@@ -449,7 +461,55 @@
     .logo {
         width: 120px;
     }
-
+    .banner-info-icon-main-2 {
+        position: fixed;
+        top: 200px;
+        right: -15px;
+        z-index: 10;
+      }
+      .side-button {
+        color: white;
+        text-decoration: none;
+        border-radius: 60px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        overflow: hidden;
+        width: auto;
+        max-width: 70px;
+        border-radius: 30px 0px 0px 30px;
+        background: #2C2C2C;
+        -webkit-transition: max-width 0.5s;
+        transition: max-width 0.5s;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 11px;
+      }
+      .side-button-2 {
+        color: white;
+        text-decoration: none;
+        border-radius: 60px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        overflow: hidden;
+        width: auto;
+        max-width: 70px;
+        border-radius: 30px 0px 0px 30px;
+        background: #2C2C2C;
+        -webkit-transition: max-width 0.5s;
+        transition: max-width 0.5s;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 11px;
+      }
+      .side-button .icon img{
+        width: 35px;
+      }
+      .side-button-2 .icon img{
+        width: 35px;
+      }
+      
 
     .speedometer-content span {
         font-size: 18px;

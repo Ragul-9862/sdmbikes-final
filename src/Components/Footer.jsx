@@ -6,8 +6,9 @@ export default function Footer() {
   <div className="container-fluid ">
     <div className="row footer-wrapper-main">
       <div className="col-lg-3">
-        <div className="footer-logo">
-          <img className="img-fluid" src={require("../Components/assets/Footer/footer-logo.png")} alt="logo" />
+        <div className="footer">
+          <img className="img-fluid footer-logo" src={require("../Components/assets/Navbar/logo.png")} alt="logo" />
+          <p className='text-center mt-3  footer-logo-info '>“No plans. No maps. No GPS. Just ride.”</p>
         </div>
       </div>
       <div className="col-lg-5 mt-4">
@@ -35,7 +36,7 @@ export default function Footer() {
               <li><a href="tel: +91 9876543210"><i className="bi bi-telephone-fill" />+91 9876543210
                 </a>
               </li>
-              <li><a href="mail to: jawayezdi@gmail.com"><i className="bi bi-envelope-open" />jawayezdi@gmail.com</a></li>
+              <li><a href="info@shreedhanammotors.com"><i className="bi bi-envelope-open" />info@shreedhanammotors.com</a></li>
             </ul>
           </div>
         </div>

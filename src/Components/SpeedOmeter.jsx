@@ -16,7 +16,7 @@ export default function SpeedOmeter() {
         mollis
         .Aliquam ferme ntum sapien odio, ac eleifend libero bibendum dictum ligula. Vivamus
       </p>
-      <button className="custom-btn">READ MORE</button>
+      {/* <button className="custom-btn">READ MORE</button> */}
     </div>
   </div>
     </section>
