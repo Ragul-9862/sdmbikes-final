@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+@font-face{
+  font-family: reem;
+  src: url("../src/Components/assets/reem-kufi/ReemKufi-Regular.ttf");
+}
+
 
 body {
   margin: 0;
-  font-family: 'Reem Kufi' !important;
+  font-family: reem !important;
 }
 
 ::-webkit-scrollbar {

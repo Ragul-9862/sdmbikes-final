@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FiAlignLeft, FiX } from "react-icons/fi";
-import jawa from '../Components/assets/Navbar/md-logo-jawa.png'
+import jawa from '../Components/assets/Navbar/jawa.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar() {
@@ -27,7 +27,8 @@ export default function Navbar() {
   return (
     <section>
       <nav className="navbar navbar-expand-lg fixed-top">
-        <div className="container">
+        <div className="container-fluid">
+
           <button
             className={`navbar-toggler order-lg-0 ${toggle ? "" : "collapsed"}`}
             onClick={handleToggle}
@@ -80,15 +81,13 @@ export default function Navbar() {
             <img src={require("../Components/assets/Navbar/jawa.png")} alt="logo" className='d-none d-lg-block jawa' />
           </Link>
         )}
-        {(windowWidth < 992) && (
-          <div style={{ position: "relative",textDecoration:"none" }}>
-            {/* <a className="gotojawa" target="_blank" href="">go to java</a> */}
-            <Link to='/HomePageJawa'>
-         <img className='md-logo' src={jawa} alt="" />
-
-            </Link>
-          </div>
-        )}
+         {(windowWidth < 992) && (
+        <div style={{ position: "relative", textDecoration: "none" }}>
+          <Link to='/HomePageJawa'>
+            <img className={`md-logo ${toggle ? 'position-top' : ''}`} src={jawa} alt="" />
+          </Link>
+        </div>
+      )}
       </nav>
 
  

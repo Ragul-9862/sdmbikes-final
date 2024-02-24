@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import React, { useRef, useState } from 'react';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
-import img1 from '../Components/assets/j-bike/bike-5.png';
+import img1 from '../Components/assets/j-bike/bike-1.png';
 import img2 from '../Components/assets/Navbar/Roadster-banner.png';
 import img3 from '../Components/assets/Navbar/Adventure-banner.png';
 import "./latest.css"
@@ -68,9 +68,9 @@ const VerticalCarousel = () => {
 
   const updateProgress = () => {
     const calc = ((currentSlide + 1) / slides.length) * 100;
-    setProgress(calc);
+    const progress = currentSlide === 0 ? 33.33 : calc;
+    setProgress(progress);
   };
-
   const getColorBasedOnProgress = () => {
     const progressPercentage = (currentSlide + 1) / slides.length;
     if (progressPercentage <= 1 / 3) {
@@ -82,7 +82,7 @@ const VerticalCarousel = () => {
     }
   };
   const progressBarStyle = {
-    width: `${progress}%`,
+    width: `${progress}%`, 
     backgroundColor: getColorBasedOnProgress(),
     border: '1px solid grey',
     paddingRight: '5px',
@@ -180,7 +180,7 @@ const VerticalCarousel = () => {
                 <div className="carousel-controls d-flex justify-content-center align-items-center  " >
                   <FiArrowLeft className='icon-left  d-none d-lg-block mr-3' onClick={goToPrevSlide} /> <p className='progress-info' >{slides[currentSlide].num}</p> 
                   <div className="progress mr-3" style={{ width: '100%', overflow: 'hidden' }}>
-                    <div style={progressBarStyle}></div>
+                    <div style={progressBarStyle} ></div>
                   </div>
                   <FiArrowRight className='icon-right  d-none d-lg-block' onClick={goToNextSlide} />
                 </div>

@@ -9,22 +9,21 @@ import { FiArrowLeft } from "react-icons/fi";
 // <------------------Scrambler----------------------------------------->
 // import BikeBoldBlack from '../Components/assets/View360/Scrambler/Scrambler.png';
 // const BikeBoldBlack = require(`../Components/assets/java-bike/bike-${number}.png`).default;
-
-import BikeMidnightBlue from '../Components/assets/View360/Scrambler/Scrambler-2.png';
-import BikeFireOrange from '../Components/assets/View360/Scrambler/Scrambler-3.png';
-import BikeMeanGreen from '../Components/assets/View360/Scrambler/Scrambler-4.png';
-import BikeOutlawOlive from '../Components/assets/View360/Scrambler/Scrambler-5.png';
-import BikeRebelRed from '../Components/assets/View360/Scrambler/Scrambler-6.png';
-import BikeYellingYellow from '../Components/assets/View360/Scrambler/Scrambler-7.png';
+// import BikeMidnightBlue from '../Components/assets/View360/Scrambler/Scrambler-2.png';
+// import BikeFireOrange from '../Components/assets/View360/Scrambler/Scrambler-3.png';
+// import BikeMeanGreen from '../Components/assets/View360/Scrambler/Scrambler-4.png';
+// import BikeOutlawOlive from '../Components/assets/View360/Scrambler/Scrambler-5.png';
+// import BikeRebelRed from '../Components/assets/View360/Scrambler/Scrambler-6.png';
+// import BikeYellingYellow from '../Components/assets/View360/Scrambler/Scrambler-7.png';
 
 // <------------------Roadster----------------------------------------->
 
 // import BikeShodowGrey from '../Components/assets/View360/Roadster/Roadster.png'
-import BikeInfernoRed from '../Components/assets/View360/Roadster/Roadster-2.png'
-import BikeGlacialWhite from '../Components/assets/View360/Roadster/Roadster-3.png'
-import BikeSmokeGrey from '../Components/assets/View360/Roadster/Roadster-4.png'
-import BikeHunterGrey from '../Components/assets/View360/Roadster/Roadster-5.png'
-import BikeSteelBlue from '../Components/assets/View360/Roadster/Roadster-6.png'
+// import BikeInfernoRed from '../Components/assets/View360/Roadster/Roadster-2.png'
+// import BikeGlacialWhite from '../Components/assets/View360/Roadster/Roadster-3.png'
+// import BikeSmokeGrey from '../Components/assets/View360/Roadster/Roadster-4.png'
+// import BikeHunterGrey from '../Components/assets/View360/Roadster/Roadster-5.png'
+// import BikeSteelBlue from '../Components/assets/View360/Roadster/Roadster-6.png'
 
 // <------------- Adventure------------------------------------->
 
@@ -50,7 +49,7 @@ export default function New() {
   };
 
   const handleIncrease12 = () => {
-    setNumber12((prevNumber) => Math.min(17, prevNumber + 1));
+    setNumber12((prevNumber) => Math.min(16, prevNumber + 1));
   };
   // <------------Scrambler FireOrange------------------------------->
   const [number13, setNumber13] = useState(1);
@@ -62,20 +61,134 @@ export default function New() {
   };
 
   const handleIncrease13 = () => {
-    setNumber13((prevNumber) => Math.min(17, prevNumber + 1));
+    setNumber13((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+  // <------------Scrambler MeenGreen------------------------------->
+  const [number14, setNumber14] = useState(1);
+  const BikeMeanGreen = require(`../Components/assets/j-bike/Scrambler-meengreen/bike-${number14}.png`)
+
+
+  const handleDecrease14 = () => {
+    setNumber14((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease14 = () => {
+    setNumber14((prevNumber) => Math.min(17, prevNumber + 1));
+  };
+  // <------------Scrambler Outlaw Olive------------------------------->
+  const [number15, setNumber15] = useState(1);
+  const BikeOutlawOlive = require(`../Components/assets/j-bike/Scrambler-OutlawOlive/bike-${number15}.png`)
+
+
+  const handleDecrease15 = () => {
+    setNumber15((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease15 = () => {
+    setNumber15((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+  // <------------Scrambler RebelRed------------------------------->
+  const [number16, setNumber16] = useState(1);
+  const BikeRebelRed = require(`../Components/assets/j-bike/Scrambler-RebelRed/bike-${number16}.png`)
+
+
+  const handleDecrease16 = () => {
+    setNumber16((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease16 = () => {
+    setNumber16((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+  // <------------Scrambler YellingYellow------------------------------->
+  const [number17, setNumber17] = useState(1);
+  const BikeYellingYellow = require(`../Components/assets/j-bike/Scrambler-YellingYellow/bike-${number17}.png`)
+
+
+  const handleDecrease17 = () => {
+    setNumber17((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease17 = () => {
+    setNumber17((prevNumber) => Math.min(16, prevNumber + 1));
   };
 
 
 
   const [number2, setNumber2] = useState(1);
-  const BikeShodowGrey = require(`../Components/assets/j-bike/Roadster/bike-${number2}.png`)
+  const BikeShodowGrey = require(`../Components/assets/j-bike/Roadster/Roadster-ShadowGrey/bike-${number2}.png`)
+
+  // <------------------Roadster-infernoRed---------------->
+
+  const [number22, setNumber22] = useState(1);
+  const BikeInfernoRed = require(`../Components/assets/j-bike/Roadster/Roadster-InfernoRed/bike-${number22}.png`)
+
+  
+  const handleDecrease22 = () => {
+    setNumber22((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease22 = () => {
+    setNumber22((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+  // <------------------Roadster-GlacialWhite---------------->
+
+  const [number23, setNumber23] = useState(1);
+  const BikeGlacialWhite = require(`../Components/assets/j-bike/Roadster/Roadster-GlacialWhite/bike-${number23}.png`)
+
+  
+  const handleDecrease23 = () => {
+    setNumber23((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease23 = () => {
+    setNumber23((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+  // <------------------Roadster-Smoke-grey---------------->
+
+  const [number24, setNumber24] = useState(1);
+  const BikeSmokeGrey = require(`../Components/assets/j-bike/Roadster/Roadster-SmokeGrey/bike-${number24}.png`)
+
+  
+  const handleDecrease24 = () => {
+    setNumber24((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease24 = () => {
+    setNumber24((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+  // <------------------Roadster-Hunter-grey---------------->
+
+  const [number25, setNumber25] = useState(1);
+  const BikeHunterGrey = require(`../Components/assets/j-bike/Roadster/Roadster-HunterGrey/bike-${number25}.png`)
+
+  
+  const handleDecrease25 = () => {
+    setNumber25((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease25 = () => {
+    setNumber25((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+  // <------------------Roadster-Steel-blue---------------->
+
+  const [number26, setNumber26] = useState(1);
+  const BikeSteelBlue = require(`../Components/assets/j-bike/Roadster/Roadster-SteelBlue/bike-${number26}.png`)
+
+  
+  const handleDecrease26 = () => {
+    setNumber26((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease26 = () => {
+    setNumber26((prevNumber) => Math.min(16, prevNumber + 1));
+  };
 
 
 
 
 
   const [number3, setNumber3] = useState(1);
-  const BikeWithoutWhite = require(`../Components/assets/j-bike/Adventure/bike-${number3}.png`)
+  const BikeWithoutWhite = require(`../Components/assets/j-bike/Adventure/Adventure-WhithoutWhite/bike-${number3}.png`)
 
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -89,7 +202,7 @@ export default function New() {
   const handleMouseMove = (e) => {
     if (isDragging) {
       const deltaX = e.clientX - startX;
-      const sensitivity = 8;
+      const sensitivity = 5;
       if (deltaX > sensitivity) {
         handleIncrease();
         setStartX(e.clientX);
@@ -109,7 +222,7 @@ export default function New() {
   };
 
   const handleIncrease = () => {
-    setNumber((prevNumber) => Math.min(17, prevNumber + 1));
+    setNumber((prevNumber) => Math.min(16, prevNumber + 1));
   };
 
   const handleDecrease2 = () => {
@@ -117,7 +230,7 @@ export default function New() {
   };
 
   const handleIncrease2 = () => {
-    setNumber2((prevNumber) => Math.min(17, prevNumber + 1));
+    setNumber2((prevNumber) => Math.min(16, prevNumber + 1));
   };
   const handleDecrease3 = () => {
     setNumber3((prevNumber) => Math.max(1, prevNumber - 1));
@@ -296,10 +409,65 @@ export default function New() {
 <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent === 'event1' ? '' : 'd-none'}`}>
   <section className='slider'>
     <Box>
-      {selectedColor === 'MeanGreen' ? (
+    {selectedColor === 'YellingYellow' ? (
+       <>
+       <img
+         src={BikeYellingYellow}
+         className='img-fluid'
+         alt=""
+         style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+         onMouseDown={handleMouseDown}
+         onMouseMove={handleMouseMove}
+         onMouseUp={handleMouseUp}
+       />
+       <div className='view-360-icons-main'>
+         <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+           <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease17} />
+           <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease17} />
+         </Stack>
+       </div>
+     </>
+
+    ):selectedColor === 'RebelRed' ? (
+  <>
+  <img
+    src={BikeRebelRed}
+    className='img-fluid'
+    alt=""
+    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+    onMouseDown={handleMouseDown}
+    onMouseMove={handleMouseMove}
+    onMouseUp={handleMouseUp}
+  />
+  <div className='view-360-icons-main'>
+    <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease16} />
+      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease16} />
+    </Stack>
+  </div>
+</>
+    ): selectedColor === 'OutlawOlive' ? (
+       <>
+       <img
+         src={BikeOutlawOlive}
+         className='img-fluid'
+         alt=""
+         style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+         onMouseDown={handleMouseDown}
+         onMouseMove={handleMouseMove}
+         onMouseUp={handleMouseUp}
+       />
+       <div className='view-360-icons-main'>
+         <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+           <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease15} />
+           <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease15} />
+         </Stack>
+       </div>
+     </>
+    ):selectedColor === 'MeanGreen' ? (
         <>
           <img
-            src={BikeFireOrange}
+            src={BikeMeanGreen}
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
@@ -309,8 +477,8 @@ export default function New() {
           />
           <div className='view-360-icons-main'>
             <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease13} />
-              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease13} />
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease14} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease14} />
             </Stack>
           </div>
         </>
@@ -375,29 +543,121 @@ export default function New() {
 
 
 
-            <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
-              <section className='slider'>
-                <Box>
-                  <img
-                    src={getColorImageSource2(selectedColor2)}
-                    className='img-fluid'
-                    alt=""
-                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-                    onMouseDown={handleMouseDown}
-                    onMouseMove={handleMouseMove}
-                    onMouseUp={handleMouseUp}
-                  />
-                  <div className='view-360-icons-main'>
-                    <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-                      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease2} />
-                      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease2} />
-                    </Stack>
-                  </div>
-
-                </Box>
-              </section>
-
-            </div>
+<div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
+  <section className='slider'>
+    <Box>
+    {selectedColor2 === "SteelBlue" ? (
+       <>
+       <img
+         src={getColorImageSource2(selectedColor2)}
+         className='img-fluid'
+         alt=""
+         style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+         onMouseDown={handleMouseDown}
+         onMouseMove={handleMouseMove}
+         onMouseUp={handleMouseUp}
+       />
+       <div className='view-360-icons-main'>
+         <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+           <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease26} />
+           <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease26} />
+         </Stack>
+       </div>
+     </>
+    ): selectedColor2 === "HunterGrey" ? (
+     <>
+     <img
+       src={getColorImageSource2(selectedColor2)}
+       className='img-fluid'
+       alt=""
+       style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+       onMouseDown={handleMouseDown}
+       onMouseMove={handleMouseMove}
+       onMouseUp={handleMouseUp}
+     />
+     <div className='view-360-icons-main'>
+       <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+         <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease25} />
+         <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease25} />
+       </Stack>
+     </div>
+   </>
+    ):selectedColor2 === "SmokeGrey" ? (
+        <>
+        <img
+          src={getColorImageSource2(selectedColor2)}
+          className='img-fluid'
+          alt=""
+          style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+        />
+        <div className='view-360-icons-main'>
+          <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+            <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease24} />
+            <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease24} />
+          </Stack>
+        </div>
+      </>
+    ): selectedColor2 === "GlacialWhite" ? (
+  <>
+  <img
+    src={getColorImageSource2(selectedColor2)}
+    className='img-fluid'
+    alt=""
+    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+    onMouseDown={handleMouseDown}
+    onMouseMove={handleMouseMove}
+    onMouseUp={handleMouseUp}
+  />
+  <div className='view-360-icons-main'>
+    <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease23} />
+      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease23} />
+    </Stack>
+  </div>
+</>
+    ): selectedColor2 === "InfernoRed" ? (
+        <>
+          <img
+            src={getColorImageSource2(selectedColor2)}
+            className='img-fluid'
+            alt=""
+            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+          />
+          <div className='view-360-icons-main'>
+            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease22} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease22} />
+            </Stack>
+          </div>
+        </>
+      ) : (
+        <>
+          <img
+            src={getColorImageSource2(selectedColor2)}
+            className='img-fluid'
+            alt=""
+            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+          />
+          <div className='view-360-icons-main'>
+            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease2} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease2} />
+            </Stack>
+          </div>
+        </>
+      )}
+    </Box>
+  </section>
+</div>
             <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
               <section className='slider'>
                 <Box>
@@ -482,7 +742,7 @@ export default function New() {
             </div>
 
             {/* <--------------------- Roadster -------------------------------> */}
-            <div className={`col-lg-2 color-palette ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
+            <div className={`col-lg-1 color-palette ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
               <div
                 className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'ShodowGrey' ? 'active' : ''}`}
                 onClick={() => handleColorClick2('ShodowGrey')}
@@ -575,7 +835,7 @@ export default function New() {
             {/* <--------------------- Adventure -------------------------------> */}
 
 
-            <div className={`col-lg-2 color-palette ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
+            <div className={`col-lg-1 color-palette ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
               <div
                 className={`d-flex align-items-center color-palette-info-3 ${selectedColor3 === 'WithoutWhite' ? 'active' : ''}`}
                 onClick={() => handleColorClick3('WithoutWhite')}

@@ -26,8 +26,8 @@ export default function Navbar() {
 
   return (
     <section>
-      <nav className="navbar navbar-expand-lg fixed-top">
-        <div className="container">
+      <nav className="navbar navbar-expand-lg fixed-top" id='fixed-top-2'>
+        <div className="container-fluid">
           <button
             className={`navbar-toggler order-lg-0 ${toggle ? "" : "collapsed"}`}
             onClick={handleToggle}
@@ -38,7 +38,7 @@ export default function Navbar() {
             aria-expanded={toggle ? 'true' : 'false'}
             aria-label="Toggle navigation"
           >
-            {toggle ? <FiX className='hamberger' /> : <FiAlignLeft className='hamberger' />}
+            {toggle ? <FiX className='hamberger' id='hamberger' /> : <FiAlignLeft className='hamberger' id='hamberger' />}
           </button>
           <div className="navbar-brand-container d-flex justify-content-center justify-content-lg-start flex-grow-1 order-lg-1">
             <Link to="/">
