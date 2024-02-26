@@ -976,17 +976,6 @@ export default function New() {
 
 
 <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
-<div>
-{/* <div className="switch-container d-flex justify-content-center">
-  <div className='Roadster-color-option-main'>
-    <p>Show:</p>
-  </div>
-  <div className='Roadster-color-option'>
-    <p className={selectedEvent2 === 'event2' ? 'active' : ''} onClick={() => setSelectedEvent2('event2')}>Single Tone</p>
-    <p className={selectedEvent2 === 'event3' ? 'active' : ''} onClick={() => setSelectedEvent2('event3')}>Dual Tone</p>
-  </div>
-</div> */}
-</div>
   <section className='slider'>
     <Box>
     {selectedColor2 === "SteelBlue" ? (
@@ -1219,13 +1208,11 @@ export default function New() {
 
             {/* <--------------------- Roadster -------------------------------> */}
 
-{/* <----------------------single tone---------------------------> */}
+{/* <----------------------Dual tone---------------------------> */}
 
 
 
-<div className={`col-lg-1 color-palette ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
-
-
+            <div className={`col-lg-1 color-palette ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
               <div
                 className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'ShodowGrey' ? 'active' : ''}`}
                 onClick={() => handleColorClick2('ShodowGrey')}
@@ -1272,7 +1259,7 @@ export default function New() {
 
 {/* <----------------------Dual tone---------------------------> */}
 
-<div className={`col-lg-1 color-palette ${selectedEvent2 === 'event3' ? '' : 'd-none'}`}>
+            <div className={`col-lg-1 color-palette ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
               <div
                 className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'ShodowGrey' ? 'active' : ''}`}
                 onClick={() => handleColorClick2('ShodowGrey')}

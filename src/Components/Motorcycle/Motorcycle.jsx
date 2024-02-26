@@ -61,7 +61,7 @@ export default function Motorcycle() {
                   </span>
                 </p>
                 <button className="yezdi-details" onClick={handleEnquiryClick}>
-                  Enquiry Now <span> <HiArrowNarrowRight /></span>
+                  Enquiry Now 
                 </button>
               </div>
             ))}

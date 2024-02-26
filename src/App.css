@@ -543,8 +543,41 @@ span{
 }
 .view-360-icons   {
   margin-right: 35px;
+
+}
+.switch-container{
+  flex-direction: column;
+  text-align: center;
+}
+.switch-container p{
+font-size: 12px;
+font-weight: 700;
+width: 100px;
+background-color: white;
+border-radius: 20px;
+
+}
+.Roadster-color-option-main{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.Roadster-color-option{
+  display: flex;
+  flex-direction: row;  
+}
+.Roadster-color-option p.active {
+  background-color: #AF4E4F; 
+  color: white;
 }
 
+
+
+.Roadster-color-option p{
+ margin-right: 5px;
+}
 /* <------------------ Timeline ---------------------> */
 
 .timeline {
