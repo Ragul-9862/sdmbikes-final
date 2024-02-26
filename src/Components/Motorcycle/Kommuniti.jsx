@@ -6,7 +6,7 @@ import clubs from '../assets/Motorcycle/Kommuniti/Blogs.jpg';
 import mechanic from '../assets/Motorcycle/Kommuniti/mechanic.jpg';
 import { Link } from 'react-router-dom';
 import { FiChevronRight } from "react-icons/fi";
-import EMICalculator from './Emi';
+// import EMICalculator from './Emi';
 
 
 export default function Kommuniti() {
@@ -51,9 +51,9 @@ export default function Kommuniti() {
       </div>
     </section>
 
-    <section>
+    {/* <section>
         <EMICalculator/>
-    </section>
+    </section> */}
          
     </div>
   );

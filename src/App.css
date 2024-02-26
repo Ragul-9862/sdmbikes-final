@@ -21,7 +21,7 @@
   width: 70px;
   height: 70px;
   position: absolute;
-  top: -38px;
+  top: -36px;
   font-size: 15px;
   right: 10px;
     margin-bottom: 30px;
@@ -31,10 +31,10 @@
 .jawa{
   height: 100px;
   width: 100px;
-  margin-right: 42px;
+  margin-right: 20px;
 }
 .position-top{
-top: -148px;
+top: -167px;
 }
 
 .link{
@@ -120,8 +120,8 @@ top: -148px;
 .navbar {
   height: 115px;
   margin: 0 auto;
-  width: 80%;
-  border-radius: 0px 0px 50px 50px;
+  /* width: 80%; */
+  /* border-radius: 0px 0px 50px 50px; */
   background: #000000;
   z-index: 2000;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -131,7 +131,8 @@ top: -148px;
   color: #ffffff;
   font-size: 22px;
   font-weight: 400;
-  margin-left: 10px;
+  margin-left: 40px;
+  margin-right: 20px;
 }
 
 .navbar-nav .nav-link.active,
@@ -140,6 +141,9 @@ top: -148px;
 }
 
 .navbar-nav .nav-link:hover {
+  color: #B03035;
+}
+.book-a-test:hover{
   color: #B03035;
 }
 button.navbar-toggler:focus {
@@ -270,15 +274,25 @@ button.navbar-toggler:focus {
 
 /* <---------------- Speed0meter--------------------> */
 .speedometer-wrapper {
-  /* background-image: url("../src/Components/assets/SpeedOmeter/speedo-bg.png"); */
+  /* background-image: url("../src/Components/assets/SpeedOmeter/speedometer-bg.png");  */
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  /* height: 85vh;  */
+  /* padding: 10px;  */
+  background-color: #0E0E0E;
+  position: relative; 
+}
+/* .speedometer-wrapper-info{
+  background-image: url("../src/Components/assets/SpeedOmeter/speedometer\ .png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* height: 100vh; */
-  /* padding: 10px; */
+  height: 75vh;
+  padding: 10px;
   background-color: #0E0E0E;
   position: relative;
-}
+} */
 .speedometer-content{
   text-align: left;
   justify-content: center;
@@ -1677,8 +1691,9 @@ font-size: 25px;
 /* <-----------Emi----------------------------------> */
 
 
-.h__mb60{
+.h__mb60 {
   background-color: #313131;
+  padding-top: 130px;
 }
 .grid__gap60{
   padding: 30px;

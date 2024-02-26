@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FiChevronRight } from "react-icons/fi";
+
 
 const EmiCalculator = () => {
     const [loanAmount, setLoanAmount] = useState('');
@@ -55,6 +57,11 @@ const EmiCalculator = () => {
     };
     return (
         <div className='h__mb60'>
+            <Link className='link' to='/'>
+             <p className='back-page'>
+                Home <span><FiChevronRight/></span> Emi Calculator
+              </p>
+            </Link>
             <section className="section dark-theme h__mb60 container text-center" style={{ padding: "30px" }}>
                 <h1 className="section__ttl">EMI Calculator</h1>
                 <p className="section__desc h__mb30">Select the various details of your preferred bike loan such as Principal Amount, Interest Rate, Loan Term, Loan Processing fee with your preferred mode of EMI payment. The break-ups of Total Amount Payable and Loan Pay-Off Period are graphically listed. Click on any portion of the graph to view its details. The Starting Balance, Principal, Interest and Ending Balance for the entire tenure is represented as an Amortization Table. Click the “Apply Loan” button to begin the process of availing your loan.</p>

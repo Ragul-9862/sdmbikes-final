@@ -92,11 +92,18 @@
         margin-right: 25px;
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link {
+    /* .navbar-expand-lg .navbar-nav .nav-link {
         color: #ffffff;
         font-size: 19px;
         font-weight: 400;
         margin-left: 0px;
+    } */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 400;
+        margin-left: -14px;
+        margin-right: 25px;
     }
 }
 
@@ -112,15 +119,24 @@
         top: 64%;
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link {
+    /* .navbar-expand-lg .navbar-nav .nav-link {
         color: #ffffff;
         font-size: 19px;
         font-weight: 400;
         margin-left: 0px;
-    }
+    } */
+  
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 30px;
+    margin-left: -15px;
+}
+
 
     .fixed-top {
-        width: 92%;
+        width: 100%;
     }
 
     .bike-type h1 {
@@ -134,7 +150,7 @@
         position: relative;
         top: -81px;
     }
-
+   
     .banner-img {
         position: relative;
         top: -32px;
@@ -157,10 +173,15 @@
 
     .navbar-expand-lg .navbar-nav .nav-link {
         color: #ffffff;
-        font-size: 19px;
+        font-size: 18px;
         font-weight: 400;
-        margin-left: 0px;
+        margin-left: -16px;
+        margin-right: 14px;
     }
+    .navbar{
+        width: 100%;
+    }
+
 
 
 }
@@ -183,7 +204,6 @@
     }
 
     .offcanvas-header {
-        /* position: absolute; */
         right: 5%;
         top: 0%;
     }
@@ -445,7 +465,7 @@
         z-index: 2000;
     }
     .speedometer-wrapper {
-        background-image: url("../src/Components/assets/SpeedOmeter/speedo-bg.png");
+        background-image: url("../src/Components/assets/SpeedOmeter/speedometer-bg.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

@@ -5,9 +5,9 @@ export default function SpeedOmeter() {
     <section className='container-fluid speedometer'>
     <div className="speedometer-wrapper row">
       <div className='col-lg-7 col-md-2 col-sm-2'>
-        <img src={require("../Components/assets/SpeedOmeter/speedometer .png")} className='img-fluid d-none d-lg-block' alt="" />
+        <img src={require("../Components/assets/SpeedOmeter/speedometer-bg.png")} className='img-fluid d-none d-lg-block' alt="" />
       </div>
-    <div className="speedometer-content col-lg-5 col-md-10 col-sm-10">
+    <div className="speedometer-content col-lg-4 col-md-10 col-sm-10">
       <h2>Digital Speedometer</h2>
       <span>INSTRUMENT CONSOLE</span>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis quam sapien

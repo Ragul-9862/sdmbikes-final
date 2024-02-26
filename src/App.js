@@ -10,6 +10,7 @@ import KommunitiPage from '../src/Pages/KommunitiPage';
 import ContactUsPage from './Pages/ContactUsPage';
 import HomePageJawa from './Pages/JawaMotorcycle/HomePageJawa';
 import Motorcyclejawa from './Pages/JawaMotorcycle/Motorcyclejawa';
+import EmiCalculatorPage from './Pages/EmiCalculatorPage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
             <Route path="/Motorcycle" element={<MotorcyclePage />} />
             <Route path="/Kommuniti" element={<KommunitiPage />} />
             <Route path="/ContactUs" element={<ContactUsPage />} />
+            <Route path="/EmiCalculator" element={<EmiCalculatorPage />} />
             <Route path="/HomePageJawa" element={<HomePageJawa />} />
             <Route path="/MotorcycleJawa" element={<Motorcyclejawa />} />
           </Routes>

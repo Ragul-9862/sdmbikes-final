@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import { FiArrowRight } from "react-icons/fi";
 import { FiArrowLeft } from "react-icons/fi";
+import Highlights from '../Components/Highlights';
 
 
 
@@ -1152,13 +1153,6 @@ export default function New() {
 </div>
 
 
-            {/* <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
-              <img src={getColorImageSource2(selectedColor2)} className='img-fluid' alt={`Bike ${selectedColor2}`} />
-            </div> */}
-            {/* <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
-              <img src={getColorImageSource3(selectedColor3)} className='img-fluid' alt={`Bike ${selectedColor3}`} />
-            </div> */}
-
             <div className={`col-lg-1 color-palette ${selectedEvent === 'event1' ? '' : 'd-none'}`}>
               <div
                 className={`d-flex align-items-center color-palette-info ${selectedColor === 'BoldBlack' ? 'active' : ''}`}
@@ -1258,50 +1252,6 @@ export default function New() {
               </div>
             </div>
 
-            {/* <div className={`col-lg-4 color-palette ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
-              <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'ShodowGrey' ? 'active' : ''}`}
-                onClick={() => handleColorClick2('ShodowGrey')}
-              >
-                <div className="color-box palette-1-Roadster active"></div>
-                <p>Dark <span>Shodow Grey</span></p>
-              </div>
-              <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'InfernoRed' ? 'active' : ''}`}
-                onClick={() => handleColorClick2('InfernoRed')}
-              >
-                <div className="color-box palette-2-Roadster"></div>
-                <p>Dark <span>Inferno Red</span></p>
-              </div>
-              <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'GlacialWhite' ? 'active' : ''}`}
-                onClick={() => handleColorClick2('GlacialWhite')}
-              >
-                <div className="color-box palette-3-Roadster"></div>
-                <p>Dark <span>Glacial White</span></p>
-              </div>
-              <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'SmokeGrey' ? 'active' : ''}`}
-                onClick={() => handleColorClick2('SmokeGrey')}
-              >
-                <div className="color-box palette-4-Roadster"></div>
-                <p>Dark <span>Smoke Grey</span></p>
-              </div>
-              <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'HunterGrey' ? 'active' : ''}`}
-                onClick={() => handleColorClick2('HunterGrey')}
-              >
-                <div className="color-box palette-5-Roadster"></div>
-                <p>Dark <span>Hunter Grey</span></p>
-              </div>
-              <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'SteelBlue' ? 'active' : ''}`}
-                onClick={() => handleColorClick2('SteelBlue')}
-              >
-                <div className="color-box palette-6-Roadster"></div>
-                <p>Dark <span>Steel Blue</span></p> 
-              </div>
-            </div> */}
 
             {/* <--------------------- Adventure -------------------------------> */}
 
@@ -1332,6 +1282,9 @@ export default function New() {
           </div>
         </div>
       </section>
+      <Highlights selectedEvent1={selectedEvent} selectedEvent2={selectedEvent2} selectedEvent3={selectedEvent3} />
+
+
     </div>
   );
 }

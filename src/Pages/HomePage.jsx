@@ -16,7 +16,7 @@ export default function HomePage() {
       <Latest />
       <SpeedOmeter />
       <View360 />
-      <Highlights />
+      {/* <Highlights /> */}
       <OurBlogs/>
       <Gallery/>
       <Footer />

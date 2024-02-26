@@ -43,7 +43,7 @@ export default function Navbar() {
           </button>
           <div className="navbar-brand-container d-flex justify-content-center justify-content-lg-start flex-grow-1 order-lg-1">
             <Link to="/">
-              <a className="navbar-brand ms-lg-5" href="#home">
+              <a className="navbar-brand ms-lg-3" href="#home">
                 <img src={require("../Components/assets/Navbar/logo.png")} className='logo' alt='logo' />
               </a>
             </Link>
@@ -60,9 +60,14 @@ export default function Navbar() {
                   <a className="nav-link" href="#link">Motorcycles</a>
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className='link' to="/EmiCalculator">
+                  <a className="nav-link" href="#link">Emi Calculator</a>
+                </Link>
+              </li>
               <Link className='link' to="/Kommuniti">
                 <li className="nav-item">
-                  <a className="nav-link" href="#about">Community</a>
+                  <a className="nav-link" href="#about">Kommuniti</a>
                 </li>
               </Link>
               <Link className='link' to="/Contactus">
