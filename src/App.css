@@ -83,7 +83,7 @@ top: -167px;
   box-shadow: none;
 }
 #fixed-top-2{
-  background-color: #AF4E4F;
+  background: linear-gradient(to bottom,#990021,#6E0018) #990021;;
 }
 #hamberger{
   color: white;
@@ -1007,6 +1007,7 @@ button {
   background-position: center;
   background-size: cover;
   position: relative;
+  z-index: -1;
 }
 .footer{
 
@@ -1873,5 +1874,69 @@ font-size: 25px;
   color: #AF4E4F;
 }
 
+/* <--------------------Popup form------------------------------------> */
 
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(2px); 
+  z-index: 1050; 
+}
 
+.popup-form {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000000;
+  width: 90%; 
+  max-width: 400px; 
+  padding: 10px 15px;
+  z-index: 1060; /* Increased z-index to ensure it's above other elements */
+  border-radius: 8px;
+}
+
+.modal-header {
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  color: white;
+}
+
+.modal-title {
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  color: white;
+}
+
+.modal-header .btn-close {
+  color: white;
+}
+
+.btn-closed {
+  color:#AF4E4F ;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .popup-form {
+    width: 90%;
+    max-width: 90%;
+    top: 55%;
+  }
+}
