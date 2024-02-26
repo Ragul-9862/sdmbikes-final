@@ -6,31 +6,6 @@ import { FiArrowLeft } from "react-icons/fi";
 
 
 
-// <------------------Scrambler----------------------------------------->
-// import BikeBoldBlack from '../Components/assets/View360/Scrambler/Scrambler.png';
-// const BikeBoldBlack = require(`../Components/assets/java-bike/bike-${number}.png`).default;
-// import BikeMidnightBlue from '../Components/assets/View360/Scrambler/Scrambler-2.png';
-// import BikeFireOrange from '../Components/assets/View360/Scrambler/Scrambler-3.png';
-// import BikeMeanGreen from '../Components/assets/View360/Scrambler/Scrambler-4.png';
-// import BikeOutlawOlive from '../Components/assets/View360/Scrambler/Scrambler-5.png';
-// import BikeRebelRed from '../Components/assets/View360/Scrambler/Scrambler-6.png';
-// import BikeYellingYellow from '../Components/assets/View360/Scrambler/Scrambler-7.png';
-
-// <------------------Roadster----------------------------------------->
-
-// import BikeShodowGrey from '../Components/assets/View360/Roadster/Roadster.png'
-// import BikeInfernoRed from '../Components/assets/View360/Roadster/Roadster-2.png'
-// import BikeGlacialWhite from '../Components/assets/View360/Roadster/Roadster-3.png'
-// import BikeSmokeGrey from '../Components/assets/View360/Roadster/Roadster-4.png'
-// import BikeHunterGrey from '../Components/assets/View360/Roadster/Roadster-5.png'
-// import BikeSteelBlue from '../Components/assets/View360/Roadster/Roadster-6.png'
-
-// <------------- Adventure------------------------------------->
-
-// import BikeWithoutWhite from '../Components/assets/View360/Adventure/Adventure.png'
-import BikeSlickSilver from '../Components/assets/View360/Adventure/Adventure-2.png'
-import BikeMambaBlack from '../Components/assets/View360/Adventure/Adventure-3.png'
-
 export default function New() {
 
   // <------------Scrambler------------------------------->
@@ -73,7 +48,7 @@ export default function New() {
   };
 
   const handleIncrease14 = () => {
-    setNumber14((prevNumber) => Math.min(17, prevNumber + 1));
+    setNumber14((prevNumber) => Math.min(16, prevNumber + 1));
   };
   // <------------Scrambler Outlaw Olive------------------------------->
   const [number15, setNumber15] = useState(1);
@@ -117,6 +92,33 @@ export default function New() {
   const [number2, setNumber2] = useState(1);
   const BikeShodowGrey = require(`../Components/assets/j-bike/Roadster/Roadster-ShadowGrey/bike-${number2}.png`)
 
+  const [isDragging2, setIsDragging2] = useState(false);
+  const [startX2, setStartX2] = useState(0);
+
+  const handleMouseDown2 = (e) => {
+    setIsDragging2(true);
+    setStartX(e.clientX);
+  };
+
+  const handleMouseMove2 = (e) => {
+    if (isDragging2) {
+      const deltaX = e.clientX - startX2;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease2();
+        setStartX2(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease2();
+        setStartX2(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp2 = () => {
+    setIsDragging2(false);
+  };
+
+
   // <------------------Roadster-infernoRed---------------->
 
   const [number22, setNumber22] = useState(1);
@@ -130,6 +132,36 @@ export default function New() {
   const handleIncrease22 = () => {
     setNumber22((prevNumber) => Math.min(16, prevNumber + 1));
   };
+
+
+  const [isDragging22, setIsDragging22] = useState(false);
+  const [startX22, setStartX22] = useState(0);
+
+  const handleMouseDown22 = (e) => {
+    setIsDragging22(true);
+    setStartX22(e.clientX);
+  };
+
+  const handleMouseMove22 = (e) => {
+    if (isDragging22) {
+      const deltaX = e.clientX - startX22;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease22();
+        setStartX22(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease22();
+        setStartX22(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp22 = () => {
+    setIsDragging22(false);
+  };
+
+
+
   // <------------------Roadster-GlacialWhite---------------->
 
   const [number23, setNumber23] = useState(1);
@@ -143,6 +175,33 @@ export default function New() {
   const handleIncrease23 = () => {
     setNumber23((prevNumber) => Math.min(16, prevNumber + 1));
   };
+
+  const [isDragging23, setIsDragging23] = useState(false);
+  const [startX23, setStartX23] = useState(0);
+
+  const handleMouseDown23 = (e) => {
+    setIsDragging23(true);
+    setStartX23(e.clientX);
+  };
+
+  const handleMouseMove23 = (e) => {
+    if (isDragging23) {
+      const deltaX = e.clientX - startX23;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease23();
+        setStartX23(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease23();
+        setStartX2(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp23 = () => {
+    setIsDragging23(false);
+  };
+
   // <------------------Roadster-Smoke-grey---------------->
 
   const [number24, setNumber24] = useState(1);
@@ -156,6 +215,33 @@ export default function New() {
   const handleIncrease24 = () => {
     setNumber24((prevNumber) => Math.min(16, prevNumber + 1));
   };
+
+  const [isDragging24, setIsDragging24] = useState(false);
+  const [startX24, setStartX24] = useState(0);
+
+  const handleMouseDown24 = (e) => {
+    setIsDragging24(true);
+    setStartX24(e.clientX);
+  };
+
+  const handleMouseMove24 = (e) => {
+    if (isDragging24) {
+      const deltaX = e.clientX - startX24;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease24();
+        setStartX24(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease24();
+        setStartX24(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp24 = () => {
+    setIsDragging24(false);
+  };
+
   // <------------------Roadster-Hunter-grey---------------->
 
   const [number25, setNumber25] = useState(1);
@@ -169,6 +255,33 @@ export default function New() {
   const handleIncrease25 = () => {
     setNumber25((prevNumber) => Math.min(16, prevNumber + 1));
   };
+
+  const [isDragging25, setIsDragging25] = useState(false);
+  const [startX25, setStartX25] = useState(0);
+
+  const handleMouseDown25 = (e) => {
+    setIsDragging25(true);
+    setStartX25(e.clientX);
+  };
+
+  const handleMouseMove25 = (e) => {
+    if (isDragging25) {
+      const deltaX = e.clientX - startX25;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease25();
+        setStartX25(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease25();
+        setStartX25(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp25 = () => {
+    setIsDragging25(false);
+  };
+
   // <------------------Roadster-Steel-blue---------------->
 
   const [number26, setNumber26] = useState(1);
@@ -183,6 +296,32 @@ export default function New() {
     setNumber26((prevNumber) => Math.min(16, prevNumber + 1));
   };
 
+  const [isDragging26, setIsDragging26] = useState(false);
+  const [startX26, setStartX26] = useState(0);
+
+  const handleMouseDown26 = (e) => {
+    setIsDragging26(true);
+    setStartX26(e.clientX);
+  };
+
+  const handleMouseMove26 = (e) => {
+    if (isDragging26) {
+      const deltaX = e.clientX - startX26;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease26();
+        setStartX26(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease26();
+        setStartX26(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp26 = () => {
+    setIsDragging26(false);
+  };
+
 
 
 
@@ -190,6 +329,113 @@ export default function New() {
   const [number3, setNumber3] = useState(1);
   const BikeWithoutWhite = require(`../Components/assets/j-bike/Adventure/Adventure-WhithoutWhite/bike-${number3}.png`)
 
+  const [number32, setNumber32] = useState(1);
+  const BikeSlickSilver = require(`../Components/assets/j-bike/Adventure/Adventure-SlickSliver/bike-${number32}.png`)
+
+  const handleDecrease32 = () => {
+    setNumber32((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease32 = () => {
+    setNumber32((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+
+  // <------------------------------Adventure----------------------------->
+
+  const [number33, setNumber33] = useState(1);
+  const BikeMambaBlack = require(`../Components/assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number33}.png`)
+
+  const handleDecrease33 = () => {
+    setNumber33((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease33 = () => {
+    setNumber33((prevNumber) => Math.min(17, prevNumber + 1));
+  };
+
+  // <-------------- MambaBlack--------------------->
+
+  const [isDragging33, setIsDragging33] = useState(false);
+  const [startX33, setStartX33] = useState(0);
+
+  const handleMouseDown33 = (e) => {
+    setIsDragging33(true);
+    setStartX33(e.clientX);
+  };
+
+  const handleMouseMove33 = (e) => {
+    if (isDragging33) {
+      const deltaX = e.clientX - startX33;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease33();
+        setStartX33(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease33();
+        setStartX33(e.clientX);
+      }
+    }
+  };
+  const handleMouseUp33 = () => {
+    setIsDragging33(false);
+  };
+  // <-------------- Slcik Sliver--------------------->
+
+  const [isDragging32, setIsDragging32] = useState(false);
+  const [startX32, setStartX32] = useState(0);
+
+  const handleMouseDown32 = (e) => {
+    setIsDragging32(true);
+    setStartX32(e.clientX);
+  };
+
+  const handleMouseMove32 = (e) => {
+    if (isDragging32) {
+      const deltaX = e.clientX - startX32;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease32();
+        setStartX32(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease32();
+        setStartX32(e.clientX);
+      }
+    }
+  };
+  const handleMouseUp32 = () => {
+    setIsDragging32(false);
+  };
+  // <-------------- WhithoutWhite--------------------->
+
+  const [isDragging3, setIsDragging3] = useState(false);
+  const [startX3, setStartX3] = useState(0);
+
+  const handleMouseDown3 = (e) => {
+    setIsDragging3(true);
+    setStartX3(e.clientX);
+  };
+
+  const handleMouseMove3 = (e) => {
+    if (isDragging3) {
+      const deltaX = e.clientX - startX3;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease3();
+        setStartX3(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease3();
+        setStartX3(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp3 = () => {
+    setIsDragging3(false);
+  };
+
+
+  // <-----------------------Drag----------------------------------------------------->
+// <----------------------Scrambler--------------------------------->
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
 
@@ -197,7 +443,6 @@ export default function New() {
     setIsDragging(true);
     setStartX(e.clientX);
   };
-
 
   const handleMouseMove = (e) => {
     if (isDragging) {
@@ -216,6 +461,192 @@ export default function New() {
   const handleMouseUp = () => {
     setIsDragging(false);
   };
+
+  // <-----------MidnightBlue--------------------------->
+
+  const [isDragging12, setIsDragging12] = useState(false);
+  const [startX12, setStartX12] = useState(0);
+
+  const handleMouseDown12 = (e) => {
+    setIsDragging12(true);
+    setStartX12(e.clientX);
+  };
+
+  
+  const handleMouseMove12 = (e) => {
+    if (isDragging12) {
+      const deltaX = e.clientX - startX12;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease12();
+        setStartX12(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease12();
+        setStartX12(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp12 = () => {
+    setIsDragging12(false);
+  };
+  // <-----------FireOrange--------------------------->
+
+  const [isDragging13, setIsDragging13] = useState(false);
+  const [startX13, setStartX13] = useState(0);
+
+  const handleMouseDown13 = (e) => {
+    setIsDragging13(true);
+    setStartX13(e.clientX);
+  };
+
+  
+  const handleMouseMove13 = (e) => {
+    if (isDragging13) {
+      const deltaX = e.clientX - startX13;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease13();
+        setStartX13(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease13();
+        setStartX13(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp13 = () => {
+    setIsDragging13(false);
+  };
+  // <-----------MeenGreen--------------------------->
+
+  const [isDragging14, setIsDragging14] = useState(false);
+  const [startX14, setStartX14] = useState(0);
+
+  const handleMouseDown14 = (e) => {
+    setIsDragging14(true);
+    setStartX14(e.clientX);
+  };
+
+  
+  const handleMouseMove14 = (e) => {
+    if (isDragging14) {
+      const deltaX = e.clientX - startX14;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease14();
+        setStartX14(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease14();
+        setStartX14(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp14 = () => {
+    setIsDragging14(false);
+  };
+  // <-----------OutlawOlive--------------------------->
+
+  const [isDragging15, setIsDragging15] = useState(false);
+  const [startX15, setStartX15] = useState(0);
+
+  const handleMouseDown15 = (e) => {
+    setIsDragging15(true);
+    setStartX15(e.clientX);
+  };
+
+  
+  const handleMouseMove15 = (e) => {
+    if (isDragging15) {
+      const deltaX = e.clientX - startX15;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease15();
+        setStartX15(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease15();
+        setStartX15(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp15 = () => {
+    setIsDragging15(false);
+  };
+  // <-----------RebelRed--------------------------->
+
+  const [isDragging16, setIsDragging16] = useState(false);
+  const [startX16, setStartX16] = useState(0);
+
+  const handleMouseDown16 = (e) => {
+    setIsDragging16(true);
+    setStartX16(e.clientX);
+  };
+
+  
+  const handleMouseMove16 = (e) => {
+    if (isDragging16) {
+      const deltaX = e.clientX - startX16;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease16();
+        setStartX16(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease16();
+        setStartX16(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp16 = () => {
+    setIsDragging16(false);
+  };
+  // <-----------YellingYellow--------------------------->
+
+  const [isDragging17, setIsDragging17] = useState(false);
+  const [startX17, setStartX17] = useState(0);
+
+  const handleMouseDown17 = (e) => {
+    setIsDragging17(true);
+    setStartX17(e.clientX);
+  };
+
+  
+  const handleMouseMove17 = (e) => {
+    if (isDragging17) {
+      const deltaX = e.clientX - startX17;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease17();
+        setStartX17(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease17();
+        setStartX17(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp17 = () => {
+    setIsDragging17(false);
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   const handleDecrease = () => {
     setNumber((prevNumber) => Math.max(1, prevNumber - 1));
@@ -237,7 +668,7 @@ export default function New() {
   };
 
   const handleIncrease3 = () => {
-    setNumber3((prevNumber) => Math.min(17, prevNumber + 1));
+    setNumber3((prevNumber) => Math.min(16, prevNumber + 1));
   };
 
 
@@ -416,9 +847,9 @@ export default function New() {
          className='img-fluid'
          alt=""
          style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-         onMouseDown={handleMouseDown}
-         onMouseMove={handleMouseMove}
-         onMouseUp={handleMouseUp}
+         onMouseDown={handleMouseDown17}
+         onMouseMove={handleMouseMove17}
+         onMouseUp={handleMouseUp17}
        />
        <div className='view-360-icons-main'>
          <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -435,9 +866,9 @@ export default function New() {
     className='img-fluid'
     alt=""
     style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-    onMouseDown={handleMouseDown}
-    onMouseMove={handleMouseMove}
-    onMouseUp={handleMouseUp}
+    onMouseDown={handleMouseDown16}
+    onMouseMove={handleMouseMove16}
+    onMouseUp={handleMouseUp16}
   />
   <div className='view-360-icons-main'>
     <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -453,9 +884,9 @@ export default function New() {
          className='img-fluid'
          alt=""
          style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-         onMouseDown={handleMouseDown}
-         onMouseMove={handleMouseMove}
-         onMouseUp={handleMouseUp}
+         onMouseDown={handleMouseDown15}
+         onMouseMove={handleMouseMove15}
+         onMouseUp={handleMouseUp15}
        />
        <div className='view-360-icons-main'>
          <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -471,9 +902,9 @@ export default function New() {
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
+            onMouseDown={handleMouseDown14}
+            onMouseMove={handleMouseMove14}
+            onMouseUp={handleMouseUp14}
           />
           <div className='view-360-icons-main'>
             <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -489,9 +920,9 @@ export default function New() {
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
+            onMouseDown={handleMouseDown13}
+            onMouseMove={handleMouseMove13}
+            onMouseUp={handleMouseUp13}
           />
           <div className='view-360-icons-main'>
             <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -507,9 +938,9 @@ export default function New() {
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
+            onMouseDown={handleMouseDown12}
+            onMouseMove={handleMouseMove12}
+            onMouseUp={handleMouseUp12}
           />
           <div className='view-360-icons-main'>
             <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -553,9 +984,9 @@ export default function New() {
          className='img-fluid'
          alt=""
          style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-         onMouseDown={handleMouseDown}
-         onMouseMove={handleMouseMove}
-         onMouseUp={handleMouseUp}
+         onMouseDown={handleMouseDown26}
+         onMouseMove={handleMouseMove26}
+         onMouseUp={handleMouseUp26}
        />
        <div className='view-360-icons-main'>
          <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -571,9 +1002,9 @@ export default function New() {
        className='img-fluid'
        alt=""
        style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-       onMouseDown={handleMouseDown}
-       onMouseMove={handleMouseMove}
-       onMouseUp={handleMouseUp}
+       onMouseDown={handleMouseDown25}
+       onMouseMove={handleMouseMove25}
+       onMouseUp={handleMouseUp25}
      />
      <div className='view-360-icons-main'>
        <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -589,9 +1020,9 @@ export default function New() {
           className='img-fluid'
           alt=""
           style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
+          onMouseDown={handleMouseDown24}
+          onMouseMove={handleMouseMove24}
+          onMouseUp={handleMouseUp24}
         />
         <div className='view-360-icons-main'>
           <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -607,9 +1038,9 @@ export default function New() {
     className='img-fluid'
     alt=""
     style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-    onMouseDown={handleMouseDown}
-    onMouseMove={handleMouseMove}
-    onMouseUp={handleMouseUp}
+    onMouseDown={handleMouseDown23}
+    onMouseMove={handleMouseMove23}
+    onMouseUp={handleMouseUp23}
   />
   <div className='view-360-icons-main'>
     <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -625,9 +1056,9 @@ export default function New() {
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
+            onMouseDown={handleMouseDown22}
+            onMouseMove={handleMouseMove22}
+            onMouseUp={handleMouseUp22}
           />
           <div className='view-360-icons-main'>
             <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -643,9 +1074,9 @@ export default function New() {
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
+            onMouseDown={handleMouseDown2}
+            onMouseMove={handleMouseMove2}
+            onMouseUp={handleMouseUp2}
           />
           <div className='view-360-icons-main'>
             <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
@@ -658,29 +1089,69 @@ export default function New() {
     </Box>
   </section>
 </div>
-            <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
-              <section className='slider'>
-                <Box>
-                  <img
-                    src={getColorImageSource3(selectedColor3)}
-                    className='img-fluid'
-                    alt=""
-                    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-                    onMouseDown={handleMouseDown}
-                    onMouseMove={handleMouseMove}
-                    onMouseUp={handleMouseUp}
-                  />
-                  <div className='view-360-icons-main'>
-                    <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-                      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease3} />
-                      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease3} />
-                    </Stack>
-                  </div>
+<div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
+  <section className='slider'>
+    <Box>
+      {selectedColor3 === "MambaBlack" ? (
+        <div>
+          <img
+            src={getColorImageSource3(selectedColor3)}
+            className='img-fluid'
+            alt=""
+            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+            onMouseDown={handleMouseDown33}
+            onMouseMove={handleMouseMove33}
+            onMouseUp={handleMouseUp33}
+          />
+          <div className='view-360-icons-main'>
+            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease33} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease33} />
+            </Stack>
+          </div>
+        </div>
+      ) : selectedColor3 === "SlickSilver" ? (
+        <div>
+          <img
+            src={getColorImageSource3(selectedColor3)}
+            className='img-fluid'
+            alt=""
+            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+            onMouseDown={handleMouseDown32}
+            onMouseMove={handleMouseMove32}
+            onMouseUp={handleMouseUp32}
+          />
+          <div className='view-360-icons-main'>
+            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease32} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease32} />
+            </Stack>
+          </div>
+        </div>
+      ) : (
+        <div>
+          <img
+            src={getColorImageSource3(selectedColor3)}
+            className='img-fluid'
+            alt=""
+            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+            onMouseDown={handleMouseDown3}
+            onMouseMove={handleMouseMove3}
+            onMouseUp={handleMouseUp3}
+          />
+          <div className='view-360-icons-main'>
+            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease3} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease3} />
+            </Stack>
+          </div>
+        </div>
+      )}
+    </Box>
+  </section>
+</div>
 
-                </Box>
-              </section>
 
-            </div>
             {/* <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent2 === 'event2' ? '' : 'd-none'}`}>
               <img src={getColorImageSource2(selectedColor2)} className='img-fluid' alt={`Bike ${selectedColor2}`} />
             </div> */}

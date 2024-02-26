@@ -31,7 +31,7 @@
 .jawa{
   height: 100px;
   width: 100px;
-  margin-right: 15px;
+  margin-right: 42px;
 }
 .position-top{
 top: -148px;
@@ -489,7 +489,7 @@ hr{
 
 .view-360{
   /* background: url("../src/Components/assets/View360/degree-bg.png"); */
-  background-color: #57545B;
+  background-color: #54575B;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -764,13 +764,13 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
 }
 .palette-1-Adventure{
-  background-color: #383838;
+  background-color: #AFAFAF;
 }
 .palette-2-Adventure {
-  background-color: #B31B21;
+  background-color: #D6D6D6;
 }
 .palette-3-Adventure {
-  background-color: #F8F0E9;
+  background-color: #3D3D3D;
 }
 
 
