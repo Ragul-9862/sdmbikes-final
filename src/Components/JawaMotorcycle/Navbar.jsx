@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FiAlignLeft, FiX } from "react-icons/fi";
-import yezdi from '../assets/Navbar/md-logo-yezdi.png'
+import yezdi from '../assets/Navbar/yezdi.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar() {
@@ -50,45 +50,48 @@ export default function Navbar() {
           <div className={`collapse navbar-collapse ${toggle ? "show" : ""} justify-content-lg-end order-lg-2`} id="navbarNav">
             <ul className="navbar-nav me-auto">
               <Link className='link' to="/" >
-                <li className="nav-item">
+                <li className="nav-item j-nav">
                   <a className="nav-link" href="#home">Home</a>
                 </li>
               </Link>
-              <li className="nav-item">
+              <li className="nav-item j-nav ">
                 <Link className='link' to="/MotorcycleJawa">
                   <a className="nav-link" href="#link">Motorcycles</a>
                 </Link>
               </li>
+              <li className="nav-item j-nav">
+                <Link className='link ' to="/EmiCalculator">
+                  <a className="nav-link" href="#link">Emi Calculator</a>
+                </Link>
+              </li>
               <Link className='link' to="/Kommuniti">
-                <li className="nav-item">
-                  <a className="nav-link" href="#about">Community</a>
+                <li className="nav-item j-nav">
+                  <a className="nav-link " href="#about">Kommuniti</a>
                 </li>
               </Link>
               <Link className='link' to="/Contactus">
-                <li className="nav-item ">
-                  <a className="nav-link" href="#about">Contact Us</a>
+                <li className="nav-item j-nav ">
+                  <a className="nav-link " href="#about">Contact Us</a>
                 </li>
               </Link>
-              <li className="nav-item">
-                <a className="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Book a Test Drive</a>
+              <li className="nav-item j-nav">
+                <a className="nav-link " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Book a Test Drive</a>
               </li>
             </ul>
           </div>
         </div> 
         {(windowWidth >= 992) && (
-          <Link to='/'>
+          <Link to="/HomePageJawa">
             <img src={require("../assets/Navbar/yezdi.png")} alt="logo" className='d-none d-lg-block jawa' />
           </Link>
         )}
-        {(windowWidth < 992) && (
-          <div style={{ position: "relative",textDecoration:"none" }}>
-            <Link to='/'>
-         <img className='md-logo' src={yezdi} alt="" />
-
-            </Link>
-            {/* <a className="gotojawa" target="_blank" href="">go to java</a> */}
-          </div>
-        )}
+         {(windowWidth < 992) && (
+        <div style={{ position: "relative", textDecoration: "none" }}>
+          <Link to='/HomePageJawa'>
+            <img className={`md-logo ${toggle ? 'position-top' : ''}`} src={yezdi} alt="" />
+          </Link>
+        </div>
+      )}
       </nav>
 
  

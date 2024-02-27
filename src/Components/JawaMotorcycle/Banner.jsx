@@ -15,7 +15,7 @@ const slides = [
   {
     id: 1,
     img: img1,
-    // text: 'JAWA 350',
+    text: 'JAWA 350',
     info1: "Off Roading",
     info2: "Daily Commute",
     info3: "Touring",
@@ -25,7 +25,7 @@ const slides = [
   {
     id: 2,
     img: img2,
-    // text: '42',
+    text: '42',
     info1: "City Cruising",
     info2: "Urban Lifestyle",
     info3: "Style and Comfort",
@@ -35,7 +35,7 @@ const slides = [
   {
     id: 3,
     img: img3,
-    // text: '42 bobber',
+    text: '42 bobber',
     info1: "Off Road Trails",
     info2: "Long Expeditions",
     info3: "Exploring Nature",
@@ -45,7 +45,7 @@ const slides = [
   {
     id: 4,
     img: img4,
-    // text: 'Perak',
+    text: 'Perak',
     info1: "Off Road Trails",
     info2: "Long Expeditions",
     info3: "Exploring Nature",
@@ -169,7 +169,7 @@ const VerticalCarousel = () => {
               <Slider ref={sliderRef} {...settings}>
                 {slides.map((slide, index) => (
                   <div key={index} className={`carousel-slide ${index === currentSlide ? 'active' : ''}`}>
-                    <img className='img-fluid' src={slide.img} alt={`Slide ${slide.id}`} />
+                    <img className='img-fluid jawa-banner-img' src={slide.img} alt={`Slide ${slide.id}`} />
                   </div>
                 ))}
               </Slider>

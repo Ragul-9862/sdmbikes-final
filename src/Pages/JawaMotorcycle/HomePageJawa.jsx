@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../Components/JawaMotorcycle/Navbar'
 import Banner from '../../Components/JawaMotorcycle/Banner'
 import SpeedOmeter from '../../Components/SpeedOmeter'
+import Jawa360 from '../../Components/JawaMotorcycle/Jawa360'
 import View360 from '../../Components/View360'
 // import Highlights from '../../Components/Highlights'
 import OurBlogs from '../../Components/OurBlogs'
@@ -14,7 +15,8 @@ export default function HomePageJawa() {
         <Navbar/>
         <Banner/>
         <SpeedOmeter/>
-        <View360/>
+        <Jawa360/>
+        {/* <View360/> */}
         {/* <Highlights/> */}
         <OurBlogs/>
         <Gallery/>

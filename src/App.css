@@ -146,6 +146,9 @@ top: -167px;
 .book-a-test:hover{
   color: #B03035;
 }
+.j-nav:hover{
+color: #000000;
+}
 button.navbar-toggler:focus {
   outline: none !important;
   border: none !important;
@@ -257,9 +260,9 @@ button.navbar-toggler:focus {
 .side-button-2 .texted {
   white-space: nowrap;
   color: white;
-  text-decoration: none;
+  text-decoration: none !important;
+  border-bottom: none;
   font-size: 15px;
-  text-decoration: none;
   padding-right: 15px;
 }
 
@@ -545,6 +548,7 @@ span{
   margin-right: 35px;
 
 }
+
 .switch-container{
   flex-direction: column;
   text-align: center;
@@ -557,6 +561,40 @@ background-color: white;
 border-radius: 20px;
 
 }
+.Roadster-color-option-main{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.Roadster-color-option{
+  display: flex;
+  flex-direction: row;  
+}
+.Roadster-color-option p.active {
+  background-color: #AF4E4F; 
+  color: white;
+}
+
+
+
+.Roadster-color-option p{
+ margin-right: 5px;
+}
+
+.Roadster-color-option label {
+  display: none; /* Initially hide labels */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.Roadster-color-option input[type="radio"]:hover + label {
+  display: inline-block; /* Display label when radio button is hovered */
+}
+
+
+
+
 .Roadster-color-option-main{
   text-align: center;
   display: flex;
@@ -661,6 +699,14 @@ border-radius: 20px;
   left: -12px;
   transform: translateY(-50%);
 }
+.event-4.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: -12px;
+  transform: translateY(-50%);
+}
 
 
 
@@ -686,6 +732,17 @@ border-radius: 20px;
   border-radius: 50%;
   transform: translateY(-50%);
 }
+.event-4::after {
+  content: '';
+  position: absolute;
+  top: 74%;
+  left: -10px;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
 
 .event-content1 {
   max-width: 400px;
@@ -693,11 +750,12 @@ border-radius: 20px;
   padding: 15px 18px;
 }
 .event-content2 {
-  max-width: 400px;
   padding: 15px 18px;
 }
 .event-content3 {
-  max-width: 400px;
+  padding: 15px 18px;
+}
+.event-content4 {
   padding: 15px 18px;
 }
 .event-content1  h3{
@@ -721,6 +779,16 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
 }
 .event-content3 p {
+  font-weight: 800;
+  width: 150px;
+  color: #FFFF00;
+}
+.event-content4  h3{
+  font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+.event-content4 p {
   font-weight: 800;
   width: 150px;
   color: #FFFF00;
@@ -803,6 +871,27 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .palette-6-Roadster {
   background-color: #374A65;
+}
+
+/* <----------Dual tone--------------------> */
+.palette-7-Roadster {
+  background-color: #DD4447;
+
+}
+.palette-8-Roadster {
+  background-color: #FAFAFA;
+}
+.palette-9-Roadster {
+  background-color: #2F4A40;
+}
+.palette-10-Roadster{
+  background-color: #A1393C;
+}
+.palette-11-Roadster{
+  background-color: #746D6D;
+}
+.palette-12-Roadster {
+  background-color: #B5B5B5;
 }
 
 /* <---------------------- Adventure------------------------------------> */

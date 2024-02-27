@@ -20,4 +20,191 @@
     justify-content: center;
     align-items: center;
 }
+.jawa-banner-img{
+    width: 95%;
+    margin-top: 20px;
+}
 
+
+
+.timeline-jawa {
+  max-width: 600px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+.timeline-jawa::before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  width: 2px;
+  height: 68%;
+  background: #ffffff;
+  transform: translateX(-50%);
+}
+
+.timeline-jawa {
+  position: relative;
+}
+
+.timeline-jawa::after {
+  content: '';
+  position: absolute;
+  top: 8%;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  background-color: #FFFF00;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.timeline-jawa.active::after {
+  display: block;
+}
+
+
+
+.event-content-jawa {
+  padding: 10px 8px;
+  width: 100px;
+}
+.event-content2-jawa{
+  padding: 10px 0px;
+  width: 100px;
+
+}
+.event-content3-jawa{
+  padding: 10px 0px;
+  width: 100px;
+
+}
+.event-content4-jawa{
+  padding: 10px 0px;
+  width: 100px;
+
+}
+
+
+.event-1-jawa::after {
+  content: '';
+  position: absolute;
+  top: 8%;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.event-2-jawa::after {
+  content: '';
+  position: absolute;
+  top: 31%;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.event-3-jawa::after {
+  content: '';
+  position: absolute;
+  top: 58%;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.event-4-jawa::after {
+  content: '';
+  position: absolute;
+  top: 81%;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+.event-1-jawa.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-50%);
+}
+
+.event-2-jawa.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: -12px;
+  transform: translateY(-50%);
+}
+
+.event-3-jawa.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: -12px;
+  transform: translateY(-50%);
+}
+.event-4-jawa.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: -12px;
+  transform: translateY(-50%);
+}
+
+
+/* <--------------Color Pallette-------------------------------> */
+
+/* <--------------Jawa 350--------------------------> */
+.palette-1-Jawa-350{
+  background-color: #8F2023;
+
+}
+.palette-2-Jawa-350{
+  background-color: #814932;
+
+}
+.palette-3-Jawa-350{
+  background-color: #000000;
+
+}
+/* <--------------Jawa 350--------------------------> */
+.palette-1-Bobber{
+  background-color: #101820;
+
+}
+.palette-2-Bobber{
+  background-color: #91493D;
+
+}
+.palette-3-Bobber{
+  background-color: #E4E4E4;
+
+}
+.palette-4-Bobber{
+  background-color: #9B4347;
+
+}
+
+/* <-----------------Perak----------------------------------------> */
+.palette-1-Perak{
+  background-color: #90634C;
+
+}
