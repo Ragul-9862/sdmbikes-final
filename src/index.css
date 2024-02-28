@@ -27,8 +27,8 @@ body {
   cursor: pointer;
 }
 .form-check-input:checked {
-  background-color: #b03035;
-  border-color: #b03035;
+  background-color: #B03035;
+  border-color: #B03035;
 }
 
 code {

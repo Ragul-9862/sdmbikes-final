@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiChevronRight } from "react-icons/fi";
 
-
 const EmiCalculator = () => {
-    const [loanAmount, setLoanAmount] = useState('');
-    const [loanTerm, setLoanTerm] = useState('');
-    const [interestRate, setInterestRate] = useState('');
-    const [monthlyEMI, setMonthlyEMI] = useState('');
-    const [totalPaymentWithInterest, setTotalPaymentWithInterest] = useState('');
-    const [downPayment, setDownPayment] = useState('');
+    const [loanAmount, setLoanAmount] = useState(0);
+    const [loanTerm, setLoanTerm] = useState(0);
+    const [interestRate, setInterestRate] = useState(0);
+    const [monthlyEMI, setMonthlyEMI] = useState(0);
+    const [totalPaymentWithInterest, setTotalPaymentWithInterest] = useState(0);
+    const [downPayment, setDownPayment] = useState(0);
 
     const handleLoanAmountChange = (e) => {
         const amount = e.target.value;
@@ -51,16 +50,17 @@ const EmiCalculator = () => {
             const totalPayment = emi * months;
             setTotalPaymentWithInterest(totalPayment.toFixed(2));
         } else {
-            setMonthlyEMI('');
-            setTotalPaymentWithInterest('');
+            setMonthlyEMI(0);
+            setTotalPaymentWithInterest(0);
         }
     };
+    
     return (
         <div className='h__mb60'>
             <Link className='link' to='/'>
-             <p className='back-page'>
-                Home <span><FiChevronRight/></span> Emi Calculator
-              </p>
+                <p className='back-page'>
+                    Home <span><FiChevronRight/></span> Emi Calculator
+                </p>
             </Link>
             <section className="section dark-theme h__mb60 container text-center" style={{ padding: "30px" }}>
                 <h1 className="section__ttl">EMI Calculator</h1>
@@ -71,37 +71,36 @@ const EmiCalculator = () => {
                             <fieldset className="input__field input">
                                 <div className="grid-flex grid-sb h__mb15">
                                     <label className="input__label">Down Payment</label>
-                                    <div className="input input--prefix input--border">
-                                        <input className="input__control" id="downpayment" name="downPayment" value={downPayment} maxLength="7" type="text" onChange={handleDownPaymentChange} />
+                                    <div className="input input--prefix input--border d-flex">
+                                        <input type="range" className="input__control" id="downpayment" name="downPayment" value={downPayment} max="100000" step="5000" onChange={handleDownPaymentChange}  style={{ backgroundColor: 'red' }}  />
+                                        <span>{downPayment}</span>
                                     </div>
                                 </div>
                             </fieldset>
                             <fieldset className="input__field input h__mb50">
                                 <div className="grid-flex grid-sb h__mb15">
                                     <label className="input__label">Loan Amount</label>
-                                    <div className="input input--prefix input--border">
-                                        <input className="input__control" id="loanamount" name="loanAmount" value={loanAmount} maxLength="7" type="text" onChange={handleLoanAmountChange} />
+                                    <div className="input input--prefix input--border  d-flex">
+                                        <input type="range" className="input__control" id="loanamount" name="loanAmount" value={loanAmount} max="1000000" step="50000" onChange={handleLoanAmountChange} />
+                                        <span>{loanAmount}</span>
                                     </div>
                                 </div>
                             </fieldset>
                             <fieldset className="input__field input h__mb50">
                                 <div className="grid-flex grid-sb h__mb15">
                                     <label className="input__label">Loan Term</label>
-                                    <div className="emi-calc__val">
-                                        <select className="input__control" id="loanterm" name="loanTerm" value={loanTerm} onChange={ handleLoanTermChange}>
-                                            <option value="">Select Term</option>
-                                            <option value="12">12 Months</option>
-                                            <option value="24">24 Months</option>
-                                            <option value="36">36 Months</option>
-                                        </select>
+                                    <div className="emi-calc__val  d-flex">
+                                        <input type="range" className="input__control" id="loanterm" name="loanTerm" value={loanTerm} min="12" max="36" step="12" onChange={handleLoanTermChange}/>
+                                        <span>{loanTerm} Months</span>
                                     </div>
                                 </div>
                             </fieldset>
                             <fieldset className="input__field input">
                                 <div className="grid-flex grid-sb h__mb15">
                                     <label className="input__label">Interest Rate <em>(Per/Annum)</em></label>
-                                    <div className="input input--prefix input--border">
-                                        <input className="input__control" id="loaninterest" name="interestRate" maxLength="5" value={interestRate} type="text" onChange={ handleInterestRateChange } />
+                                    <div className="input input--prefix input--border d-flex">
+                                        <input type="range" className="input__control" id="loaninterest" name="interestRate" value={interestRate} max="30" onChange={handleInterestRateChange} />
+                                        <span>{interestRate}</span>
                                     </div>
                                 </div>
                             </fieldset>

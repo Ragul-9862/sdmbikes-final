@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import EmiCalculator from '../Components/Motorcycle/Emi'
+// import EmiCalculator from '../Components/Motorcycle/Emicalculators'
 import Footer from '../Components/Footer'
+import Emicalculators from '../Components/Motorcycle/Emicalculators'
 
 export default function EmiCalculatorPage() {
   return (
     <div>
         <Navbar/>
-        <EmiCalculator/>
+        <Emicalculators/>
         <Footer/>
     </div>
   )

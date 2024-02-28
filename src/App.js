@@ -11,6 +11,7 @@ import ContactUsPage from './Pages/ContactUsPage';
 import HomePageJawa from './Pages/JawaMotorcycle/HomePageJawa';
 import Motorcyclejawa from './Pages/JawaMotorcycle/Motorcyclejawa';
 import EmiCalculatorPage from './Pages/EmiCalculatorPage';
+import Emicalculators from './Components/Motorcycle/Emicalculators';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,8 @@ function App() {
         ) : (
           <Routes>
             <Route path="/" element={<HomePage />} />
+            {/* <Route path="/" element={<Emicalculators />} /> */}
+
             <Route path="/Motorcycle" element={<MotorcyclePage />} />
             <Route path="/Kommuniti" element={<KommunitiPage />} />
             <Route path="/ContactUs" element={<ContactUsPage />} />
