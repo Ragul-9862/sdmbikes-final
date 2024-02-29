@@ -60,16 +60,16 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item j-nav">
-                <Link className='link ' to="/EmiCalculator">
+                <Link className='link ' to="/EmiCalculatorPageJawa">
                   <a className="nav-link" href="#link">Emi Calculator</a>
                 </Link>
               </li>
-              <Link className='link' to="/Kommuniti">
+              <Link className='link' to="/KommunitiPageJawa">
                 <li className="nav-item j-nav">
                   <a className="nav-link " href="#about">Kommuniti</a>
                 </li>
               </Link>
-              <Link className='link' to="/Contactus">
+              <Link className='link' to="/ContactUsPageJawa">
                 <li className="nav-item j-nav ">
                   <a className="nav-link " href="#about">Contact Us</a>
                 </li>
@@ -81,13 +81,13 @@ export default function Navbar() {
           </div>
         </div> 
         {(windowWidth >= 992) && (
-          <Link to="/HomePageJawa">
+          <Link to="/">
             <img src={require("../assets/Navbar/yezdi.png")} alt="logo" className='d-none d-lg-block jawa' />
           </Link>
         )}
          {(windowWidth < 992) && (
         <div style={{ position: "relative", textDecoration: "none" }}>
-          <Link to='/HomePageJawa'>
+          <Link to='/'>
             <img className={`md-logo ${toggle ? 'position-top' : ''}`} src={yezdi} alt="" />
           </Link>
         </div>

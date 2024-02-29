@@ -1,9 +1,9 @@
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
-import img1 from '../Components/assets/j-bike/bike-1.png';
+import img1 from '../Components/assets/j-bike/Scrambler/Scrambler-Boldblack/bike-1.png';
 import img2 from '../Components/assets/Navbar/Roadster-banner.png';
 import img3 from '../Components/assets/Navbar/Adventure-banner.png';
 import "./latest.css"
@@ -44,7 +44,11 @@ const slides = [
 const VerticalCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(33.33); // Set initial progress to 33.33
+
+  useEffect(() => {
+    updateProgress(); // Update progress when component mounts
+  }, []);
 
   const goToPrevSlide = () => {
     if (sliderRef.current) {
@@ -71,6 +75,7 @@ const VerticalCarousel = () => {
     const progress = currentSlide === 0 ? 33.33 : calc;
     setProgress(progress);
   };
+
   const getColorBasedOnProgress = () => {
     const progressPercentage = (currentSlide + 1) / slides.length;
     if (progressPercentage <= 1 / 3) {
@@ -81,6 +86,7 @@ const VerticalCarousel = () => {
       return currentSlide === 2 ? 'grey' : 'white';
     }
   };
+
   const progressBarStyle = {
     width: `${progress}%`, 
     backgroundColor: getColorBasedOnProgress(),
@@ -125,7 +131,7 @@ const VerticalCarousel = () => {
       <section className='container-fluid banner' >
         <div className='banner-info-icon-1'>
         <div className='banner-info-icon-main-1'>
-            <a href="#" className="side-button">
+            <a href="tel:9876543210" className="side-button">
                 <span className="icon"><img src={require("../Components/assets/Navbar/Phone iCon-2.png")} alt=""/></span>
                 <span className="texted">Phone</span>
             </a>
@@ -133,7 +139,7 @@ const VerticalCarousel = () => {
         </div>
         <div className='banner-info-icon-2'>
         <div className='banner-info-icon-main-2'>
-            <a href="#" className="side-button-2">
+            <a href="https://wa.me/9876543210" className="side-button-2">
             <span className="icon"><img src={require("../Components/assets/Navbar/Phone iCon.png")} alt=""/></span>
                 <span className="texted">Whatsapp</span>
             </a>

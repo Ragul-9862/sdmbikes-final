@@ -5,7 +5,7 @@ import img2 from '../assets/Navbar/42.png';
 import img3 from '../assets/Navbar/Perak.png';
 import img4 from '../assets/Navbar/42-bobber.png';
 import { FiChevronRight } from "react-icons/fi";
-import { HiArrowNarrowRight, HiChevronDown, HiChevronUp } from "react-icons/hi";
+import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 
 export default function JMotorcycle() {
   const [expanded, setExpanded] = useState([false, false, false, false]);
@@ -24,11 +24,11 @@ export default function JMotorcycle() {
                 Home <span><FiChevronRight/></span> Motorcycle
               </p>
             </Link>
-      <section className='motorcycle'>
+      <section className='motorcycles'>
         <div className="container text-center">
           <div className="row d-flex justify-content-center align-items-center">
             <div className="col-lg-12 motorcycle-main-info">
-              <h2>YEZDI MOTORCYCLES</h2>
+              <h2>JAWA MOTORCYCLES</h2>
               <p>
               Embracing the spirit of innovation, the Yezdi narrative is woven by a dedicated community of motorcycle enthusiasts who envisioned the limitless potential of two-wheelers and the transformative influence they could wield in people's lives. However, the Yezdi expedition is an ongoing saga. The concluding chapter is still unwritten, fueled by our unyielding thirst for innovation. We persist in dreaming, challenging conventions, and consistently pondering the question, 'What could a motorcycle be?'
               </p>

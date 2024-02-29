@@ -471,7 +471,7 @@ export default function New() {
   };
 
 
-// <---------------------------------42 Orion White ------------------------------------------------>
+// <---------------------------------42 Orion Red ------------------------------------------------>
 
   const [number44, setNumber44] = useState(1);
   const BikeOrionred = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
@@ -511,6 +511,166 @@ export default function New() {
   const handleMouseUp44 = () => {
     setIsDragging44(false);
   };
+// <---------------------------------42 InfinityBlack ------------------------------------------------>
+
+  const [number45, setNumber45] = useState(1);
+  const BikeInfinityBlack = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+
+  
+  const handleDecrease45 = () => {
+    setNumber45((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease45 = () => {
+    setNumber45((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+
+
+  const [isDragging45, setIsDragging45] = useState(false);
+  const [startX45, setStartX45] = useState(0);
+
+  const handleMouseDown45 = (e) => {
+    setIsDragging45(true);
+    setStartX45(e.clientX);
+  };
+
+  const handleMouseMove45 = (e) => {
+    if (isDragging45) {
+      const deltaX = e.clientX - startX45;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease45();
+        setStartX45(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease45();
+        setStartX45(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp45 = () => {
+    setIsDragging45(false);
+  };
+// <---------------------------------42 StarshipBlue ------------------------------------------------>
+
+  const [number46, setNumber46] = useState(1);
+  const BikeStarshipBlue = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+
+  
+  const handleDecrease46 = () => {
+    setNumber46((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease46 = () => {
+    setNumber46((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+
+
+  const [isDragging46, setIsDragging46] = useState(false);
+  const [startX46, setStartX46] = useState(0);
+
+  const handleMouseDown46 = (e) => {
+    setIsDragging46(true);
+    setStartX46(e.clientX);
+  };
+
+  const handleMouseMove46 = (e) => {
+    if (isDragging46) {
+      const deltaX = e.clientX - startX46;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease46();
+        setStartX46(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease46();
+        setStartX46(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp46 = () => {
+    setIsDragging46(false);
+  };
+// <---------------------------------42 Orion White ------------------------------------------------>
+
+  const [number47, setNumber47] = useState(1);
+  const BikeCelestialCopper = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+
+  
+  const handleDecrease47 = () => {
+    setNumber47((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease47 = () => {
+    setNumber47((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+
+
+  const [isDragging47, setIsDragging47] = useState(false);
+  const [startX47, setStartX47] = useState(0);
+
+  const handleMouseDown47 = (e) => {
+    setIsDragging47(true);
+    setStartX47(e.clientX);
+  };
+
+  const handleMouseMove47 = (e) => {
+    if (isDragging47) {
+      const deltaX = e.clientX - startX47;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease47();
+        setStartX47(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease47();
+        setStartX47(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp47 = () => {
+    setIsDragging47(false);
+  };
+// <---------------------------------42 Orion White ------------------------------------------------>
+
+  const [number48, setNumber48] = useState(1);
+  const BikeCosmicRock = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+
+  
+  const handleDecrease48 = () => {
+    setNumber48((prevNumber) => Math.max(1, prevNumber - 1));
+  };
+
+  const handleIncrease48 = () => {
+    setNumber48((prevNumber) => Math.min(16, prevNumber + 1));
+  };
+
+
+  const [isDragging48, setIsDragging48] = useState(false);
+  const [startX48, setStartX48] = useState(0);
+
+  const handleMouseDown48 = (e) => {
+    setIsDragging48(true);
+    setStartX48(e.clientX);
+  };
+
+  const handleMouseMove48 = (e) => {
+    if (isDragging48) {
+      const deltaX = e.clientX - startX48;
+      const sensitivity = 5;
+      if (deltaX > sensitivity) {
+        handleIncrease48();
+        setStartX48(e.clientX);
+      } else if (deltaX < -sensitivity) {
+        handleDecrease48();
+        setStartX48(e.clientX);
+      }
+    }
+  };
+
+  const handleMouseUp48 = () => {
+    setIsDragging48(false);
+  };
 
 
 
@@ -524,8 +684,8 @@ export default function New() {
   const [selectedEvent3, setSelectedEvent3] = useState('event3');
   const [selectedColor3, setSelectedColor3] = useState('Default');
 
-  const [selectedEvent4, setSelectedEvent4] = useState('event3');
-  const [selectedColor4, setSelectedColor4] = useState('Default');
+  const [selectedEvent4, setSelectedEvent4] = useState('event4');
+  const [selectedColor4, setSelectedColor4] = useState('Cosmiccarbon');
 
 
   const renderDetails = (event, title, price) => {
@@ -557,9 +717,9 @@ export default function New() {
 
   const renderDetails4 = (event, title, price) => {
     return (
-      <div className={`event-content1 ${selectedEvent4 === event ? 'active' : ''}`} onClick={() => handleEventClick4(event, 'Default')}>
+      <div className={`event-content1 ${selectedEvent4 === event ? 'active' : ''}`} onClick={() => handleEventClick4(event, 'Cosmiccarbon')}>
         <h3>{title}</h3>
-        {selectedEvent3 === event ? <p>{price}</p> : ""}
+        {selectedEvent4 === event ? <p className='selected-event-4'>{price}</p> : ""}
       </div>
     );
   };
@@ -655,8 +815,14 @@ export default function New() {
         return BikeAllstarblack;
       case 'Siriuswhite':
         return BikeSiriuswhite;
-      case 'Orionred':
-        return BikeOrionred;
+      case 'InfinityBlack':
+        return BikeInfinityBlack;
+      case 'StarshipBlue':
+        return BikeStarshipBlue;
+      case 'CelestialCopper':
+        return BikeCelestialCopper;
+      case 'CosmicRock':
+        return BikeCosmicRock;
       default:
         return BikeCosmiccarbon;
     }
@@ -683,22 +849,22 @@ export default function New() {
           <div className='row view-360-main'>
             <div className='col-lg-1 timeline-main'>
               <div className="timeline-2">
-                <div className={`event-1-2 ${selectedEvent === 'event1' ? 'active' : ''}`} onClick={() => handleEventClick('event1', 'BoldBlack')}>
+                <div className={`event-1-2 ${selectedEvent === 'event1' ? 'active' : ''}`} onClick={() => handleEventClick('event1', 'Red')}>
                   <div className="event-content1-2">
                     {renderDetails('event1', 'Jawa 350', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
                   </div>
                 </div>
-                <div className={`event-2-2 ${selectedEvent2 === 'event2' ? 'active' : ''}`} onClick={() => handleEventClick2('event2', 'MidnightBlue')}>
+                <div className={`event-2-2 ${selectedEvent2 === 'event2' ? 'active' : ''}`} onClick={() => handleEventClick2('event2', 'Blackmirror')}>
                   <div className="event-content1-2">
                     {renderDetails2('event2', '42 Bobber', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
                   </div>
                 </div>
-                <div className={`event-3-2 ${selectedEvent3 === 'event3' ? 'active' : ''}`} onClick={() => handleEventClick3('event3', 'FireOrange')}>
+                <div className={`event-3-2 ${selectedEvent3 === 'event3' ? 'active' : ''}`} onClick={() => handleEventClick3('event3', 'Default')}>
                   <div className="event-content1-2">
                     {renderDetails3('event3', 'Perak', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
                   </div>
                 </div>
-                <div className={`event-4-2 ${selectedEvent4 === 'event4' ? 'active' : ''}`} onClick={() => handleEventClick4('event4', 'FireOrange')}>
+                <div className={`event-4-2 ${selectedEvent4 === 'event4' ? 'active' : ''}`} onClick={() => handleEventClick4('event4', 'Cosmiccarbon')}>
                   <div className="event-content1-2">
                     {renderDetails4('event4', '42', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
                   </div>
@@ -854,7 +1020,25 @@ export default function New() {
 <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent4 === 'event4' ? '' : 'd-none'}`}>
   <section className='slider'>
     <Box>
-      {selectedColor2 === "Orionred" ? (
+    {selectedColor2 === "InfinityBlack" ? (
+  <>
+  <img
+    src={getColorImageSource4(selectedColor4)}
+    className='img-fluid'
+    alt=""
+    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+    onMouseDown={handleMouseDown24}
+    onMouseMove={handleMouseMove24}
+    onMouseUp={handleMouseUp24}
+  />
+  <div className='view-360-icons-main'>
+    <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease24} />
+      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease24} />
+    </Stack>
+  </div>
+</>
+    ):selectedColor2 === "Orionred" ? (
         <>
           <img
             src={getColorImageSource4(selectedColor4)}
@@ -1050,31 +1234,31 @@ export default function New() {
                 <p>Orion Red </p>
               </div>
               <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'Orionred' ? 'active' : ''}`}
-                onClick={() => handleColorClick4('Orionred')}
+                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'InfinityBlack' ? 'active' : ''}`}
+                onClick={() => handleColorClick4('InfinityBlack')}
               >
-                <div className={`color-box palette-5-42 ${selectedColor4 === 'Orionred' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-5-42 ${selectedColor4 === 'InfinityBlack' ? 'active-palette ' : ''} `}></div>
                 <p>Infinity Black </p>
               </div>
               <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'Orionred' ? 'active' : ''}`}
-                onClick={() => handleColorClick4('Orionred')}
+                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'StarshipBlue' ? 'active' : ''}`}
+                onClick={() => handleColorClick4('StarshipBlue')}
               >
-                <div className={`color-box palette-6-42 ${selectedColor4 === 'Orionred' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-6-42 ${selectedColor4 === 'StarshipBlue' ? 'active-palette ' : ''} `}></div>
                 <p>Starship Blue </p>
               </div>
               <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'Orionred' ? 'active' : ''}`}
-                onClick={() => handleColorClick4('Orionred')}
+                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'CelestialCopper' ? 'active' : ''}`}
+                onClick={() => handleColorClick4('CelestialCopper')}
               >
-                <div className={`color-box palette-7-42 ${selectedColor4 === 'Orionred' ? 'active-palette ' : ''} `}></div>
-                <p>Celestial Coppe </p>
+                <div className={`color-box palette-7-42 ${selectedColor4 === 'CelestialCopper' ? 'active-palette ' : ''} `}></div>
+                <p>Celestial Copper </p>
               </div>
               <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'Orionred' ? 'active' : ''}`}
-                onClick={() => handleColorClick4('Orionred')}
+                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'CosmicRock' ? 'active' : ''}`}
+                onClick={() => handleColorClick4('CosmicRock')}
               >
-                <div className={`color-box palette-8-42 ${selectedColor4 === 'Orionred' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-8-42 ${selectedColor4 === 'CosmicRock' ? 'active-palette ' : ''} `}></div>
                 <p>Cosmic Rock </p>
               </div>
             </div>
@@ -1090,7 +1274,7 @@ export default function New() {
                 onClick={() => handleColorClick3('Default')}
               >
                 <div className={`color-box palette-1-Perak ${selectedColor3 === 'Default' ? 'active-palette ' : ''} `}></div>
-                <p>Default</p>
+                <p>Perak</p>
               </div>
             </div>
           </div>

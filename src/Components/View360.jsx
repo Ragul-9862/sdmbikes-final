@@ -12,12 +12,12 @@ export default function New() {
   // <------------Scrambler------------------------------->
 
   const [number, setNumber] = useState(1);
-  const BikeBoldBlack = require(`../Components/assets/j-bike/bike-${number}.png`)
+  const BikeBoldBlack = require(`../Components/assets/j-bike/Scrambler/Scrambler-Boldblack/bike-${number}.png`)
 
 
   // <------------Scrambler Midnightblue------------------------------->
   const [number12, setNumber12] = useState(1);
-  const BikeMidnightBlue = require(`../Components/assets/j-bike/Scrambler-midnight-blue/bike-${number12}.png`)
+  const BikeMidnightBlue = require(`../Components/assets/j-bike/Scrambler/Scrambler-midnight-blue/bike-${number12}.png`)
 
 
   const handleDecrease12 = () => {
@@ -29,7 +29,7 @@ export default function New() {
   };
   // <------------Scrambler FireOrange------------------------------->
   const [number13, setNumber13] = useState(1);
-  const BikeFireOrange = require(`../Components/assets/j-bike/Scrambler-fireorange/bike-${number13}.png`)
+  const BikeFireOrange = require(`../Components/assets/j-bike/Scrambler/Scrambler-fireorange/bike-${number13}.png`)
 
 
   const handleDecrease13 = () => {
@@ -41,7 +41,7 @@ export default function New() {
   };
   // <------------Scrambler MeenGreen------------------------------->
   const [number14, setNumber14] = useState(1);
-  const BikeMeanGreen = require(`../Components/assets/j-bike/Scrambler-meengreen/bike-${number14}.png`)
+  const BikeMeanGreen = require(`../Components/assets/j-bike//Scrambler/Scrambler-meengreen/bike-${number14}.png`)
 
 
   const handleDecrease14 = () => {
@@ -53,7 +53,7 @@ export default function New() {
   };
   // <------------Scrambler Outlaw Olive------------------------------->
   const [number15, setNumber15] = useState(1);
-  const BikeOutlawOlive = require(`../Components/assets/j-bike/Scrambler-OutlawOlive/bike-${number15}.png`)
+  const BikeOutlawOlive = require(`../Components/assets/j-bike//Scrambler/Scrambler-OutlawOlive/bike-${number15}.png`)
 
 
   const handleDecrease15 = () => {
@@ -65,7 +65,7 @@ export default function New() {
   };
   // <------------Scrambler RebelRed------------------------------->
   const [number16, setNumber16] = useState(1);
-  const BikeRebelRed = require(`../Components/assets/j-bike/Scrambler-RebelRed/bike-${number16}.png`)
+  const BikeRebelRed = require(`../Components/assets/j-bike//Scrambler/Scrambler-RebelRed/bike-${number16}.png`)
 
 
   const handleDecrease16 = () => {
@@ -77,7 +77,7 @@ export default function New() {
   };
   // <------------Scrambler YellingYellow------------------------------->
   const [number17, setNumber17] = useState(1);
-  const BikeYellingYellow = require(`../Components/assets/j-bike/Scrambler-YellingYellow/bike-${number17}.png`)
+  const BikeYellingYellow = require(`../Components/assets/j-bike//Scrambler/Scrambler-YellingYellow/bike-${number17}.png`)
 
 
   const handleDecrease17 = () => {
@@ -91,7 +91,7 @@ export default function New() {
 
 
   const [number2, setNumber2] = useState(1);
-  const BikeShodowGrey = require(`../Components/assets/j-bike/Roadster/Roadster-ShadowGrey/bike-${number2}.png`)
+  const BikeShadowGrey = require(`../Components/assets/j-bike/Roadster/Roadster-ShadowGrey/bike-${number2}.png`)
 
   const [isDragging2, setIsDragging2] = useState(false);
   const [startX2, setStartX2] = useState(0);
@@ -925,11 +925,11 @@ const handleMouseUp34 = () => {
   const [selectedColor, setSelectedColor] = useState('BoldBlack');
 
   const [selectedEvent2, setSelectedEvent2] = useState('event2');
-  const [selectedColor2, setSelectedColor2] = useState('MidnightBlue');
+  const [selectedColor2, setSelectedColor2] = useState('ShadowGrey');
   const [selectedColor4, setSelectedColor4] = useState('RushHourRed');
 
   const [selectedEvent3, setSelectedEvent3] = useState('event3');
-  const [selectedColor3, setSelectedColor3] = useState('FireOrange');
+  const [selectedColor3, setSelectedColor3] = useState('WhithoutWhite');
 
   const [eventDetails, setEventDetails] = useState({
     event1: { title: 'Scrambler', price: 'On Road Price ₹ 2,08,829' },
@@ -947,7 +947,7 @@ const handleMouseUp34 = () => {
 
   const renderDetails2 = (event, title, price) => {
     return (
-      <div className={`event-content1 ${selectedEvent2 === event ? 'active' : ''}`} onClick={() => handleEventClick2(event, 'MidnightBlue')}>
+      <div className={`event-content1 ${selectedEvent2 === event ? 'active' : ''}`} onClick={() => handleEventClick2(event, 'ShadowGrey')}>
         <h3>{title}</h3>
         {selectedEvent2 === event ? <p>{price}</p> : ""}
       </div>
@@ -956,7 +956,7 @@ const handleMouseUp34 = () => {
 
   const renderDetails3 = (event, title, price) => {
     return (
-      <div className={`event-content1 ${selectedEvent3 === event ? 'active' : ''}`} onClick={() => handleEventClick3(event, 'FireOrange')}>
+      <div className={`event-content1 ${selectedEvent3 === event ? 'active' : ''}`} onClick={() => handleEventClick3(event, 'WithoutWhite')}>
         <h3>{title}</h3>
         {selectedEvent3 === event ? <p>{price}</p> : ""}
       </div>
@@ -1030,8 +1030,8 @@ const handleMouseUp34 = () => {
 
   const getColorImageSource2 = (color2) => {
     switch (color2) {
-      case 'ShodowGrey':
-        return BikeShodowGrey;
+      case 'ShadowGrey':
+        return BikeShadowGrey;
       case 'InfernoRed':
         return BikeInfernoRed;
       case 'GlacialWhite':
@@ -1043,7 +1043,7 @@ const handleMouseUp34 = () => {
       case 'SteelBlue':
         return BikeSteelBlue;
       default:
-        return BikeShodowGrey;
+        return BikeShadowGrey;
     }
   };
 
@@ -1095,12 +1095,12 @@ const handleMouseUp34 = () => {
                     {renderDetails('event1', 'Scrambler', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
                   </div>
                 </div>
-                <div className={`event-2 ${selectedEvent2 === 'event2' ? 'active' : ''}`} onClick={() => handleEventClick2('event2', 'MidnightBlue')}>
+                <div className={`event-2 ${selectedEvent2 === 'event2' ? 'active' : ''}`} onClick={() => handleEventClick2('event2', 'ShadowGrey')}>
                   <div className="event-content2">
                     {renderDetails2('event2', 'Roadster', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
                   </div>
                 </div>
-                <div className={`event-3 ${selectedEvent3 === 'event3' ? 'active' : ''}`} onClick={() => handleEventClick3('event3', 'FireOrange')}>
+                <div className={`event-3 ${selectedEvent3 === 'event3' ? 'active' : ''}`} onClick={() => handleEventClick3('event3', 'WithoutWhite')}>
                   <div className="event-content2">
                     {renderDetails3('event3', 'Adventure', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
                   </div>
@@ -1621,10 +1621,10 @@ const handleMouseUp34 = () => {
 
 
               <div
-                className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'ShodowGrey' ? 'active' : ''}`}
-                onClick={() => handleColorClick2('ShodowGrey')}
+                className={`d-flex align-items-center color-palette-info-2 ${selectedColor2 === 'ShadwGrey' ? 'active' : ''}`}
+                onClick={() => handleColorClick2('ShadowGrey')}
               >
-                <div className={`color-box palette-1-Roadster ${selectedColor2 === 'ShodowGrey' ? 'active-palette ' : ''} `}></div>
+                <div className={`color-box palette-1-Roadster ${selectedColor2 === 'ShadowGrey' ? 'active-palette ' : ''} `}></div>
                 <p>Dark <span>Shodow Grey</span></p>
               </div>
               <div
