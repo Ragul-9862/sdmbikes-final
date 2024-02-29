@@ -319,8 +319,8 @@ button.navbar-toggler:focus {
 }
 .speedometer-content span {
   color: #AF4E4F;
+  font-family: croser;
   font-size: 35px;
-  font-family: croser !important;
   font-weight: 900;
   letter-spacing: 2px;
 
@@ -332,7 +332,6 @@ button.navbar-toggler:focus {
 
 .custom-btn {
   background: url('../src/Components/assets/SpeedOmeter/custom.png');
-
   background-position: center;
   width: 260px;
   color: #FFF;
@@ -528,9 +527,8 @@ hr{
 .view-360-img-main img{
   width: 100%;
 }
-.view-360-container-info {
-/* padding-top: 40px; */
-h2{
+.view-360-container-info h2{
+ 
   color: #000;
    width: 100%;
   font-family: 'Racing Sans One', sans-serif;
@@ -539,10 +537,12 @@ h2{
   font-weight: 400;
   line-height: 65px; 
 
+
 }
+.view-360-container-info {
+
 span{
   color: #FF0;
-    font-family: 'croser';
     font-size: 76px;
     font-style: normal;
     font-weight: 400;
@@ -1149,7 +1149,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 .highlights span {
     color: #af4e4f;
-    font-family: 'croser';
     font-size: 76px;
     font-style: normal;
     font-weight: 400;
@@ -1213,7 +1212,7 @@ button {
 }
 .ourblogs-main-info-main span{
   color: #FF0;
-  font-family: 'croser';
+  /* font-family: 'reem'; */
     /* font-size: 76px; */
     font-style: normal;
     font-weight: 400;

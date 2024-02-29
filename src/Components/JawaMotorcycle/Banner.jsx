@@ -3,10 +3,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import React, { useRef, useState } from 'react';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
-import img1 from '../assets/Navbar/jawa-350.png';
-import img2 from '../assets/Navbar/42.png';
-import img3 from '../assets/Navbar/42-bobber.png';
-import img4 from '../assets/Navbar/Perak.png';
+import img1 from '../assets/j-bike/Jawa-350/Maroon/bike-1.png';
+import img2 from '../assets/j-bike/42/CosmicCarbon/bike-1.png';
+import img3 from '../assets/j-bike/Bobber/BlackMirror/bike-1.png';
+import img4 from '../assets/j-bike/Perak/bike-1.png';
 
 import './Banner.css'
 
@@ -86,12 +86,14 @@ const VerticalCarousel = () => {
 
   const getColorBasedOnProgress = () => {
     const progressPercentage = (currentSlide + 1) / slides.length;
-    if (progressPercentage <= 1 / 3) {
+    if (progressPercentage <= 1 / 4) {
       return currentSlide === 0 ? 'grey' : 'white';
     } else if (progressPercentage <= 2 / 3) {
       return currentSlide === 1 ? 'grey' : 'white';
-    } else {
+    } else if (progressPercentage <= 3 / 4) {
       return currentSlide === 2 ? 'grey' : 'white';
+    } else {
+      return currentSlide === 3 ? 'grey' : 'white';
     }
   };
   const progressBarStyle = {
