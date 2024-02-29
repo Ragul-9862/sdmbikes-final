@@ -533,7 +533,7 @@ hr{
 h2{
   color: #000;
    width: 100%;
-  font-family: 'croser';
+  font-family: 'Racing Sans One', sans-serif;
   font-size: 56px;
   font-style: normal;
   font-weight: 400;
@@ -542,7 +542,7 @@ h2{
 }
 span{
   color: #FF0;
-    font-family: 'Racing Sans One', sans-serif;
+    font-family: 'croser';
     font-size: 76px;
     font-style: normal;
     font-weight: 400;
@@ -1140,7 +1140,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #000;
     padding-top: 40px;
     max-width: 150px;
-    font-family: 'croser';
+    font-family: 'Racing Sans One', sans-serif;
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
@@ -1149,7 +1149,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 .highlights span {
     color: #af4e4f;
-    font-family: 'Racing Sans One', sans-serif;
+    font-family: 'croser';
     font-size: 76px;
     font-style: normal;
     font-weight: 400;
@@ -1213,7 +1213,7 @@ button {
 }
 .ourblogs-main-info-main span{
   color: #FF0;
-    font-family: 'Racing Sans One', sans-serif;
+  font-family: 'croser';
     /* font-size: 76px; */
     font-style: normal;
     font-weight: 400;
