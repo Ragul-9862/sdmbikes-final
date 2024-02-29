@@ -429,7 +429,7 @@ export default function New() {
   };
 
 
-// <---------------------------------42 Allstarblack ------------------------------------------------>
+// <---------------------------------42 Sirus White------------------------------------------------>
 
   const [number43, setNumber43] = useState(1);
   const BikeSiriuswhite = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
@@ -471,7 +471,7 @@ export default function New() {
   };
 
 
-// <---------------------------------42 Allstarblack ------------------------------------------------>
+// <---------------------------------42 Orion White ------------------------------------------------>
 
   const [number44, setNumber44] = useState(1);
   const BikeOrionred = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
@@ -1048,6 +1048,34 @@ export default function New() {
               >
                 <div className={`color-box palette-4-42 ${selectedColor4 === 'Orionred' ? 'active-palette ' : ''} `}></div>
                 <p>Orion Red </p>
+              </div>
+              <div
+                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'Orionred' ? 'active' : ''}`}
+                onClick={() => handleColorClick4('Orionred')}
+              >
+                <div className={`color-box palette-5-42 ${selectedColor4 === 'Orionred' ? 'active-palette ' : ''} `}></div>
+                <p>Infinity Black </p>
+              </div>
+              <div
+                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'Orionred' ? 'active' : ''}`}
+                onClick={() => handleColorClick4('Orionred')}
+              >
+                <div className={`color-box palette-6-42 ${selectedColor4 === 'Orionred' ? 'active-palette ' : ''} `}></div>
+                <p>Starship Blue </p>
+              </div>
+              <div
+                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'Orionred' ? 'active' : ''}`}
+                onClick={() => handleColorClick4('Orionred')}
+              >
+                <div className={`color-box palette-7-42 ${selectedColor4 === 'Orionred' ? 'active-palette ' : ''} `}></div>
+                <p>Celestial Coppe </p>
+              </div>
+              <div
+                className={`d-flex align-items-center color-palette-info-2 ${selectedColor4 === 'Orionred' ? 'active' : ''}`}
+                onClick={() => handleColorClick4('Orionred')}
+              >
+                <div className={`color-box palette-8-42 ${selectedColor4 === 'Orionred' ? 'active-palette ' : ''} `}></div>
+                <p>Cosmic Rock </p>
               </div>
             </div>
           

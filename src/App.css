@@ -287,7 +287,7 @@ button.navbar-toggler:focus {
   background-repeat: no-repeat; 
   background-position: center; 
   background-size: cover; 
-  height: 78vh; 
+  /* height: 78vh;  */
   /* padding: 10px;  */
   background-color: #0E0E0E;
   position: relative; 

@@ -198,6 +198,13 @@
     .speedometer-wrapper-infos{
         margin-top: 450px;
     }
+    .speedometer-content span {
+        color: #AF4E4F;
+        font-size: 26px;
+        font-family: croser !important;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
 }
 
 
