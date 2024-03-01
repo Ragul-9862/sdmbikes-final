@@ -74,7 +74,7 @@ export default function New() {
   // <------------------Roadster-infernoRed---------------->
 
   const [number22, setNumber22] = useState(1);
-  const BikeMysticcopper = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeMysticcopper = require(`../assets/j-bike/Bobber/MysticCopper/bike-${number22}.png`)
 
   
   const handleDecrease22 = () => {
@@ -117,7 +117,7 @@ export default function New() {
   // <------------------Roadster-GlacialWhite---------------->
 
   const [number23, setNumber23] = useState(1);
-  const BikeMoonstonewhite = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeMoonstonewhite = require(`../assets/j-bike/Bobber/MoonstoneWhite/bike-${number23}.png`)
 
   
   const handleDecrease23 = () => {
@@ -125,7 +125,7 @@ export default function New() {
   };
 
   const handleIncrease23 = () => {
-    setNumber23((prevNumber) => Math.min(16, prevNumber + 1));
+    setNumber23((prevNumber) => Math.min(15, prevNumber + 1));
   };
 
   const [isDragging23, setIsDragging23] = useState(false);
