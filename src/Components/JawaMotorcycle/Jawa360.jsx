@@ -17,7 +17,7 @@ export default function New() {
 
   // <------------Scrambler Midnightblue------------------------------->
   const [number12, setNumber12] = useState(1);
-  const BikeBrown = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeBrown = require(`../assets/j-bike/Jawa-350/Brown/bike-${number12}.png`)
 
 
   const handleDecrease12 = () => {
@@ -29,7 +29,7 @@ export default function New() {
   };
   // <------------Scrambler FireOrange------------------------------->
   const [number13, setNumber13] = useState(1);
-  const BikeBlack = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeBlack = require(`../assets/j-bike/Jawa-350/Black/bike-${number13}.png`)
 
 
   const handleDecrease13 = () => {

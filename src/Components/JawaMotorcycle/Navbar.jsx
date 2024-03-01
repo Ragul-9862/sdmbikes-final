@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FiAlignLeft, FiX } from "react-icons/fi";
 import yezdi from '../assets/Navbar/yezdi.png'
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);

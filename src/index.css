@@ -1,6 +1,13 @@
+
+
+
 @font-face{
   font-family: reem;
   src: url("../src/Components/assets/reem-kufi/ReemKufi-Regular.ttf");
+}
+@font-face{
+  font-family: RacingSansOne;
+  src: url("../src/Components/assets/Racing_Sans_One/RacingSansOne-Regular.ttf");
 }
 
 
@@ -8,6 +15,7 @@ body {
   margin: 0;
   font-family: reem !important;
 }
+
 
 ::-webkit-scrollbar {
   width: 10px !important;

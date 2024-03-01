@@ -1,3 +1,4 @@
+
 .row>* {
   flex-shrink: 0;
   width: 100%;
@@ -77,19 +78,38 @@ top: -167px;
   left: 0;
 }
 
-
-
 .navbar-toggler:focus {
   text-decoration: none; 
   outline: none;
   box-shadow: none;
 }
-#fixed-top-2{
-  background: linear-gradient(to bottom,#990021,#6E0018) #990021;;
+
+/* <------------------------Jawa Bike Navbar-------------------------------------------------> */
+#fixed-top-2 {
+  background: linear-gradient(to bottom, #990021, #6E0018) #990021;
+}
+
+#fixed-top-2 .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 40px;
+  margin-right: 20px;
+  transition: color 0.3s ease; 
+}
+
+#fixed-top-2 .navbar-nav .nav-link:hover {
+  color: #ffffff; 
 }
 #hamberger{
   color: white;
 }
+
+
+
+
+
+
 .vertical-carousel-container {
   position: relative;
  
@@ -142,6 +162,14 @@ top: -167px;
 .navbar-nav .nav-link.show {
   color: #B03035;
 }
+.navbar-nav .nav-link:hover {
+  color: #B03035; 
+}
+
+#book-a-test-ride:hover{
+  color: #B03035; 
+}
+
 .j-nav{
   color: black;
 }
@@ -320,7 +348,6 @@ button.navbar-toggler:focus {
 
 .speedometer-content h2 {
   color: #fff;
-  font-family: 'Futura Lt BT', sans-serif;
   font-size: 40px;
   font-weight: 300;
 
@@ -343,7 +370,7 @@ button.navbar-toggler:focus {
   background-position: center;
   width: 260px;
   color: #FFF;
-  font-family: "Racing Sans One";
+  font-family: RacingSansOne;
   font-size: 32px;
   padding: 10px 25px;
   font-weight: 400;
@@ -539,7 +566,7 @@ hr{
  
   color: #000;
    width: 100%;
-  font-family: 'Racing Sans One', sans-serif;
+   font-family: RacingSansOne;
   font-size: 56px;
   font-style: normal;
   font-weight: 400;
@@ -1150,7 +1177,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #000;
     padding-top: 40px;
     max-width: 150px;
-    font-family: 'Racing Sans One', sans-serif;
+    font-family: RacingSansOne;
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
@@ -1213,7 +1240,7 @@ button {
   color: #000;
   padding-top: 40px;
   max-width: 150px;
-  font-family: 'Racing Sans One', sans-serif;
+  font-family: RacingSansOne;
   font-size: 56px;
   font-style: normal;
   font-weight: 400;
@@ -1222,8 +1249,7 @@ button {
 }
 .ourblogs-main-info-main span{
   color: #FF0;
-  /* font-family: 'reem'; */
-    /* font-size: 76px; */
+  font-family: RacingSansOne;
     font-style: normal;
     font-weight: 400;
     line-height: 65px;
@@ -1989,143 +2015,6 @@ font-size: 25px;
 .contact-uss{
   color: white;
 }
-/* <-----------Emi----------------------------------> */
-
-
-.h__mb60 {
-  background-color: #313131;
-  padding-top: 130px;
-}
-.grid__gap60{
-  padding: 30px;
-  border: 1px solid #a1a1a1;
-  background-color:rgb(35 35 35);
-}
-
-.section__ttl {
-  font-size: 36px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 30px;
-}
-
-.section__desc {
-  font-size: 16px;
-  color: #ffffff;
-  width: 80%;
-  margin: 0 auto 30px;
-}
-
-.input__field {
-  margin-bottom: 50px;
-
-}
-
-.input__label {
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 15px;
-  display: block;
-}
-
-.input__control {
-  width: calc(100% - 50px);
-  padding: 12px 25px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  color: #000000;
-}
-
-.input__prefix {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 15px;
-  font-size: 16px;
-  color: #333;
-}
-
-
-
-.emi-calc__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.emi-calc__list li{
-  padding-top: 30px;
-}
-
-.emi-calc__list-item {
-  text-align: center;
-}
-
-.emi-calc__list-label {
-  font-size: 20px;
-  color: #AF4E4F;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.emi-calc__list-val {
-  font-size: 25px;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.emi-calc__emiblock {
-  text-align: center;
-}
-
-.emi-calc__emi {
-  font-size: 24px;
-  color: #ffffff;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.emi-calc__totalamt {
-  font-size: 36px;
-  color: #ffffff;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.emi-calc__smtxt {
-  font-size: 14px;
-  color: #AF4E4F;
-}
-
-.emi-calc__actionbtn {
-  background-color: #007bff;
-  color: #fff;
-  font-size: 18px;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.emi-calc__actionbtn:hover {
-  background-color: #0056b3;
-}
-.input__control {
-  --range-color: red;
-}
-
-.input__control::-webkit-slider-thumb {
-  background-color: var(--range-color);
-}
-
-.input__control::-moz-range-thumb {
-  background-color: var(--range-color);
-}
-
-.input__control::-ms-thumb {
-  background-color: var(--range-color);
-}
 
 /* <----------- Gallery -------------------> */
 .gallery-main{
@@ -2266,6 +2155,27 @@ color: white;
 }
 
 /* <-------------Emi new--------> */
+
+.h__mb60 {
+  background-color: #313131;
+  padding-top: 130px;
+}
+
+
+.section__ttl {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.section__desc {
+  font-size: 16px;
+  color: #ffffff;
+  width: 80%;
+  margin: 0 auto 30px;
+}
+
 .emi-calculator-section{
   background-color: #313131;
   padding-top: 125px;
@@ -2324,6 +2234,15 @@ color: white;
   font-size: 18px;
   color: #B03035;
 }
+.input__control {
+  width: calc(100% - 50px);
+  padding: 12px 25px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #000000;
+}
+
 
 /* <-------------------> */
 .emi-info-main{

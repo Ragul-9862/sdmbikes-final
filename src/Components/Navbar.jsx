@@ -76,7 +76,7 @@ export default function Navbar() {
                 </li>
               </Link>
               <li className="nav-item">
-                <a className="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Book a Test Drive</a>
+                <a className="nav-link" id='book-a-test-ride' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Book a Test Drive</a>
               </li>
             </ul>
           </div>

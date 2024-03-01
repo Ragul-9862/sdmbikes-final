@@ -17,9 +17,9 @@ import KommunitiPageJawa from './Pages/JawaMotorcycle/KommunitiPageJawa';
 
 function App() {
   useEffect(() => {
-    // Function to force reload of resources
+  
     const clearCache = () => {
-      // Append a random query parameter to the URL of static resources
+     
       const scripts = document.querySelectorAll('script');
       const links = document.querySelectorAll('link[rel="stylesheet"]');
       const images = document.querySelectorAll('img');
@@ -34,9 +34,9 @@ function App() {
       });
     };
 
-    // Call the clearCache function when the component mounts
+
     clearCache();
-  }, []); // Run only once when the component mounts
+  }, []); 
 
 
 

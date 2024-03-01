@@ -600,7 +600,7 @@ const handleMouseUp34 = () => {
   };
 
   const handleIncrease33 = () => {
-    setNumber33((prevNumber) => Math.min(17, prevNumber + 1));
+    setNumber33((prevNumber) => Math.min(16, prevNumber + 1));
   };
 
   // <-------------- MambaBlack--------------------->
