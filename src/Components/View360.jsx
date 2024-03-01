@@ -8,18 +8,7 @@ import Highlights from '../Components/Highlights';
 
 
 export default function New() {
-  const imageNumbers = Array.from({ length: 16 }, (_, i) => i + 1);
-  const LazyImage = ({ src, alt, className, onMouseDown, onMouseMove, onMouseUp }) => (
-    <img
-      src={src}
-      alt={alt}
-      className={className}
-      style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-      onMouseDown={onMouseDown}
-      onMouseMove={onMouseMove}
-      onMouseUp={onMouseUp}
-    />
-  );
+
   
 
   // <------------Scrambler------------------------------->
@@ -1518,24 +1507,21 @@ const handleMouseUp34 = () => {
         </div>
       ) : selectedColor3 === "SlickSilver" ? (
         <div>
-               {imageNumbers.map((imageNumber) => (
-          <div key={imageNumber}>
-            <LazyImage
-              src={`../Components/assets/j-bike/Adventure/Adventure-WhithoutWhite/bike-${imageNumber}.png`}
-              alt=""
-              className="img-fluid"
-              onMouseDown={handleMouseDown}
-              onMouseMove={handleMouseMove}
-              onMouseUp={handleMouseUp}
-            />
-            <div className='view-360-icons-main'>
-              <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-                <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease} />
-                <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease} />
-              </Stack>
-            </div>
+          <img
+            src={getColorImageSource3(selectedColor3)}
+            className='img-fluid'
+            alt=""
+            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+            onMouseDown={handleMouseDown32}
+            onMouseMove={handleMouseMove32}
+            onMouseUp={handleMouseUp32}
+          />
+          <div className='view-360-icons-main'>
+            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease32} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease32} />
+            </Stack>
           </div>
-        ))}
         </div>
       ) : (
         <div>
