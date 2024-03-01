@@ -8,6 +8,24 @@ import Highlights from '../Components/Highlights';
 
 
 export default function New() {
+  
+  useEffect(() => {
+    // Preload images
+    const preloadImages = () => {
+      const images = [];
+      const numImages = 10; // Adjust this number based on how many images you want to preload
+
+      for (let i = 1; i <= numImages; i++) {
+        const img = new Image();
+        img.src = require(`../Components/assets/j-bike/Adventure/Adventure-WhithoutWhite/bike-${i}.png`);
+        images.push(img);
+      }
+    };
+
+    preloadImages();
+  }, []);
+
+  
 
   // <------------Scrambler------------------------------->
 
@@ -1486,23 +1504,23 @@ const handleMouseUp34 = () => {
   <section className='slider'>
     <Box>
       {selectedColor3 === "MambaBlack" ? (
-        <div>
-          <img
-            src={getColorImageSource3(selectedColor3)}
-            className='img-fluid'
-            alt=""
-            style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-            onMouseDown={handleMouseDown33}
-            onMouseMove={handleMouseMove33}
-            onMouseUp={handleMouseUp33}
-          />
-          <div className='view-360-icons-main'>
-            <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease33} />
-              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease33} />
-            </Stack>
-          </div>
-        </div>
+      <div>
+      <img
+        src={getColorImageSource3(selectedColor3)}
+        alt=""
+        className='img-fluid'
+        style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+        onMouseDown={selectedColor3 === "MambaBlack" ? handleMouseDown33 : selectedColor3 === "SlickSilver" ? handleMouseDown32 : handleMouseDown3}
+        onMouseMove={selectedColor3 === "MambaBlack" ? handleMouseMove33 : selectedColor3 === "SlickSilver" ? handleMouseMove32 : handleMouseMove3}
+        onMouseUp={selectedColor3 === "MambaBlack" ? handleMouseUp33 : selectedColor3 === "SlickSilver" ? handleMouseUp32 : handleMouseUp3}
+      />
+      <div className='view-360-icons-main'>
+        <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+          <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={selectedColor3 === "MambaBlack" ? handleDecrease33 : selectedColor3 === "SlickSilver" ? handleDecrease32 : handleDecrease3} />
+          <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={selectedColor3 === "MambaBlack" ? handleIncrease33 : selectedColor3 === "SlickSilver" ? handleIncrease32 : handleIncrease3} />
+        </Stack>
+      </div>
+    </div>
       ) : selectedColor3 === "SlickSilver" ? (
         <div>
           <img

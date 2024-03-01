@@ -50,31 +50,31 @@ export default function Navbar() {
           <div className={`collapse navbar-collapse ${toggle ? "show" : ""} justify-content-lg-end order-lg-2`} id="navbarNav">
             <ul className="navbar-nav me-auto">
               <Link className='link' to="/" >
-                <li className="nav-item j-nav">
+                <li className=" j-nav">
                   <a className="nav-link" href="#home">Home</a>
                 </li>
               </Link>
-              <li className="nav-item j-nav ">
+              <li className=" j-nav ">
                 <Link className='link' to="/MotorcycleJawa">
                   <a className="nav-link" href="#link">Motorcycles</a>
                 </Link>
               </li>
-              <li className="nav-item j-nav">
+              <li className="j-nav">
                 <Link className='link ' to="/EmiCalculatorPageJawa">
                   <a className="nav-link" href="#link">Emi Calculator</a>
                 </Link>
               </li>
               <Link className='link' to="/KommunitiPageJawa">
-                <li className="nav-item j-nav">
+                <li className=" j-nav">
                   <a className="nav-link " href="#about">Kommuniti</a>
                 </li>
               </Link>
               <Link className='link' to="/ContactUsPageJawa">
-                <li className="nav-item j-nav ">
+                <li className=" j-nav ">
                   <a className="nav-link " href="#about">Contact Us</a>
                 </li>
               </Link>
-              <li className="nav-item j-nav">
+              <li className="j-nav">
                 <a className="nav-link " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Book a Test Drive</a>
               </li>
             </ul>

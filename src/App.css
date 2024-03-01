@@ -142,6 +142,9 @@ top: -167px;
 .navbar-nav .nav-link.show {
   color: #B03035;
 }
+.j-nav{
+  color: black;
+}
 .j-nav.active,
 .j-nav.show {
   color: #000000;
