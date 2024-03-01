@@ -1484,13 +1484,13 @@ const handleMouseUp34 = () => {
        </div>
      
 
-       <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
+<div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent3 === 'event3' ? '' : 'd-none'}`}>
   <section className='slider'>
     <Box>
       {selectedColor3 === "MambaBlack" ? (
         <div>
           <img
-            src={`${getColorImageSource3(selectedColor3)}?${new Date().getTime()}`}
+            src={getColorImageSource3(selectedColor3)}
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
@@ -1508,7 +1508,7 @@ const handleMouseUp34 = () => {
       ) : selectedColor3 === "SlickSilver" ? (
         <div>
           <img
-            src={`${getColorImageSource3(selectedColor3)}?${new Date().getTime()}`}
+            src={getColorImageSource3(selectedColor3)}
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
@@ -1526,7 +1526,7 @@ const handleMouseUp34 = () => {
       ) : (
         <div>
           <img
-            src={`${getColorImageSource3(selectedColor3)}?${new Date().getTime()}`}
+            src={getColorImageSource3(selectedColor3)}
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
@@ -1545,7 +1545,6 @@ const handleMouseUp34 = () => {
     </Box>
   </section>
 </div>
-
 
 
             <div className={`col-lg-1 color-palette ${selectedEvent === 'event1' ? '' : 'd-none'}`}>
