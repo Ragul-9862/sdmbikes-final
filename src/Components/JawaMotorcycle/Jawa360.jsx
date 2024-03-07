@@ -390,7 +390,7 @@ export default function New() {
 // <---------------------------------42 Allstarblack ------------------------------------------------>
 
   const [number42, setNumber42] = useState(1);
-  const BikeAllstarblack = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeAllstarblack = require(`../assets/j-bike/42/AllStarBlack/bike-${number42}.png`)
 
   
   const handleDecrease42 = () => {
@@ -1074,21 +1074,21 @@ export default function New() {
             </Stack>
           </div>
         </>
-      ) : selectedColor2 === "Allstarblack" ? (
+      ) : selectedColor4 === "Allstarblack" ? (
         <>
           <img
             src={getColorImageSource4(selectedColor4)}
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-            onMouseDown={handleMouseDown22}
-            onMouseMove={handleMouseMove22}
-            onMouseUp={handleMouseUp22}
+            onMouseDown={handleMouseDown42}
+            onMouseMove={handleMouseMove42}
+            onMouseUp={handleMouseUp42}
           />
           <div className='view-360-icons-main'>
             <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease22} />
-              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease22} />
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease42} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease42} />
             </Stack>
           </div>
         </>

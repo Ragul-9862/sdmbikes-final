@@ -1997,6 +1997,9 @@ font-size: 25px;
   background-color: #313131;
   padding-top: 120px;
 }
+.error-message {
+  color: red;
+}
 
 .contactus-info{
   h3{

@@ -23,7 +23,7 @@ export default function Emicalculators() {
     };
 
     const handleInterestRateChange = (e) => {
-        const rate = e.target.value;
+        const rate = parseFloat(e.target.value).toFixed(2); // Round to 2 decimal places
         setInterestRate(rate);
         calculateLoan(loanAmount, loanTerm, rate, downPayment);
     };
@@ -78,7 +78,7 @@ export default function Emicalculators() {
                                     <span className='box'>&#8377;{downPayment}</span>
                                 </div>
                                 <div>
-                                    <input type="range" className="input__control" name="downPayment" value={downPayment} max="100000" step="5000" onChange={handleDownPaymentChange} />
+                                    <input type="range" className="input__control" name="downPayment" value={downPayment} max="300000" step="5000" onChange={handleDownPaymentChange} />
                                 </div>
                             </div>
                             <div>
@@ -87,7 +87,7 @@ export default function Emicalculators() {
                                     <span className='box'>&#8377;{loanAmount}</span>
                                 </div>
                                 <div>
-                                    <input type="range" className="input__control" name="loanAmount" value={loanAmount} max="100000" step="5000" onChange={handleLoanAmountChange} />
+                                    <input type="range" className="input__control" name="loanAmount" value={loanAmount} max="600000" step="5000" onChange={handleLoanAmountChange} />
                                 </div>
                             </div>
                             <div>
@@ -96,7 +96,7 @@ export default function Emicalculators() {
                                     <span className='box'>{loanTerm} Months</span>
                                 </div>
                                 <div>
-                                    <input type="range" className="input__control" name="loanTerm" value={loanTerm} min="12" max="36" step="12" onChange={handleLoanTermChange} />
+                                    <input type="range" className="input__control" name="loanTerm" value={loanTerm} min="12" max="60" step="12" onChange={handleLoanTermChange} />
                                 </div>
                             </div>
                             <div>
@@ -105,7 +105,7 @@ export default function Emicalculators() {
                                     <span className='box'>{interestRate}</span>
                                 </div>
                                 <div>
-                                    <input type="range" className="input__control" name="interestRate" value={interestRate} max="30" onChange={handleInterestRateChange} />
+                                    <input type="range" className="input__control" name="interestRate" value={interestRate} max="30" step="0.01" onChange={handleInterestRateChange} />
                                 </div>
                             </div>
                         </div>
