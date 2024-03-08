@@ -432,7 +432,7 @@ export default function New() {
 // <---------------------------------42 Sirus White------------------------------------------------>
 
   const [number43, setNumber43] = useState(1);
-  const BikeSiriuswhite = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeSiriuswhite = require(`../assets/j-bike/42/SiriusWhite/bike-${number43}.png`)
 
   
   const handleDecrease43 = () => {
@@ -474,7 +474,7 @@ export default function New() {
 // <---------------------------------42 Orion Red ------------------------------------------------>
 
   const [number44, setNumber44] = useState(1);
-  const BikeOrionred = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeOrionred = require(`../assets/j-bike/42/OrionRed/bike-${number44}.png`)
 
   
   const handleDecrease44 = () => {
@@ -815,6 +815,8 @@ export default function New() {
         return BikeAllstarblack;
       case 'Siriuswhite':
         return BikeSiriuswhite;
+      case 'Orionred':
+        return BikeOrionred;
       case 'InfinityBlack':
         return BikeInfinityBlack;
       case 'StarshipBlue':
@@ -1020,7 +1022,7 @@ export default function New() {
 <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent4 === 'event4' ? '' : 'd-none'}`}>
   <section className='slider'>
     <Box>
-    {selectedColor2 === "InfinityBlack" ? (
+    {selectedColor4 === "InfinityBlack" ? (
   <>
   <img
     src={getColorImageSource4(selectedColor4)}
@@ -1038,39 +1040,39 @@ export default function New() {
     </Stack>
   </div>
 </>
-    ):selectedColor2 === "Orionred" ? (
+    ):selectedColor4 === "Orionred" ? (
         <>
           <img
             src={getColorImageSource4(selectedColor4)}
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-            onMouseDown={handleMouseDown24}
-            onMouseMove={handleMouseMove24}
-            onMouseUp={handleMouseUp24}
+            onMouseDown={handleMouseDown44}
+            onMouseMove={handleMouseMove44}
+            onMouseUp={handleMouseUp44}
           />
           <div className='view-360-icons-main'>
             <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease24} />
-              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease24} />
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease44} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease44} />
             </Stack>
           </div>
         </>
-      ) : selectedColor2 === "Siriuswhite" ? (
+      ) : selectedColor4 === "Siriuswhite" ? (
         <>
           <img
             src={getColorImageSource4(selectedColor4)}
             className='img-fluid'
             alt=""
             style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-            onMouseDown={handleMouseDown23}
-            onMouseMove={handleMouseMove23}
-            onMouseUp={handleMouseUp23}
+            onMouseDown={handleMouseDown43}
+            onMouseMove={handleMouseMove43}
+            onMouseUp={handleMouseUp43}
           />
           <div className='view-360-icons-main'>
             <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease23} />
-              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease23} />
+              <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease43} />
+              <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease43} />
             </Stack>
           </div>
         </>
