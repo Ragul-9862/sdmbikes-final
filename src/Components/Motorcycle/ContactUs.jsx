@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useForm } from '@formspree/react';
+import { NavLink } from 'react-router-dom';
 import { FiChevronRight } from "react-icons/fi";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    Name: '',
+    Email: '',
+    Message: ''
   });
 
+  const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [formErrors, setFormErrors] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,76 +22,85 @@ export default function ContactUs() {
 
   const validateForm = () => {
     let errors = {};
-    if (!formData.name.trim()) {
+    if (!formData.Name.trim()) {
       errors.name = "Name is required";
     }
-    if (!formData.email.trim()) {
+    if (!formData.Email.trim()) {
       errors.email = "Email is required";
-    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+    } else if (!/^\S+@\S+\.\S+$/.test(formData.Email)) {
       errors.email = "Invalid email address";
     }
-    if (!formData.message.trim()) {
+    if (!formData.Message.trim()) {
       errors.message = "Message is required";
     }
     return errors;
   };
 
-  const [state, handleSubmit] = useForm("xoqgljzk");
-
-  const handleFormSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validateForm();
     if (Object.keys(validationErrors).length === 0) {
-      await handleSubmit(e);
-      setSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      });
-      setFormErrors({
-        name: '',
-        email: '',
-        message: ''
-      });
+      const formEle = e.target;
+      const formDatab = new FormData(formEle);
+      fetch(
+        "https://script.google.com/macros/s/AKfycbwgRBd4Fz6p_kVHV8ujM7Kaoy2__LV1zcE3TJwUggJgB1X5_UrCUX72EjFRoqSnK-gLPw/exec",
+        {
+          method: "POST",
+          body: formDatab
+        }
+      )
+        .then((res) => {
+          return res.text().then(text => {
+            console.log("Response from server:", text);
+            return text;
+          });
+        })
+        .then((data) => {
+          console.log("Data from server:", data);
+          setSubmitted(true);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     } else {
-      setFormErrors(validationErrors);
+      setErrors(validationErrors);
     }
   };
-
+  
+  
   return (
     <section className="contact-us">
-      <Link className='link' to='/'>
+      <NavLink className='link' to='/'>
         <p className='back-page'>
           Home <span><FiChevronRight/></span> ContactUs
         </p>
-      </Link>
+      </NavLink>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 contact-uss">
             <h2>Contact Us</h2>
             <p>If you have any questions or inquiries, feel free to contact us using the form below.</p>
-            <form className="contact-form" onSubmit={handleFormSubmit}>
-              <div className="form-group">
-                <input type="text" id="name" name="name" className="form-control" placeholder="Your Name" value={formData.name} onChange={handleChange} />
-                {formErrors.name && <span className="error-message">{formErrors.name}</span>}
+            {submitted ? (
+              <div>
+                <p>Thank you for contacting us!</p>
               </div>
-              <div className="form-group">
-                <input type="email" id="email" name="email" className="form-control" placeholder="Your Email" value={formData.email} onChange={handleChange} />
-                {formErrors.email && <span className="error-message">{formErrors.email}</span>}
-              </div>
-              <div className="form-group">
-                <textarea id="message" name="message" className="form-control" rows="5" placeholder="Message" value={formData.message} onChange={handleChange}></textarea>
-                {formErrors.message && <span className="error-message">{formErrors.message}</span>}
-              </div>
-              {submitted ? (
-                <p>Thanks for contacting us!</p>
-              ) : (
-                <button type="submit" className="book-now" disabled={state.submitting}>
-                  {state.submitting ? 'Submitting...' : 'Submit'}
-                </button>
-              )}
-            </form>
+            ) : (
+              <form className="contact-form" method='POST' onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <input type="text" id="name"  name="Name" className="form-control" placeholder="Your Name" value={formData.Name} onChange={handleChange} />
+                  {errors.name && <span className="error-message">{errors.name}</span>}
+                </div>
+                <div className="form-group">
+                  <input type="email" id="email" name="Email" className="form-control" placeholder="Your Email" value={formData.Email} onChange={handleChange} />
+                  {errors.email && <span className="error-message">{errors.email}</span>}
+                </div>
+                <div className="form-group">
+                  <textarea id="message" name="Message" className="form-control" rows="5" placeholder="Message" value={formData.Message} onChange={handleChange}></textarea>
+                  {errors.message && <span className="error-message">{errors.message}</span>}
+                </div>
+                <button type="submit" className="book-now">Submit</button>
+              </form>
+            )}
           </div>
           <div className="col-lg-6 contactus-info">
             <h2>Visit Us</h2>
