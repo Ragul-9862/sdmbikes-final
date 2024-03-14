@@ -1,7 +1,6 @@
 import React from 'react'
 import Latest from '../Components/Latest'
 import Navbar from '../Components/Navbar'
-import Highlights from '../Components/Highlights'
 import SpeedOmeter from '../Components/SpeedOmeter'
 import View360 from '../Components/View360'
 import Footer from '../Components/Footer'
@@ -16,7 +15,6 @@ export default function HomePage() {
       <Latest />
       <SpeedOmeter />
       <View360 />
-      {/* <Highlights /> */}
       <OurBlogs/>
       <Gallery/>
       <Footer />

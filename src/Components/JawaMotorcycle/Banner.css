@@ -4,6 +4,7 @@
 .carousel-controls{
     width: 715px;
     bottom: 25px;
+    cursor: pointer;
 }
 .progress{
     height: 8px;

@@ -218,7 +218,7 @@ const VerticalCarousel = () => {
                 <div className="carousel-controls d-flex justify-content-center align-items-center">
                   <FiArrowLeft className="icon-left d-none d-lg-block mr-3" onClick={goToPrevSlide} />
                   <p className="progress-info">{slides[currentSlide].num}</p>
-                  <div className="progress mr-3" style={{ width: '50%', overflow: 'hidden' }}>
+                  <div className="progress mr-3" style={{ width: '100%', overflow: 'hidden' }}>
                     <div style={progressBarStyle}></div>
                   </div>
                   <FiArrowRight className="icon-right d-none d-lg-block" onClick={goToNextSlide} />

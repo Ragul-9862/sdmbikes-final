@@ -39,7 +39,6 @@ export default function ContactUs() {
     e.preventDefault();
     const validationErrors = validateForm();
     if (Object.keys(validationErrors).length === 0) {
-      // Proceed with form submission
       console.log("Form submitted:", formData);
     } else {
       setErrors(validationErrors);

@@ -142,29 +142,29 @@ export default function Navbar() {
           </div>
           <div className={`collapse navbar-collapse ${toggle ? "show" : ""} justify-content-lg-end order-lg-2`} id="navbarNav">
             <ul className="navbar-nav me-auto">
-            <li className={`nav-item ${activeLink === '/Home' ? 'actives' : ''}`}>
+            <li className={`nav-item ${activeLink === '/HomePageJawa' ? 'actives' : ''}`}>
             <Link className='link' to="/HomePageJawa" onClick={() => handleLinkClick('/')}>
-              <a className="nav-link" href="#home">Home</a>
+              <a className="nav-link" href="#HomePageJawa">Home</a>
             </Link>
           </li>
-          <li className={`nav-item ${activeLink === '/Motorcycle' ? 'actives' : ''}`}>
+          <li className={`nav-item ${activeLink === '/MotorcycleJawa' ? 'actives' : ''}`}>
             <Link className='link' to="/MotorcycleJawa" onClick={() => handleLinkClick('/Motorcycle')}>
-              <a className="nav-link" href="#link">Motorcycles</a>
+              <a className="nav-link" href="#MotorcycleJawa">Motorcycles</a>
             </Link>
           </li>
-          <li className={`nav-item ${activeLink === '/EmiCalculator' ? 'actives' : ''}`}>
+          <li className={`nav-item ${activeLink === '/EmiCalculatorPageJawa' ? 'actives' : ''}`}>
             <Link className='link' to="/EmiCalculatorPageJawa" onClick={() => handleLinkClick('/EmiCalculator')}>
-              <a className="nav-link" href="#link">Emi Calculator</a>
+              <a className="nav-link" href="#EmiCalculatorPageJawa">Emi Calculator</a>
             </Link>
           </li>
-          <li className={`nav-item ${activeLink === '/Kommuniti' ? 'actives' : ''}`}>
+          <li className={`nav-item ${activeLink === '/KommunitiPageJawa' ? 'actives' : ''}`}>
             <Link className='link' to="/KommunitiPageJawa" onClick={() => handleLinkClick('/Kommuniti')}>
-              <a className="nav-link" href="#about">Kommuniti</a>
+              <a className="nav-link" href="#KommunitiPageJawa">Kommuniti</a>
             </Link>
           </li>
-          <li className={`nav-item ${activeLink === '/Contactus' ? 'actives' : ''}`}>
+          <li className={`nav-item ${activeLink === '/ContactusPageJawa' ? 'actives' : ''}`}>
             <Link className='link' to="/ContactusPageJawa" onClick={() => handleLinkClick('/Contactus')}>
-              <a className="nav-link" href="#about">Contact Us</a>
+              <a className="nav-link" href="#ContactusPageJawa">Contact Us</a>
             </Link>
           </li>
               <li className="j-nav">

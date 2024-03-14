@@ -77,7 +77,7 @@ export default function ContactUs() {
       </NavLink>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 contact-uss">
+          <div className="col-lg-6 col-md-6 contact-uss">
             <h2>Contact Us</h2>
             <p>If you have any questions or inquiries, feel free to contact us using the form below.</p>
             {submitted ? (
@@ -102,7 +102,7 @@ export default function ContactUs() {
               </form>
             )}
           </div>
-          <div className="col-lg-6 contactus-info">
+          <div className="col-lg-6 col-md-6 contactus-info">
             <h2>Visit Us</h2>
             <p>123 Jawa Street</p>
             <p>Jawa City, India</p>

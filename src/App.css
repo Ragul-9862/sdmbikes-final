@@ -18,17 +18,24 @@
   width: 100px; 
   height:100px; 
 }
+#fixed-top-2.navbar-nav .nav-item.actives .nav-link{
+  color: #000000 !important; 
+
+}
 .navbar-nav .nav-item.active .nav-link {
   color: #B03035; 
   
+}
+.navbar-nav .nav-item.actives .nav-link {
+  color: #000000 !important; 
 }
 .active{
   color: #B03035 !important; 
 
 }
+
 .actives{
   color: #000000 !important; 
-
 }
   
 .md-logo{
@@ -113,7 +120,7 @@ top: -167px;
 
 
 #fixed-top-2 .navbar-nav .nav-link:hover {
-  color: #ffffff; 
+  color: #000000; 
 }
 #hamberger{
   color: white;
@@ -2061,15 +2068,23 @@ font-size: 25px;
 }
 
 .contactus-info{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
   h3{
-    color: white;
+    color: #ef901d;
   }
   h2{
-    color: white;
+    color: #ef901d;
   }
   p{
     color: white;
   }
+ 
+
 }
 .contact-uss h2{
   color: white;
