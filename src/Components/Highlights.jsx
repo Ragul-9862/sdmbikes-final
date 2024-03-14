@@ -178,7 +178,6 @@ const Highlights = ({ selectedEvent1, selectedEvent2, selectedEvent3 }) => {
             duration={500} 
             className="scroll-link"
           >
-            {/* Scroll to Highlights */}
           </Link>
           {renderHighlights()}
         </div>

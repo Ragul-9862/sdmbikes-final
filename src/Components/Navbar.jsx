@@ -7,6 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [activeLink, setActiveLink] = useState(window.location.pathname); 
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
   const [formData, setFormData] = useState({
     Name: '',
     Email: '',
@@ -20,7 +25,7 @@ export default function Navbar() {
   });
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false); // Track form submission status
+  const [submitting, setSubmitting] = useState(false); 
 
   useEffect(() => {
     const handleResize = () => {
@@ -140,36 +145,36 @@ export default function Navbar() {
             </Link>
           </div>
           <div className={`collapse navbar-collapse ${toggle ? "show" : ""} justify-content-lg-end order-lg-2`} id="navbarNav">
-            <ul className="navbar-nav me-auto">
-              <Link className='link' to="/" >
-                <li className="nav-item">
-                  <a className="nav-link" href="#home">Home</a>
-                </li>
-              </Link>
-              <li className="nav-item">
-                <Link className='link' to="/Motorcycle">
-                  <a className="nav-link" href="#link">Motorcycles</a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className='link' to="/EmiCalculator">
-                  <a className="nav-link" href="#link">Emi Calculator</a>
-                </Link>
-              </li>
-              <Link className='link' to="/Kommuniti">
-                <li className="nav-item">
-                  <a className="nav-link" href="#about">Kommuniti</a>
-                </li>
-              </Link>
-              <Link className='link' to="/Contactus">
-                <li className="nav-item ">
-                  <a className="nav-link" href="#about">Contact Us</a>
-                </li>
-              </Link>
-              <li className="nav-item">
-                <a className="nav-link" id='book-a-test-ride' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Book a Test Drive</a>
-              </li>
-            </ul>
+          <ul className="navbar-nav me-auto">
+          <li className={`nav-item ${activeLink === '/' ? 'active' : ''}`}>
+            <Link className='link' to="/" onClick={() => handleLinkClick('/')}>
+              <a className="nav-link" href="#home">Home</a>
+            </Link>
+          </li>
+          <li className={`nav-item ${activeLink === '/Motorcycle' ? 'active' : ''}`}>
+            <Link className='link' to="/Motorcycle" onClick={() => handleLinkClick('/Motorcycle')}>
+              <a className="nav-link" href="#link">Motorcycles</a>
+            </Link>
+          </li>
+          <li className={`nav-item ${activeLink === '/EmiCalculator' ? 'active' : ''}`}>
+            <Link className='link' to="/EmiCalculator" onClick={() => handleLinkClick('/EmiCalculator')}>
+              <a className="nav-link" href="#link">Emi Calculator</a>
+            </Link>
+          </li>
+          <li className={`nav-item ${activeLink === '/Kommuniti' ? 'active' : ''}`}>
+            <Link className='link' to="/Kommuniti" onClick={() => handleLinkClick('/Kommuniti')}>
+              <a className="nav-link" href="#about">Kommuniti</a>
+            </Link>
+          </li>
+          <li className={`nav-item ${activeLink === '/Contactus' ? 'active' : ''}`}>
+            <Link className='link' to="/Contactus" onClick={() => handleLinkClick('/Contactus')}>
+              <a className="nav-link" href="#about">Contact Us</a>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" id='book-a-test-ride' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Book a Test Drive</a>
+          </li>
+        </ul>
           </div>
         </div>
         {(windowWidth >= 992) && (

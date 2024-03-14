@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import { FiArrowRight } from "react-icons/fi";
 import { FiArrowLeft } from "react-icons/fi";
-import Highlights from '../Highlights';
+import Highlightsjawa from '../JawaMotorcycle/Highlightsjawa';
 
 
 
@@ -514,7 +514,7 @@ export default function New() {
 // <---------------------------------42 InfinityBlack ------------------------------------------------>
 
   const [number45, setNumber45] = useState(1);
-  const BikeInfinityBlack = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeInfinityBlack = require(`../assets/j-bike/42/Dual Tone/InfinityBlack/bike-${number45}.png`)
 
   
   const handleDecrease45 = () => {
@@ -554,7 +554,7 @@ export default function New() {
 // <---------------------------------42 StarshipBlue ------------------------------------------------>
 
   const [number46, setNumber46] = useState(1);
-  const BikeStarshipBlue = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeStarshipBlue = require(`../assets/j-bike/42/Dual Tone/StarshipBlue/bike-${number46}.png`)
 
   
   const handleDecrease46 = () => {
@@ -594,7 +594,7 @@ export default function New() {
 // <---------------------------------42 Orion White ------------------------------------------------>
 
   const [number47, setNumber47] = useState(1);
-  const BikeCelestialCopper = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeCelestialCopper = require(`../assets/j-bike/42/Dual Tone/CelestialCopper/bike-${number47}.png`)
 
   
   const handleDecrease47 = () => {
@@ -634,7 +634,7 @@ export default function New() {
 // <---------------------------------42 Orion White ------------------------------------------------>
 
   const [number48, setNumber48] = useState(1);
-  const BikeCosmicRock = require(`../assets/j-bike/Adventure/Adventure-MambaBlack/bike-${number}.png`)
+  const BikeCosmicRock = require(`../assets/j-bike/42/Dual Tone/CosmicRock/bike-${number48}.png`)
 
   
   const handleDecrease48 = () => {
@@ -1020,23 +1020,81 @@ export default function New() {
 </div>
 
 <div className={`col-lg-8 d-flex justify-content-center align-items-center ${selectedEvent4 === 'event4' ? '' : 'd-none'}`}>
+
   <section className='slider'>
     <Box>
-    {selectedColor4 === "InfinityBlack" ? (
+    {selectedColor4 === "CosmicRock" ? (
+    <>
+  <img
+    src={getColorImageSource4(selectedColor4)}
+    className='img-fluid'
+    alt=""
+    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+    onMouseDown={handleMouseDown48}
+    onMouseMove={handleMouseMove48}
+    onMouseUp={handleMouseUp48}
+  />
+  <div className='view-360-icons-main'>
+    <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease48} />
+      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease48} />
+    </Stack>
+  </div>
+</>
+
+    ): selectedColor4 === "CelestialCopper" ? (
+    <>
+  <img
+    src={getColorImageSource4(selectedColor4)}
+    className='img-fluid'
+    alt=""
+    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+    onMouseDown={handleMouseDown47}
+    onMouseMove={handleMouseMove47}
+    onMouseUp={handleMouseUp47}
+  />
+  <div className='view-360-icons-main'>
+    <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease47} />
+      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease47} />
+    </Stack>
+  </div>
+</>
+
+    ): selectedColor4 === "StarshipBlue" ? (
+    <>
+  <img
+    src={getColorImageSource4(selectedColor4)}
+    className='img-fluid'
+    alt=""
+    style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
+    onMouseDown={handleMouseDown46}
+    onMouseMove={handleMouseMove46}
+    onMouseUp={handleMouseUp46}
+  />
+  <div className='view-360-icons-main'>
+    <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
+      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease46} />
+      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease46} />
+    </Stack>
+  </div>
+</>
+
+    ) : selectedColor4 === "InfinityBlack" ? (
   <>
   <img
     src={getColorImageSource4(selectedColor4)}
     className='img-fluid'
     alt=""
     style={{ cursor: 'grab', width: "100%", userSelect: 'none' }}
-    onMouseDown={handleMouseDown24}
-    onMouseMove={handleMouseMove24}
-    onMouseUp={handleMouseUp24}
+    onMouseDown={handleMouseDown45}
+    onMouseMove={handleMouseMove45}
+    onMouseUp={handleMouseUp45}
   />
   <div className='view-360-icons-main'>
     <Stack spacing={2} direction="row" sx={{ mb: 2 }} alignItems="center" justifyContent={'center'}>
-      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease24} />
-      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease24} />
+      <FiArrowLeft className='left-icon' style={{ cursor: "pointer" }} onClick={handleDecrease45} />
+      <FiArrowRight className='right-icon' style={{ cursor: "pointer" }} onClick={handleIncrease45} />
     </Stack>
   </div>
 </>
@@ -1282,7 +1340,8 @@ export default function New() {
           </div>
         </div>
       </section>
-      <Highlights selectedEvent1={selectedEvent} selectedEvent2={selectedEvent2} selectedEvent3={selectedEvent3} />
+ 
+      <Highlightsjawa selectedEvent1={selectedEvent} selectedEvent2={selectedEvent2} selectedEvent3={selectedEvent3} selectedEvent4={selectedEvent4} />
 
 
     </div>

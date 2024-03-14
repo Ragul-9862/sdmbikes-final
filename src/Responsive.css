@@ -1,3 +1,5 @@
+
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
     color: #B03035;
@@ -139,7 +141,7 @@
     }
 .navbar-expand-lg .navbar-nav .nav-link {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     margin-right: 30px;
     margin-left: -15px;
@@ -155,8 +157,26 @@
     }
 
 }
+@media screen and (min-width:1200px) and (max-width:1200px) {
+    .custom-arrow-2 {
+        left: -6%;
+        top: 57%;
+    }
+    .custom-arrow-1 {
+        left: -6%;
+        top: 70%;
+    }
+}
 
 @media screen and (max-width:1024px) {
+    #fixed-top-2 .navbar-nav .nav-link {
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 3px;
+        margin-right: 3px;
+        transition: color .3s ease;
+    }
     .scrambler-2 {
         position: relative;
         top: -81px;
@@ -223,61 +243,30 @@
 
 
 
-@media(min-width:992px){
+@media(min-width:992px) and (max-width:992.99px){
 .view-360-icons-main{
     margin-right: 40px;
 }
 
-/* .view-360-main{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-} */
+
+
+
+}
 
 .color-palette{
     margin-bottom: 60px;
 }
 .event-content1-2 h3 {
     font-weight: bold;
-    width: 130px;
+    /* width: 130px; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
-.text-class-1{
-        position: absolute;
-        translate: -50% -180%;
-        top: 0%;
-        left: 50%;
-}
-.text-class-2{
-    position: absolute;
-    translate: -50% -180%;
-    top: 0%;
-    left: 50%;
-}
-.text-class-3{
-        position: absolute;
-        translate: -50% -180%;
-        top: 0%;
-        left: 50%;
-}
-.text-class-4{
-    position: absolute;
-    translate: -50% -180%;
-    top: 0%;
-    left: 50%;
-}
 
 
 
 
-}
-
-
-
-
-@media(max-width:991.99px) {
+@media(max-width:990.99px) {
 
     .jawa {
         display: none;
@@ -289,7 +278,7 @@ flex-direction: row;
     .offcanvas-header {
         right: 5%;
         top: 0%;
-    }
+    }   
     .speedometer-wrapper-infos{
         margin-top: 450px;
     }
@@ -1298,3 +1287,17 @@ h2 {
     padding-right: 0px;
 }
 }
+
+/* .text-class-1{
+    position: absolute;
+    translate: -50% -180%;
+    top: 0%;
+    left: 50%;
+  } */
+
+  .text-class-3{
+    position: absolute;
+    translate: -50% -180%;
+    top: 0%;
+    left: 50%;
+  }

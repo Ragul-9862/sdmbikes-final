@@ -6,6 +6,11 @@ import yezdi from '../assets/Navbar/yezdi.png';
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [activeLink, setActiveLink] = useState(window.location.pathname); 
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
   const [formData, setFormData] = useState({
     Name: '',
     Email: '',
@@ -129,7 +134,7 @@ export default function Navbar() {
             {toggle ? <FiX className='hamberger' id='hamberger' /> : <FiAlignLeft className='hamberger' id='hamberger' />}
           </button>
           <div className="navbar-brand-container d-flex justify-content-center justify-content-lg-start flex-grow-1 order-lg-1">
-            <Link to="/">
+            <Link to="/HomePageJawa">
               <a className="navbar-brand ms-lg-5" href="#home">
                 <img src={require("../assets/Navbar/logo.png")} className='logo' alt='logo' />
               </a>
@@ -137,31 +142,31 @@ export default function Navbar() {
           </div>
           <div className={`collapse navbar-collapse ${toggle ? "show" : ""} justify-content-lg-end order-lg-2`} id="navbarNav">
             <ul className="navbar-nav me-auto">
-              <Link className='link' to="/" >
-                <li className=" j-nav">
-                  <a className="nav-link" href="#home">Home</a>
-                </li>
-              </Link>
-              <li className=" j-nav ">
-                <Link className='link' to="/MotorcycleJawa">
-                  <a className="nav-link" href="#link">Motorcycles</a>
-                </Link>
-              </li>
-              <li className="j-nav">
-                <Link className='link ' to="/EmiCalculatorPageJawa">
-                  <a className="nav-link" href="#link">Emi Calculator</a>
-                </Link>
-              </li>
-              <Link className='link' to="/KommunitiPageJawa">
-                <li className=" j-nav">
-                  <a className="nav-link " href="#about">Kommuniti</a>
-                </li>
-              </Link>
-              <Link className='link' to="/ContactUsPageJawa">
-                <li className=" j-nav ">
-                  <a className="nav-link " href="#about">Contact Us</a>
-                </li>
-              </Link>
+            <li className={`nav-item ${activeLink === '/Home' ? 'actives' : ''}`}>
+            <Link className='link' to="/HomePageJawa" onClick={() => handleLinkClick('/')}>
+              <a className="nav-link" href="#home">Home</a>
+            </Link>
+          </li>
+          <li className={`nav-item ${activeLink === '/Motorcycle' ? 'actives' : ''}`}>
+            <Link className='link' to="/MotorcycleJawa" onClick={() => handleLinkClick('/Motorcycle')}>
+              <a className="nav-link" href="#link">Motorcycles</a>
+            </Link>
+          </li>
+          <li className={`nav-item ${activeLink === '/EmiCalculator' ? 'actives' : ''}`}>
+            <Link className='link' to="/EmiCalculatorPageJawa" onClick={() => handleLinkClick('/EmiCalculator')}>
+              <a className="nav-link" href="#link">Emi Calculator</a>
+            </Link>
+          </li>
+          <li className={`nav-item ${activeLink === '/Kommuniti' ? 'actives' : ''}`}>
+            <Link className='link' to="/KommunitiPageJawa" onClick={() => handleLinkClick('/Kommuniti')}>
+              <a className="nav-link" href="#about">Kommuniti</a>
+            </Link>
+          </li>
+          <li className={`nav-item ${activeLink === '/Contactus' ? 'actives' : ''}`}>
+            <Link className='link' to="/ContactusPageJawa" onClick={() => handleLinkClick('/Contactus')}>
+              <a className="nav-link" href="#about">Contact Us</a>
+            </Link>
+          </li>
               <li className="j-nav">
                 <a className="nav-link " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Book a Test Drive</a>
               </li>

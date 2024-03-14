@@ -199,14 +199,14 @@ const VerticalCarousel = () => {
   </div>
 </div>
 <div className={`banner-text-main ${currentSlide === 0 || currentSlide === 2 ? 'align-left' : ''}`}>
-  <div className={`banner-text ${currentSlide === 2 ? 'text-class-3 text-class-4' : ''}`}>
+  <div className={`banner-text ${currentSlide === 2 ? 'text-class- text-class-4' : ''}`}>
     <h2 id="scramblerLeft" className="text scramble-animation slide-in-left">
       {slides[currentSlide].text}
     </h2>
   </div>
 </div>
 <div className={`banner-text-main ${currentSlide === 0 || currentSlide === 2 ? 'align-left' : ''}`}>
-  <div className={`banner-text ${currentSlide === 2 ? 'text-class-4' : ''} `}>
+  <div className={`banner-text    ${currentSlide === 2 ? 'text-class-4' : ''} `}>
     <h2 id="scramblerRight" className="text scramble-animation slide-in-right">
       {slides[currentSlide].text}
     </h2>
