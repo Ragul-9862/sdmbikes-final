@@ -647,12 +647,16 @@
         background: #000000;
         z-index: 2000;
     }
+    .speedometer{
+        padding: 0px 15px;
+        background: #000000;
+    }
     .speedometer-wrapper {
         background-image: url("../src/Components/assets/SpeedOmeter/speedometer-bg.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 100vh;
+        /* height: 100vh; */
         padding: 10px;
         /* background-color: #0E0E0E; */
         position: relative;
@@ -1239,6 +1243,10 @@
 }
 
 @media screen and (max-width:425px) {
+    .speedometer {
+        padding: 0px 15px;
+        background: #000000;
+    }
     .view-360-container-info
 span {
     color: #FF0;
@@ -1288,16 +1296,16 @@ h2 {
 }
 }
 
-/* .text-class-1{
-    position: absolute;
-    translate: -50% -180%;
-    top: 0%;
-    left: 50%;
-  } */
-
   .text-class-3{
     position: absolute;
     translate: -50% -180%;
     top: 0%;
     left: 50%;
+  }
+
+  @media screen and (max-width:320px) {
+    .speedometer{
+        padding: 0px 15px;
+        background: #000;
+    }
   }
