@@ -49,12 +49,7 @@ export default function Kommuniti() {
         </div>
         
       </div>
-    </section>
-
-    {/* <section>
-        <EMICalculator/>
-    </section> */}
-         
+    </section>      
     </div>
   );
 }

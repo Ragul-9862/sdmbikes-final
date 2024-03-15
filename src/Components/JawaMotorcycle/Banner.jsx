@@ -55,11 +55,11 @@ const slides = [
 
 const VerticalCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [progress, setProgress] = useState(0); // Initialize progress state
+  const [progress, setProgress] = useState(0); 
   const sliderRef = useRef(null);
 
   useEffect(() => {
-    updateProgress(); // Call updateProgress on component initialization
+    updateProgress(); 
   }, []);
 
   const goToPrevSlide = () => {

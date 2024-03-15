@@ -71,11 +71,11 @@ const VerticalCarousel = () => {
   };
 
   const progressBarStyle = {
-    width: '33.33%', // Set a fixed width (you can adjust as needed)
+    width: '33.33%', 
     backgroundColor: getColorBasedOnProgress(),
     border: '1px solid grey',
     paddingRight: '5px',
-    transition: 'background-color 0.2s ease-in-out', // Added transition for color change
+    transition: 'background-color 0.2s ease-in-out', 
   };
 
   const generateProgressBarDivs = () => {
@@ -104,13 +104,13 @@ const VerticalCarousel = () => {
   const animateText = () => {
     const scramblerLeft = document.getElementById("scramblerLeft");
     scramblerLeft.classList.remove("slide-in-left");
-    void scramblerLeft.offsetWidth; // Trigger reflow to restart the animation
+    void scramblerLeft.offsetWidth; 
     scramblerLeft.classList.add("slide-in-left");
   };
   const animateText2 = () => {
     const scramblerLeft = document.getElementById("scramblerRight");
     scramblerLeft.classList.remove("slide-in-right");
-    void scramblerLeft.offsetWidth; // Trigger reflow to restart the animation
+    void scramblerLeft.offsetWidth; 
     scramblerLeft.classList.add("slide-in-right");
   };
 

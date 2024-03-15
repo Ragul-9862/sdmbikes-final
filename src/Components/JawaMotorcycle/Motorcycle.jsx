@@ -52,9 +52,7 @@ export default function JMotorcycle() {
                     {expanded[index] ? " Read Less" : " Read More"} {expanded[index] ? <HiChevronUp /> : <HiChevronDown />}
                   </span>
                 </p>
-                {/* <a className="yezdi-details" href="">
-                  Book Online <span> <HiArrowNarrowRight /></span>
-                </a> */}
+             
               </div>
             ))}
           </div>

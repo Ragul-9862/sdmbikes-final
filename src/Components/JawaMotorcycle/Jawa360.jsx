@@ -847,22 +847,22 @@ export default function New() {
               <div className="timeline-2">
                 <div className={`event-1-2 ${selectedEvent === 'event1' ? 'active' : ''}`} onClick={() => handleEventClick('event1', 'Red')}>
                   <div className="event-content1-2">
-                    {renderDetails('event1', 'Jawa 350', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
+                    {renderDetails('event1', 'Jawa 350', 'On Road Price ₹ 2,14,950', 'Description for Scrambler')}
                   </div>
                 </div>
                 <div className={`event-2-2 ${selectedEvent2 === 'event2' ? 'active' : ''}`} onClick={() => handleEventClick2('event2', 'Blackmirror')}>
                   <div className="event-content1-2">
-                    {renderDetails2('event2', '42 Bobber', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
+                    {renderDetails2('event2', '42 Bobber', 'On Road Price ₹  2,25,187', 'Description for Scrambler')}
                   </div>
                 </div>
                 <div className={`event-3-2 ${selectedEvent3 === 'event3' ? 'active' : ''}`} onClick={() => handleEventClick3('event3', 'Default')}>
                   <div className="event-content1-2">
-                    {renderDetails3('event3', 'Perak', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
+                    {renderDetails3('event3', 'Perak', 'On Road Price ₹  2,13,187', 'Description for Scrambler')}
                   </div>
                 </div>
                 <div className={`event-4-2 ${selectedEvent4 === 'event4' ? 'active' : ''}`} onClick={() => handleEventClick4('event4', 'Cosmiccarbon')}>
                   <div className="event-content1-2">
-                    {renderDetails4('event4', '42', 'On Road Price ₹ 2,08,829', 'Description for Scrambler')}
+                    {renderDetails4('event4', '42', 'On Road Price ₹ 1,98,142', 'Description for Scrambler')}
                   </div>
                 </div>
               </div>
