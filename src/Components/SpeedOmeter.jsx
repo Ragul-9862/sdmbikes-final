@@ -10,13 +10,8 @@ export default function SpeedOmeter() {
     <div className="speedometer-content col-lg-4 col-md-10 col-sm-10">
       <h2>Digital Speedometer</h2>
       <span>INSTRUMENT CONSOLE</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis quam sapien
-        mollis
-        mollis .Aliquam ferme ntum sapien odio, ac eleifend libero bibendum dictum ligula.
-        Vivamus Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis quam sapien mollis
-        mollis
-        .Aliquam ferme ntum sapien odio, ac eleifend libero bibendum dictum ligula. Vivamus
+      <p>The bike's instrument console features a digital speedometer providing precise readings in both kilometers per hour and miles per hour. 
+        Its central position ensures easy visibility for the rider, enhancing safety and convenience on the road. Additionally, the digital display offers clear and accurate speed information, contributing to an enjoyable riding experience. 
       </p>
     </div>
   </div>
