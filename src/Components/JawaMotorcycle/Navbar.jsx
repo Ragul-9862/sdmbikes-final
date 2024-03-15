@@ -187,6 +187,7 @@ export default function Navbar() {
                 value={formData.Model}
                 onChange={handleChange}
                 name="Model"
+                required
               >
                 <option value="Jawa 350">Jawa 350</option>
                 <option value="42">42</option>
@@ -202,6 +203,7 @@ export default function Navbar() {
                 value={formData.State}
                 onChange={handleChange}
                 name="State"
+                required
               >
                 <option value="Tamilnadu">Tamilnadu</option>
                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -221,6 +223,7 @@ export default function Navbar() {
                 value={formData.Date}
                 onChange={handleChange}
                 name="Date"
+                required
               />
             </div>
             <div className="mb-3">
@@ -232,6 +235,7 @@ export default function Navbar() {
                 value={formData.Name}
                 onChange={handleChange}
                 name="Name"
+                required
               />
             </div>
             <div className="mb-3">
@@ -243,6 +247,7 @@ export default function Navbar() {
                 value={formData.Email}
                 onChange={handleChange}
                 name="Email"
+                required
               />
             </div>
             <div className="mb-3">
@@ -254,6 +259,7 @@ export default function Navbar() {
                 value={formData.Phone}
                 onChange={handleChange}
                 name="Phone"
+                required
               />
             </div>
             <div className="mb-3">
@@ -265,6 +271,7 @@ export default function Navbar() {
                 value={formData.Address1}
                 onChange={handleChange}
                 name="Address1"
+                required
               />
             </div>
             <div className="mb-3">
@@ -276,6 +283,7 @@ export default function Navbar() {
                 value={formData.Address2}
                 onChange={handleChange}
                 name="Address2"
+                required
               />
             </div>
             <div className="d-grid">

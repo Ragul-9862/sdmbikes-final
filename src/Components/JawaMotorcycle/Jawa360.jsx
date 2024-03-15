@@ -157,7 +157,7 @@ export default function New() {
   // <------------------Roadster-Smoke-grey---------------->
 
   const [number24, setNumber24] = useState(1);
-  const BikeJasperreddualtone = require(`../assets/j-bike/Jawa-350/Maroon/bike-${number24}.png`)
+  const BikeJasperreddualtone = require(`../assets/j-bike/Bobber/Jasperreddualtone/bike-${number24}.png`)
 
   
   const handleDecrease24 = () => {

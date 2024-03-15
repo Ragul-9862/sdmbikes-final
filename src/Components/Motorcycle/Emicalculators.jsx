@@ -23,7 +23,7 @@ export default function Emicalculators() {
     };
 
     const handleInterestRateChange = (e) => {
-        const rate = parseFloat(e.target.value).toFixed(2); // Round to 2 decimal places
+        const rate = parseFloat(e.target.value).toFixed(2); 
         setInterestRate(rate);
         calculateLoan(loanAmount, loanTerm, rate, downPayment);
     };
@@ -134,7 +134,7 @@ export default function Emicalculators() {
                                 </div>
                             </div>
                             <div>
-                                <Link className='link'>
+                                <Link to='/ContactUs' className='link'>
                                     <p className='book-now-emi '>Enquiry Now</p>
                                 </Link>
                             </div>

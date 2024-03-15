@@ -11,6 +11,7 @@ export default function ContactUs() {
 
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false); // State for indicating form submission
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -38,6 +39,7 @@ export default function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSubmitting(true); // Set submitting to true when form is being submitted
     const validationErrors = validateForm();
     if (Object.keys(validationErrors).length === 0) {
       const formEle = e.target;
@@ -61,13 +63,16 @@ export default function ContactUs() {
         })
         .catch((error) => {
           console.log(error);
+        })
+        .finally(() => {
+          setSubmitting(false); // Set submitting back to false when submission is complete
         });
     } else {
       setErrors(validationErrors);
+      setSubmitting(false); // Set submitting back to false if there are validation errors
     }
   };
-  
-  
+
   return (
     <section className="contact-us">
       <NavLink className='link' to='/'>
@@ -98,7 +103,7 @@ export default function ContactUs() {
                   <textarea id="message" name="Message" className="form-control" rows="5" placeholder="Message" value={formData.Message} onChange={handleChange}></textarea>
                   {errors.message && <span className="error-message">{errors.message}</span>}
                 </div>
-                <button type="submit" className="book-now">Submit</button>
+                <button type="submit" className="book-now-contact" disabled={submitting}>{submitting ? 'Submitting...' : 'Submit'}</button>
               </form>
             )}
           </div>

@@ -3,11 +3,12 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Emicalculators from '../Components/Motorcycle/Emicalculators'
 
+
 export default function EmiCalculatorPage() {
   return (
     <div>
         <Navbar/>
-        <Emicalculators/>
+       <Emicalculators/>
         <Footer/>
     </div>
   )

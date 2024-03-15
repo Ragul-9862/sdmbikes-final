@@ -1,34 +1,113 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { FiChevronRight } from "react-icons/fi";
 
 export default function ContactUs() {
+  const [formData, setFormData] = useState({
+    Name: '',
+    Email: '',
+    Message: ''
+  });
+
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false); // State for indicating form submission
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const validateForm = () => {
+    let errors = {};
+    if (!formData.Name.trim()) {
+      errors.name = "Name is required";
+    }
+    if (!formData.Email.trim()) {
+      errors.email = "Email is required";
+    } else if (!/^\S+@\S+\.\S+$/.test(formData.Email)) {
+      errors.email = "Invalid email address";
+    }
+    if (!formData.Message.trim()) {
+      errors.message = "Message is required";
+    }
+    return errors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitting(true); // Set submitting to true when form is being submitted
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length === 0) {
+      const formEle = e.target;
+      const formDatab = new FormData(formEle);
+      fetch(
+        "https://script.google.com/macros/s/AKfycbwgRBd4Fz6p_kVHV8ujM7Kaoy2__LV1zcE3TJwUggJgB1X5_UrCUX72EjFRoqSnK-gLPw/exec",
+        {
+          method: "POST",
+          body: formDatab
+        }
+      )
+        .then((res) => {
+          return res.text().then(text => {
+            console.log("Response from server:", text);
+            return text;
+          });
+        })
+        .then((data) => {
+          console.log("Data from server:", data);
+          setSubmitted(true);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .finally(() => {
+          setSubmitting(false); // Set submitting back to false when submission is complete
+        });
+    } else {
+      setErrors(validationErrors);
+      setSubmitting(false); // Set submitting back to false if there are validation errors
+    }
+  };
+
   return (
     <section className="contact-us">
-         <Link className='link' to='/'>
-         <p className='back-page'>
-                Home <span><FiChevronRight/></span> ContactUs
-              </p>
-            </Link>
+      <NavLink className='link' to='/'>
+        <p className='back-page'>
+          Home <span><FiChevronRight/></span> ContactUs
+        </p>
+      </NavLink>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 contact-uss">
+          <div className="col-lg-6 col-md-6 contact-uss">
             <h2>Contact Us</h2>
             <p>If you have any questions or inquiries, feel free to contact us using the form below.</p>
-            <form className="contact-form">
-              <div className="form-group">
-                <input type="text" id="name" name="name" className="form-control" placeholder="Your Name" />
+            {submitted ? (
+              <div>
+                <p>Thank you for contacting us!</p>
               </div>
-              <div className="form-group">
-                <input type="email" id="email" name="email" className="form-control" placeholder="Your Email" />
-              </div>
-              <div className="form-group">
-                <textarea id="message" name="message" className="form-control" rows="5" placeholder="Message"></textarea>
-              </div>
-              <button type="submit" className="book-now">Submit</button>
-            </form>
+            ) : (
+              <form className="contact-form" method='POST' onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <input type="text" id="name"  name="Name" className="form-control" placeholder="Your Name" value={formData.Name} onChange={handleChange} />
+                  {errors.name && <span className="error-message">{errors.name}</span>}
+                </div>
+                <div className="form-group">
+                  <input type="email" id="email" name="Email" className="form-control" placeholder="Your Email" value={formData.Email} onChange={handleChange} />
+                  {errors.email && <span className="error-message">{errors.email}</span>}
+                </div>
+                <div className="form-group">
+                  <textarea id="message" name="Message" className="form-control" rows="5" placeholder="Message" value={formData.Message} onChange={handleChange}></textarea>
+                  {errors.message && <span className="error-message">{errors.message}</span>}
+                </div>
+                <button type="submit" className="book-now-contact" disabled={submitting}>{submitting ? 'Submitting...' : 'Submit'}</button>
+              </form>
+            )}
           </div>
-          <div className="col-lg-6 contactus-info">
+          <div className="col-lg-6 col-md-6 contactus-info">
             <h2>Visit Us</h2>
             <p>123 Jawa Street</p>
             <p>Jawa City, India</p>
@@ -38,11 +117,6 @@ export default function ContactUs() {
             <p>info@shreedhanammotors.com</p>
           </div>
         </div>
-        {/* <div className='row mt-5'>
-          <div className='col-lg-6'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15664.779657500296!2d76.97047327603333!3d11.023997938145445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8597229082379%3A0xa05c486340ffa872!2sCLOUD%20DREAMS!5e0!3m2!1sen!2sin!4v1707934439637!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div> */}
       </div>
     </section>
   );

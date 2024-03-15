@@ -816,24 +816,7 @@ export default function New() {
     }
   };
 
-  // const getColorImageSource4 = (color4) => {
-  //   switch (color4) {
-  //     case 'RushHourRed':
-  //       return BikeRushHourRed;
-  //     case 'LunarWhite':
-  //       return BikeLunarWhite;
-  //     case 'ForestGreen':
-  //       return BikeForestGreen;
-  //     case 'Crimson':
-  //       return BikeCrimson;
-  //     case 'GallantGrey':
-  //       return BikeGallantGrey;
-  //     case 'SinSilver':
-  //       return BikeSinSilver;
-  //     default:
-  //       return BikeRushHourRed;
-  //   }
-  // };
+
 
   return (
     <div>

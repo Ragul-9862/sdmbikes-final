@@ -1943,8 +1943,20 @@ label{
 }
 .book-now:hover{
   background-color: #000000;
- 
 }
+.book-now-contact {
+  background-color: #212121;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 30px;
+  margin-bottom: 30px;
+  transition: all ease-in-out 0.8s;
+}
+.book-now-contact:hover{
+  background-color: #000000;
+}
+
+
 .motorcycle-img h5{
 color: white;
 font-size: 25px;
@@ -1975,12 +1987,10 @@ font-size: 25px;
     /* width: 700px; */
   }
 }
-/* .kommuniti-main-img-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  gap: 1rem;
-  
-} */
+
+.kommuniti-main-info-main{
+  padding: 0px 60px 0px 60px ;
+}
  .kommuniti-main-img-info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));

@@ -36,7 +36,7 @@ export default function Kommuniti() {
           <p>Relive the road trips, find your fellow riders, or swap some spares.
           Enjoy the journey as a part of the vibrant Jawa Kommuniti.</p>
         </div>
-        <div className='row'>
+        <div className='row kommuniti-main-info-main'>
           {kommuniti.map((item) =>
             <div className='col-lg-6' key={item.id}>
               <div className="img-container ">

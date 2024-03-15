@@ -193,6 +193,7 @@ export default function Navbar() {
                 value={formData.Model}
                 onChange={handleChange}
                 name="Model"
+                required
               >
                 <option value="Scrambler">Scrambler</option>
                 <option value="Roadster">Roadster</option>
@@ -207,6 +208,7 @@ export default function Navbar() {
                 value={formData.State}
                 onChange={handleChange}
                 name="State"
+                required
               >
                 <option value="Tamilnadu">Tamilnadu</option>
                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -216,45 +218,7 @@ export default function Navbar() {
                 <option value="Gujarat">Gujarat</option>
               </select>
             </div>
-            {/* <div className="mb-3">
-              <label className="form-check-label d-block">Where do you want to have Your Test Ride?</label>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="Ride"
-                  id="Home"
-                  value="Home"
-                  checked={formData.Ride === 'Home'}
-                  onChange={handleChange}
-                />
-                <label className="form-check-label" htmlFor="Home">Home</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="Ride"
-                  id="Office"
-                  value="Office"
-                  checked={formData.Ride === 'Office'}
-                  onChange={handleChange}
-                />
-                <label className="form-check-label" htmlFor="Office">Office</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="Ride"
-                  id="Dealership"
-                  value="Dealership"
-                  checked={formData.Ride === 'Dealership'}
-                  onChange={handleChange}
-                />
-                <label className="form-check-label" htmlFor="Dealership">Dealership</label>
-              </div>
-            </div> */}
+      
             <div className="mb-3">
               <label htmlFor="date" className="form-label">Select Date for Test Ride</label>
               <input
@@ -264,6 +228,7 @@ export default function Navbar() {
                 value={formData.Date}
                 onChange={handleChange}
                 name="Date"
+                required
               />
             </div>
             <div className="mb-3">
@@ -275,6 +240,7 @@ export default function Navbar() {
                 value={formData.Name}
                 onChange={handleChange}
                 name="Name"
+                required
               />
               {errors.Name && <p className="text-danger">{errors.Name}</p>}
             </div>
@@ -287,6 +253,7 @@ export default function Navbar() {
                 value={formData.Email}
                 onChange={handleChange}
                 name="Email"
+                required
               />
               {errors.Email && <p className="text-danger">{errors.Email}</p>}
             </div>
@@ -299,6 +266,7 @@ export default function Navbar() {
                 value={formData.Phone}
                 onChange={handleChange}
                 name="Phone"
+                required
               />
             </div>
             <div className="mb-3">
@@ -310,6 +278,7 @@ export default function Navbar() {
                 value={formData.Address1}
                 onChange={handleChange}
                 name="Address1"
+                required
               />
             </div>
             <div className="mb-3">
@@ -321,6 +290,7 @@ export default function Navbar() {
                 value={formData.Address2}
                 onChange={handleChange}
                 name="Address2"
+                required
               />
             </div>
             <div className="d-grid">

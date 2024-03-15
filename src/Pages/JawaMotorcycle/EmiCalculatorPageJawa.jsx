@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../Components/JawaMotorcycle/Navbar'
-import Emicalculators from '../../Components/Motorcycle/Emicalculators'
 import Footer from '../../Components/Footer'
+import Emicalculatorsjawa from '../../Components/Motorcycle/Emicaluclatorsjawa'
 
 export default function EmiCalculatorPageJawa() {
   return (
     <div>
         <Navbar/>
-        <Emicalculators/>
+        <Emicalculatorsjawa/>
         <Footer/>
     </div>
   )
