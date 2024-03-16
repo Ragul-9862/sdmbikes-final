@@ -64,7 +64,7 @@ export default function Navbar() {
     
    
     fetch(
-      "https://script.google.com/macros/s/AKfycbwdS_x3BrsiH8nt8xtN5k2MFiJk8ByMd4h6cUHQuxNtBDR0HMbzjfmgtObCvt3BDTvfZw/exec",
+      "https://script.google.com/macros/s/AKfycbwbx7tvxuXNUKdzAyT-RwsLbplr0qRi7DHkYLwNfFeumUmMeOvBJBLSN0WOLoj-ptjDYQ/exec",
       {
         method: "POST",
         body: formDatab

@@ -11,7 +11,7 @@ export default function ContactUs() {
 
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false); // State for indicating form submission
+  const [submitting, setSubmitting] = useState(false); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -39,13 +39,13 @@ export default function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitting(true); // Set submitting to true when form is being submitted
+    setSubmitting(true); 
     const validationErrors = validateForm();
     if (Object.keys(validationErrors).length === 0) {
       const formEle = e.target;
       const formDatab = new FormData(formEle);
       fetch(
-        "https://script.google.com/macros/s/AKfycbwgRBd4Fz6p_kVHV8ujM7Kaoy2__LV1zcE3TJwUggJgB1X5_UrCUX72EjFRoqSnK-gLPw/exec",
+        "https://script.google.com/macros/s/AKfycbzgJZW0sm5kxClvOWOUJOksiQq7-UHXn39z7I82IOieCTggsK-1iOI7BP-25wg5UafB4Q/exec",
         {
           method: "POST",
           body: formDatab
@@ -65,11 +65,11 @@ export default function ContactUs() {
           console.log(error);
         })
         .finally(() => {
-          setSubmitting(false); // Set submitting back to false when submission is complete
+          setSubmitting(false);
         });
     } else {
       setErrors(validationErrors);
-      setSubmitting(false); // Set submitting back to false if there are validation errors
+      setSubmitting(false);
     }
   };
 
