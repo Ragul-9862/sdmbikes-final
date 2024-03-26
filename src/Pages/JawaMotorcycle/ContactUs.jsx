@@ -109,8 +109,8 @@ export default function ContactUs() {
           </div>
           <div className="col-lg-6 col-md-6 contactus-info">
             <h2>Visit Us</h2>
-            <p>123 Jawa Street</p>
-            <p>Jawa City, India</p>
+            <p>1420-B, sathy main road, </p>
+            <p>ganapathy, coimbatore - 641035</p>
             <h3>Phone:</h3>
             <p> +91 98765 43210</p>
             <h3>Email:</h3>

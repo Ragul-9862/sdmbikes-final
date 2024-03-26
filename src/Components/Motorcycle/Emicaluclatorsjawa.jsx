@@ -78,7 +78,7 @@ export default function Emicalculatorsjawa() {
                                     <span className='box'>&#8377;{downPayment}</span>
                                 </div>
                                 <div>
-                                    <input type="range" className="input__control" name="downPayment" value={downPayment} max="300000" step="5000" onChange={handleDownPaymentChange} />
+                                    <input type="range" className="input__control" name="downPayment" value={downPayment} max="300000" step="500" onChange={handleDownPaymentChange} />
                                 </div>
                             </div>
                             <div>
@@ -87,7 +87,7 @@ export default function Emicalculatorsjawa() {
                                     <span className='box'>&#8377;{loanAmount}</span>
                                 </div>
                                 <div>
-                                    <input type="range" className="input__control" name="loanAmount" value={loanAmount} max="600000" step="5000" onChange={handleLoanAmountChange} />
+                                    <input type="range" className="input__control" name="loanAmount" value={loanAmount} max="600000" step="500" onChange={handleLoanAmountChange} />
                                 </div>
                             </div>
                             <div>

@@ -72,7 +72,7 @@ const EmiCalculator = () => {
                                 <div className="grid-flex grid-sb h__mb15">
                                     <label className="input__label">Down Payment</label>
                                     <div className="input input--prefix input--border d-flex">
-                                        <input type="range" className="input__control" id="downpayment" name="downPayment" value={downPayment} max="100000" step="5000" onChange={handleDownPaymentChange}  style={{ backgroundColor: 'red' }}  />
+                                        <input type="range" className="input__control" id="downpayment" name="downPayment" value={downPayment} max="100000" step="500" onChange={handleDownPaymentChange}  style={{ backgroundColor: 'red' }}  />
                                         <span>{downPayment}</span>
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@ const EmiCalculator = () => {
                                 <div className="grid-flex grid-sb h__mb15">
                                     <label className="input__label">Loan Amount</label>
                                     <div className="input input--prefix input--border  d-flex">
-                                        <input type="range" className="input__control" id="loanamount" name="loanAmount" value={loanAmount} max="1000000" step="50000" onChange={handleLoanAmountChange} />
+                                        <input type="range" className="input__control" id="loanamount" name="loanAmount" value={loanAmount} max="1000000" step="500" onChange={handleLoanAmountChange} />
                                         <span>{loanAmount}</span>
                                     </div>
                                 </div>

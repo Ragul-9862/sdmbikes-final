@@ -65,11 +65,11 @@ export default function ContactUs() {
           console.log(error);
         })
         .finally(() => {
-          setSubmitting(false); // Set submitting back to false when submission is complete
+          setSubmitting(false); 
         });
     } else {
       setErrors(validationErrors);
-      setSubmitting(false); // Set submitting back to false if there are validation errors
+      setSubmitting(false); 
     }
   };
 

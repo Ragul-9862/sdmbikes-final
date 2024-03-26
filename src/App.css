@@ -27,7 +27,7 @@
   
 }
 .navbar-nav .nav-item.actives .nav-link {
-  color: #000000 !important; 
+  color: #f8c12e !important;
 }
 .active{
   color: #B03035 !important; 
@@ -114,7 +114,8 @@ top: -167px;
 
 /* <------------------------Jawa Bike Navbar-------------------------------------------------> */
 #fixed-top-2 {
-  background: linear-gradient(to bottom, #990021, #6E0018) #990021;
+  /* background: linear-gradient(to bottom, #990021, #6E0018) #990021; */
+  background: #440c15;
 }
 
 
@@ -392,7 +393,7 @@ button.navbar-toggler:focus {
   background-position: center;
   width: 260px;
   color: #FFF;
-  font-family: RacingSansOne;
+  font-family: Harley;
   font-size: 32px;
   padding: 10px 25px;
   font-weight: 400;
@@ -607,8 +608,8 @@ hr{
 
   color: #000;
    width: 100%;
-   font-family: RacingSansOne;
-  font-size: 56px;
+   font-family: Harley;
+   font-size: 76px;
   font-style: normal;
   font-weight: 400;
   line-height: 65px; 
@@ -617,7 +618,7 @@ hr{
 .view-360-container-info {
 
 span{
-  color: #FF0;
+  color: rgb(255, 255, 255);
     font-size: 76px;
     font-style: normal;
     font-weight: 400;
@@ -1216,7 +1217,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #000;
     padding-top: 40px;
     max-width: 150px;
-    font-family: RacingSansOne;
+    font-family: Harley;
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
@@ -1228,6 +1229,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 76px;
     font-style: normal;
     font-weight: 400;
+    font-size: 56px;
     line-height: 65px;
     padding-left: 10px;
 } 
@@ -1278,8 +1280,8 @@ button {
 .ourblogs-main-info-main h1{
   color: #000;
   padding-top: 40px;
-  max-width: 150px;
-  font-family: RacingSansOne;
+  max-width: 230px;
+  font-family: Harley;
   font-size: 56px;
   font-style: normal;
   font-weight: 400;
@@ -1287,8 +1289,8 @@ button {
 
 }
 .ourblogs-main-info-main span{
-  color: #FF0;
-  font-family: RacingSansOne;
+  color: rgb(255, 255, 255);
+  font-family: Harley;
     font-style: normal;
     font-weight: 400;
     line-height: 65px;
@@ -2058,10 +2060,10 @@ font-size: 25px;
   align-items: center;
 
   h3{
-    color: #ef901d;
+    color: #f8c12e;
   }
   h2{
-    color: #ef901d;
+    color: #f8c12e;
   }
   p{
     color: white;
@@ -2316,7 +2318,7 @@ flex-direction: column;
   font-size: 25px;
   line-height: 1;
   margin-right: 20px;
-  color: #B03035;
+  color: #f8c12e;
 }
 .emi-info-main span {
   color: white;
@@ -2347,7 +2349,7 @@ color: white;
 }
 
 .book-now-emi{
-  background-color: #B03035;
+  background-color: #f8c12e;
   color: rgb(0, 0, 0);
   padding: 8px 20px;
    margin-bottom: 30px;

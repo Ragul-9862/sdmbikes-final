@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="col-lg-3">
         <div className="footer">
           <img className="img-fluid footer-logo" src={require("../Components/assets/Navbar/logo.png")} alt="logo" />
-          <p className='text-center mt-3  footer-logo-info '>“No plans. No maps. No GPS. Just ride.”</p>
+          <p className='text-center mt-3  footer-logo-info '>"Revved up in Retro"</p>
         </div>
       </div>
       <div className="col-lg-5 mt-4">
@@ -19,14 +19,14 @@ export default function Footer() {
               <a href="#"><img src={require("../Components/assets/Footer/fb.png")} alt /></a>
             </div>
             <div className="social-icons">
-              <a href="#"><img src={require("../Components/assets/Footer/ins.png")} alt /></a>
+              <a href=" https://www.instagram.com/sdm_jawayezdi/ "><img src={require("../Components/assets/Footer/ins.png")} alt /></a>
             </div>
             <div className="social-icons">
               <a href="#"><img src={require("../Components/assets/Footer/x.png")} alt /></a>
             </div>
-            <div className="social-icons">
+            {/* <div className="social-icons">
               <a href="#"><img src={require("../Components/assets/Footer/print.png")} alt /></a>
-            </div>
+            </div> */}
             <div className="social-icons">
               <a href="#"><img src={require("../Components/assets/Footer/in.png")} alt /></a>
             </div>

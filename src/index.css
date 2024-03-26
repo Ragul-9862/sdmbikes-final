@@ -5,9 +5,10 @@
   font-family: reem;
   src: url("../src/Components/assets/reem-kufi/ReemKufi-Regular.ttf");
 }
+
 @font-face{
-  font-family: RacingSansOne;
-  src: url("../src/Components/assets/Racing_Sans_One/RacingSansOne-Regular.ttf");
+  font-family: Harley;
+  src: url("../src/Components/assets/harley/Lsharseyregulardemo-d98ol.otf");
 }
 
 
