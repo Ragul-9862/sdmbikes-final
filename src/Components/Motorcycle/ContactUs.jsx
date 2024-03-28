@@ -112,7 +112,7 @@ export default function ContactUs() {
             <p>1420-B, sathy main road, </p>
             <p>ganapathy, coimbatore - 641035</p>
             <h3>Phone:</h3>
-            <p> +91 98765 43210</p>
+            <p> +91 96777 59005</p>
             <h3>Email:</h3>
             <p>info@shreedhanammotors.com</p>
           </div>

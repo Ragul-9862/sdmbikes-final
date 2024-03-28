@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
           <div className="contact mt-2">
             <ul>
-              <li><a href="tel: +91 9876543210"><i className="bi bi-telephone-fill" />+91 9876543210
+              <li><a href="tel: +91 9677759005"><i className="bi bi-telephone-fill" />+91 9677759005
                 </a>
               </li>
               <li><a href="info@shreedhanammotors.com"><i className="bi bi-envelope-open" />info@shreedhanammotors.com</a></li>
