@@ -89,7 +89,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 58vh;
+        /* height: 58vh; */
         /* padding: 10px; */
         background-color: #0E0E0E;
         position: relative;
@@ -135,7 +135,7 @@
 
     .speedometer-wrapper {
         background-size: cover;
-        height: 58vh;
+        /* height: 58vh; */
         background-color: #0E0E0E;
         position: relative;
     }
@@ -661,6 +661,9 @@
         top: 0%;
         left: 50%;
     }
+    .speedometer-wrapper{
+        padding: 200px 0px 200px 0px;
+    }
 }
 
 
@@ -681,7 +684,7 @@
         background-position: center;
         background-size: cover;
         /* height: 100vh; */
-        padding: 10px;
+        /* padding: 10px; */
         /* background-color: #0E0E0E; */
         position: relative;
       }
@@ -1167,7 +1170,7 @@
     }
 
     .speedometer-content {
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     .left-icon {
